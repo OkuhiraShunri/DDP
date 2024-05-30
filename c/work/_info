@@ -1,0 +1,76 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/OkuhiraShunri/verilog/mips/ID_SIM/6
+vC
+Z0 !s110 1717052652
+!i10b 1
+!s100 h^Jj09^?2KzGYRE=l[]452
+I4XGaTES0keKP_8TTgSi203
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/OkuhiraShunri/Documents/verilog/DDP/c
+w1650521784
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/c/C.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/c/C.v
+L0 2
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1717052652.000000
+!s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/c/C.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/c/C.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@c
+vC_JOIN
+R0
+!i10b 1
+!s100 ohSe`mnLUF^=Y;455=SU`2
+I[Ol=9Gl30bEJ?8<1EQe`l2
+R1
+R2
+w1717049921
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/c/C_JOIN.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/c/C_JOIN.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/c/C_JOIN.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/c/C_JOIN.v|
+!i113 1
+R5
+R6
+n@c_@j@o@i@n
+vC_TEST
+R0
+!i10b 1
+!s100 B2TRJ_hCOhNoFl0fb0W`?2
+IShI409OQj>ge;g@>UUM@Z2
+R1
+R2
+w1717052643
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/c/C_TEST.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/c/C_TEST.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/c/C_TEST.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/c/C_TEST.v|
+!i113 1
+R5
+R6
+n@c_@t@e@s@t
