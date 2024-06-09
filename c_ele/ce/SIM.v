@@ -1,23 +1,28 @@
 `timescale 1ns / 100ps
 module SIM();
-reg send_in, ack_in, mr, exb;
-wire cp, send_out, ack_out;
+reg ce_send_in, ce_ack_in, mr, exb;
+wire ce_cp, ce_send_out, ce_ack_out;
 
-CE ce(.Send_in(send_in), .Ack_in(ack_in), .MR(mr), .Exb(exb), .Ack_out(ack_out), .Send_out(send_out), .CP(cp));
+CE ce(.CE_Send_in(ce_send_in), .CE_Ack_in(ce_ack_in), .MR(mr), .Exb(exb), .CE_Ack_out(ce_ack_out), .CE_Send_out(ce_send_out), .CE_CP(ce_cp));
 // initial begin
 //     send_in = 1;
 // #11
 //     send_in = 0;
 // 
 initial begin
-    send_in = 1;
-     mr = 1;
+    ce_send_in = 1;
+    ce_ack_in = 1;
+    exb = 1;
+    mr = 1;
 #100 mr = 0;
-#11  send_in = 0;
-#11  send_in = 1;
+#11  ce_send_in = 0;
+#11  ce_send_in = 1;
+#11   ce_ack_in = 0;
 
-#11 send_in = 0;
-#11 send_in = 1;
+
+
+// #11 send_in = 0;
+// #11 send_in = 1;
 
 //#50 mr = 1;
 // #30  send_in = 0;
@@ -28,10 +33,4 @@ initial begin
 
 
 end
-// always begin
-//         send_in = 1;
-//   #11   send_in = 0;
-//   #11;
-// end
-
 endmodule
