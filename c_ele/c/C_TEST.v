@@ -16,6 +16,17 @@ initial begin
 #11  send_in = 0;
 #11  send_in = 1;
 
+#11 send_in = 0;
+#11 send_in = 1;
+
+//#50 mr = 1;
+// #30  send_in = 0;
+// #30  send_in = 1;
+
+// #5  send_in = 0;
+// #5  send_in = 1;
+
+
 end
 // always begin
 //         send_in = 1;
