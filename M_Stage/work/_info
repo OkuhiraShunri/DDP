@@ -1,0 +1,120 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/18.0
+vARB
+Z0 !s110 1720596767
+!i10b 1
+!s100 ;RfHfRHfEh?EI=Od0nW:N2
+I?^Ke0I=R1R]faj1TI5^Ii2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/OkuhiraShunri/Documents/verilog/DDP/M_Stage
+w1718954979
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/M_Stage/ARB.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/M_Stage/ARB.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1720596767.000000
+!s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/M_Stage/ARB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/M_Stage/ARB.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@a@r@b
+vCJ
+R0
+!i10b 1
+!s100 bG5EhBFE_z9DcCYB?S6_O0
+Im0<[W`KZNI=`@jWDkeEmT1
+R1
+R2
+w1718946602
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/M_Stage/CJ.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/M_Stage/CJ.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/M_Stage/CJ.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/M_Stage/CJ.v|
+!i113 1
+R5
+R6
+n@c@j
+vCM
+R0
+!i10b 1
+!s100 VhfFAjj=PSXE9Fo@HPc^X3
+I4OS7n2LlLokWLNddGU4cm1
+R1
+R2
+w1720591144
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/M_Stage/CM.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/M_Stage/CM.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/M_Stage/CM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/M_Stage/CM.v|
+!i113 1
+R5
+R6
+n@c@m
+vM_Stage
+R0
+!i10b 1
+!s100 o?<OTYEk_ZeXfg><Ck_0^3
+II=:GAogTIN@0K>Dfci4nG3
+R1
+R2
+w1720596732
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/M_Stage/M_Stage.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/M_Stage/M_Stage.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/M_Stage/M_Stage.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/M_Stage/M_Stage.v|
+!i113 1
+R5
+R6
+n@m_@stage
+vM_Stage_SIM
+R0
+!i10b 1
+!s100 @F[WDma]zkUmRDfWlcD4G0
+IljRfaRXc3^B?^EohIhcSz0
+R1
+R2
+w1720596533
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/M_Stage/M_Stage_SIM.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/M_Stage/M_Stage_SIM.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/M_Stage/M_Stage_SIM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/M_Stage/M_Stage_SIM.v|
+!i113 1
+R5
+R6
+n@m_@stage_@s@i@m

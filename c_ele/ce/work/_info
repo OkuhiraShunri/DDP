@@ -9,61 +9,61 @@ z2
 cModel Technology
 dC:/intelFPGA/18.0
 vC
-!s110 1717913274
+Z0 !s110 1718168998
 !i10b 1
 !s100 h^Jj09^?2KzGYRE=l[]452
 I^94:^1ZT>H?iRjJ>>Q69E0
-Z0 VDg1SIo80bB@j0V0VzS_@n1
-Z1 dC:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/ce
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/ce
 w1650521784
 8C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/ce/C.v
 FC:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/ce/C.v
 L0 2
-Z2 OV;L;10.5b;63
+Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-!s108 1717913274.000000
+!s108 1718168997.000000
 !s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/ce/C.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/ce/C.v|
 !i113 1
-Z3 o-work work
-Z4 tCvgOpt 0
+Z4 o-work work
+Z5 tCvgOpt 0
 n@c
 vCE
-Z5 !s110 1717913275
+R0
 !i10b 1
 !s100 =b@`P:A1zHo^61EdPSEcj0
 IVYSdIW5AAF`ZgPMiW9?i83
-R0
 R1
+R2
 w1717901805
 8C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/ce/CE.v
 FC:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/ce/CE.v
 L0 1
-R2
+R3
 r1
 !s85 0
 31
-Z6 !s108 1717913275.000000
+Z6 !s108 1718168998.000000
 !s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/ce/CE.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/ce/CE.v|
 !i113 1
-R3
 R4
+R5
 n@c@e
 vSIM
-R5
-!i10b 1
-!s100 jY9iBj`>ZOQP]UgVfT:aH0
-IjRd6hJE==_Jod=Gd>noj>2
 R0
+!i10b 1
+!s100 lGdL>_FKfO2^95EhcDES82
+IogKYmkA`<DJ<<`lKCQ^KY3
 R1
-w1717913227
+R2
+w1718168988
 8C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/ce/SIM.v
 FC:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/ce/SIM.v
 L0 2
-R2
+R3
 r1
 !s85 0
 31
@@ -71,6 +71,6 @@ R6
 !s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/ce/SIM.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/ce/SIM.v|
 !i113 1
-R3
 R4
+R5
 n@s@i@m

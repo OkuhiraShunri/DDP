@@ -1,0 +1,15 @@
+C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cj/C.v {1 {vlog -work work -stats=none C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cj/C.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module C
+
+Top level modules:
+	C
+
+} {} {}} C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cj/CJ_SIM.v {1 {vlog -work work -stats=none C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cj/CJ_SIM.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module CB_SIM
+
+Top level modules:
+	CB_SIM
+
+} {} {}}

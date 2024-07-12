@@ -1,0 +1,120 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cm
+vARB
+Z1 !s110 1719299714
+!i10b 1
+!s100 ;RfHfRHfEh?EI=Od0nW:N2
+IAc=D5e@[]>MZIoL6oN5cY3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1718954979
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cm/ARB.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cm/ARB.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1719299714.000000
+!s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cm/ARB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cm/ARB.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@a@r@b
+vC
+R1
+!i10b 1
+!s100 h^Jj09^?2KzGYRE=l[]452
+IGPBlc2Poi8nNn>c`QJ=OV0
+R2
+R0
+w1650521784
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cm/C.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cm/C.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cm/C.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cm/C.v|
+!i113 1
+R5
+R6
+n@c
+vCJ
+R1
+!i10b 1
+!s100 bG5EhBFE_z9DcCYB?S6_O0
+I>D>glgG8oPMDZ[?ec?YSM2
+R2
+R0
+w1718946602
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cm/CJ.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cm/CJ.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cm/CJ.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cm/CJ.v|
+!i113 1
+R5
+R6
+n@c@j
+vCM_JOIN
+R1
+!i10b 1
+!s100 o<_UR?ZdlIl6WESki2VVH3
+IgVZ;Jo6hDjh2G:gR<]V7;0
+R2
+R0
+w1719298094
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cm/CM_JOIN.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cm/CM_JOIN.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cm/CM_JOIN.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cm/CM_JOIN.v|
+!i113 1
+R5
+R6
+n@c@m_@j@o@i@n
+vCM_SIM
+R1
+!i10b 1
+!s100 Q27QcAhjg<_DB6PXLY@kP2
+I?L4DZYcQg=[[3T6aDQC[<0
+R2
+R0
+w1719299703
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cm/CM_SIM.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cm/CM_SIM.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cm/CM_SIM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cm/CM_SIM.v|
+!i113 1
+R5
+R6
+n@c@m_@s@i@m

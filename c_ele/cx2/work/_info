@@ -1,0 +1,98 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cm
+vC
+Z0 !s110 1719902065
+!i10b 1
+!s100 h^Jj09^?2KzGYRE=l[]452
+IAW=Ad77Q@dj4fMP6Fb57=0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cx2
+w1650521784
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cx2/C.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cx2/C.v
+L0 2
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1719902065.000000
+!s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cx2/C.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cx2/C.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@c
+vCF
+R0
+!i10b 1
+!s100 JDi707V=QekdCzjSgi:Dh1
+IjijSVz]eTiIVdK>1XU9nz1
+R1
+R2
+w1719365321
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cx2/CF.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cx2/CF.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cx2/CF.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cx2/CF.v|
+!i113 1
+R5
+R6
+n@c@f
+vCX2
+R0
+!i10b 1
+!s100 mOI09GeXjllh_THQlND1b0
+I2KF:WkNTzCKBXiiDL:YRh1
+R1
+R2
+w1719897204
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cx2/CX2.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cx2/CX2.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cx2/CX2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cx2/CX2.v|
+!i113 1
+R5
+R6
+n@c@x2
+vCX2_SIM
+R0
+!i10b 1
+!s100 Z=`0i=zl]5T?z1fcH4Wfk0
+Ic1Mc4mDff9nIASkXY5]]@1
+R1
+R2
+w1719902061
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cx2/CX2_SIM.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cx2/CX2_SIM.v
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1719902064.000000
+!s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cx2/CX2_SIM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cx2/CX2_SIM.v|
+!i113 1
+R5
+R6
+n@c@x2_@s@i@m

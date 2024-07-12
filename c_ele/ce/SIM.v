@@ -10,7 +10,7 @@ initial begin
     ce_send_in = 1;
     c_ack_in = 1;
     //ce_ack_in = 1;
-    exb = 0;
+    exb = 1;
     mr = 1;
 #100 mr = 0;
 #11  ce_send_in = 0;
