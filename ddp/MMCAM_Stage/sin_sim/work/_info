@@ -1,0 +1,121 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/OkuhiraShunri/Documents/verilog/DDP/MMCAM_Stage/OR_AM_MA
+vC
+Z0 !s110 1721453979
+!i10b 1
+!s100 ;G>GIH:LF>dXf8C0_??_d1
+ISPoAHB4diB_TM26b@JKl^1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/OkuhiraShunri/Documents/verilog/DDP/MMCAM_Stage/sin_sim
+w1651736296
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/MMCAM_Stage/sin_sim/C.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/MMCAM_Stage/sin_sim/C.v
+L0 2
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1721453979.000000
+!s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/MMCAM_Stage/sin_sim/C.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/MMCAM_Stage/sin_sim/C.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@c
+vMMCAM_AM_OR_MA
+R0
+!i10b 1
+!s100 8e7FfCIhn2bNk2::4YP2f3
+I9DYSDbL2A9A0khHB[c9QS2
+R1
+R2
+w1655297094
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/MMCAM_Stage/sin_sim/MMCAM_AM_OR_MA.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/MMCAM_Stage/sin_sim/MMCAM_AM_OR_MA.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 common_macro.vh|C:/Users/OkuhiraShunri/Documents/verilog/DDP/MMCAM_Stage/sin_sim/MMCAM_AM_OR_MA.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/MMCAM_Stage/sin_sim/MMCAM_AM_OR_MA.v|
+!i113 1
+R5
+R6
+n@m@m@c@a@m_@a@m_@o@r_@m@a
+vMMCAM_ENTRY_FD
+R0
+!i10b 1
+!s100 dee:g`b8hFaY>X?YnTP6<3
+IbFTVbSiiJ=?chZezoO_RT0
+R1
+R2
+w1655295756
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/MMCAM_Stage/sin_sim/MMCAM_ENTRY_FD.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/MMCAM_Stage/sin_sim/MMCAM_ENTRY_FD.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 common_macro.vh|C:/Users/OkuhiraShunri/Documents/verilog/DDP/MMCAM_Stage/sin_sim/MMCAM_ENTRY_FD.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/MMCAM_Stage/sin_sim/MMCAM_ENTRY_FD.v|
+!i113 1
+R5
+R6
+n@m@m@c@a@m_@e@n@t@r@y_@f@d
+vMMCAM_Stage
+R0
+!i10b 1
+!s100 PQP9_l^f`]eC]Dn2GQ9_:2
+I00Ua@I@FZ_kVYL5;dJn121
+R1
+R2
+w1655296810
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/MMCAM_Stage/sin_sim/MMCAM_Stage.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/MMCAM_Stage/sin_sim/MMCAM_Stage.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 common_macro.vh|C:/Users/OkuhiraShunri/Documents/verilog/DDP/MMCAM_Stage/sin_sim/MMCAM_Stage.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/MMCAM_Stage/sin_sim/MMCAM_Stage.v|
+!i113 1
+R5
+R6
+n@m@m@c@a@m_@stage
+vMMCAM_Stage_sim
+R0
+!i10b 1
+!s100 lZgIm<g;U:^@lB?_n?Pgn0
+I@YFH2ll0XlWlnL0jDLY_k3
+R1
+R2
+w1655277486
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/MMCAM_Stage/sin_sim/MMCAM_Stage_sim.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/MMCAM_Stage/sin_sim/MMCAM_Stage_sim.v
+Fcommon_macro.vh
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 common_macro.vh|C:/Users/OkuhiraShunri/Documents/verilog/DDP/MMCAM_Stage/sin_sim/MMCAM_Stage_sim.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/MMCAM_Stage/sin_sim/MMCAM_Stage_sim.v|
+!i113 1
+R5
+R6
+n@m@m@c@a@m_@stage_sim

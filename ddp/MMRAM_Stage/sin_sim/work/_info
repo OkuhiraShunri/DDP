@@ -1,0 +1,99 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/18.0
+vCE
+Z0 !s110 1721707568
+!i10b 1
+!s100 83ze:9d[aZFjG[WAmkIMM2
+IkOkH2jI26ISU49[GVkUa[1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/MMRAM_Stage/sin_sim
+w1653134120
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/MMRAM_Stage/sin_sim/CE.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/MMRAM_Stage/sin_sim/CE.v
+L0 2
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1721707568.000000
+!s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/MMRAM_Stage/sin_sim/CE.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/MMRAM_Stage/sin_sim/CE.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@c@e
+vCF
+R0
+!i10b 1
+!s100 MGVYG1D4>5i^<4l<KFaiH2
+IeNoLnj19R`^leK@T4CZT13
+R1
+R2
+w1653134678
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/MMRAM_Stage/sin_sim/CF.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/MMRAM_Stage/sin_sim/CF.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/MMRAM_Stage/sin_sim/CF.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/MMRAM_Stage/sin_sim/CF.v|
+!i113 1
+R5
+R6
+n@c@f
+vMMRAM_Stage
+R0
+!i10b 1
+!s100 <CF;^k?Ol4=X=Yhf>PYZ=3
+IV8oJ:FYYzkldK9ChRP4SV0
+R1
+R2
+w1655384828
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/MMRAM_Stage/sin_sim/MMRAM_Stage.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/MMRAM_Stage/sin_sim/MMRAM_Stage.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 common_macro.vh|C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/MMRAM_Stage/sin_sim/MMRAM_Stage.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/MMRAM_Stage/sin_sim/MMRAM_Stage.v|
+!i113 1
+R5
+R6
+n@m@m@r@a@m_@stage
+vMMRAM_Stage_sim
+R0
+!i10b 1
+!s100 2JV@Ef;E^RiSzXn@VU:jO2
+ImbIVWLcg3oFB?fC`A]_EX3
+R1
+R2
+w1655384226
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/MMRAM_Stage/sin_sim/MMRAM_Stage_sim.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/MMRAM_Stage/sin_sim/MMRAM_Stage_sim.v
+Fcommon_macro.vh
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 common_macro.vh|C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/MMRAM_Stage/sin_sim/MMRAM_Stage_sim.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/MMRAM_Stage/sin_sim/MMRAM_Stage_sim.v|
+!i113 1
+R5
+R6
+n@m@m@r@a@m_@stage_sim
