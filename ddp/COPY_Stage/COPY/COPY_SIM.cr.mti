@@ -1,16 +1,16 @@
-C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/COPY_Stage/COPY/CX2.v {1 {vlog -work work -stats=none C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/COPY_Stage/COPY/CX2.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module CX2
-
-Top level modules:
-	CX2
-
-} {} {}} C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/COPY_Stage/COPY/CF.v {1 {vlog -work work -stats=none C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/COPY_Stage/COPY/CF.v
+C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/COPY_Stage/COPY/CF.v {1 {vlog -work work -stats=none C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/COPY_Stage/COPY/CF.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module CF
 
 Top level modules:
 	CF
+
+} {} {}} C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/COPY_Stage/COPY/CX2.v {1 {vlog -work work -stats=none C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/COPY_Stage/COPY/CX2.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module CX2
+
+Top level modules:
+	CX2
 
 } {} {}} C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/COPY_Stage/COPY/COPY_Stage.v {1 {vlog -work work -stats=none C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/COPY_Stage/COPY/COPY_Stage.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016

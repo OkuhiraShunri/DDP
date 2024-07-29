@@ -1,5 +1,5 @@
 `timescale 1ns/100ps
-module MA_SIM();
+module COPY_SIM();
 reg Send_in, Ack_in, MR;
 reg [39:0] PACKET_IN;
 wire Send_out, Ack_out;
