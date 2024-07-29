@@ -1,0 +1,98 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/MA_Stage/MA
+vCF
+Z0 !s110 1722229557
+!i10b 1
+!s100 MGVYG1D4>5i^<4l<KFaiH2
+IDS=Gg8U9c;6FRM0[HT`=22
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/COPY_Stage/COPY
+w1653134678
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/COPY_Stage/COPY/CF.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/COPY_Stage/COPY/CF.v
+L0 2
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1722229557.000000
+!s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/COPY_Stage/COPY/CF.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/COPY_Stage/COPY/CF.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@c@f
+vCOPY_Stage
+R0
+!i10b 1
+!s100 gCOdG0jQYSnVFHEkZ5GB?3
+IShGeUIiZKGh_UR@FNGMWQ3
+R1
+R2
+w1722212432
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/COPY_Stage/COPY/COPY_Stage.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/COPY_Stage/COPY/COPY_Stage.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/COPY_Stage/COPY/COPY_Stage.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/COPY_Stage/COPY/COPY_Stage.v|
+!i113 1
+R5
+R6
+n@c@o@p@y_@stage
+vCX2
+R0
+!i10b 1
+!s100 mOI09GeXjllh_THQlND1b0
+I5P;bELlz<?f1F5_iVeEPI3
+R1
+R2
+w1719897204
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/COPY_Stage/COPY/CX2.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/COPY_Stage/COPY/CX2.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/COPY_Stage/COPY/CX2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/COPY_Stage/COPY/CX2.v|
+!i113 1
+R5
+R6
+n@c@x2
+vMA_SIM
+R0
+!i10b 1
+!s100 gGPGn_9A9SD@R_;Q<oZi61
+IDi@]7bJ;nZjXFiWkHRf<j0
+R1
+R2
+w1722229549
+8C:\Users\OkuhiraShunri\Documents\verilog\DDP\ddp\COPY_Stage\COPY\COPY_SIM.v
+FC:\Users\OkuhiraShunri\Documents\verilog\DDP\ddp\COPY_Stage\COPY\COPY_SIM.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:\Users\OkuhiraShunri\Documents\verilog\DDP\ddp\COPY_Stage\COPY\COPY_SIM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\OkuhiraShunri\Documents\verilog\DDP\ddp\COPY_Stage\COPY\COPY_SIM.v|
+!i113 1
+R5
+R6
+n@m@a_@s@i@m
