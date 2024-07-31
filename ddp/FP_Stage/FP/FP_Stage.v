@@ -30,6 +30,10 @@ wire [1:0] LR2;
 wire BR, CPY, C, Z;
 assign {color, gen, dest, LR2, BR, CPY, OPC, C, Z, DataL, DataR} = DL;
 
+//output
+assign {WRITE_EN, WRITE_DATA, PACKET_OUT, LOAD_FLG} = ALU(color, gen, dest, LR2, BR, CPY, OPC, C, Z, DataL, DataR);
+
+//ALU
 function [`ALU_LENGTH - 1:0] ALU;//ALU_LENGTH >> 58
     input [2:0] color;
     input [7:0] gen;
@@ -57,7 +61,11 @@ function [`ALU_LENGTH - 1:0] ALU;//ALU_LENGTH >> 58
             end
         `SUB:
             begin
-                
+                {ALU[`ALU_WRITE_EN], ALU[`ALU_WRITE_DATA], ALU[`ALU_LOAD_FLG]} = {1'b0, DataL, 1'b0};
+                ALU[`ALU_color_to_CPY] = {color, gen, dest, LR2, BR, CPY};
+                ALU[`ALU_PACKET_ResultData] = DataL - DataR;
+                ALU[`ALU_C] = (DataL < DataR)? 1'b1 : 1'b0;
+                ALU[`ALU_Z] = ~|ALU[`ALU_PACKET_ResultData];
             end
         `SUBC:
             begin
@@ -105,7 +113,10 @@ function [`ALU_LENGTH - 1:0] ALU;//ALU_LENGTH >> 58
             end
         `SHR:
             begin
-                
+                {ALU[`ALU_WRITE_EN], ALU[`ALU_WRITE_DATA], ALU[`ALU_LOAD_FLG]} = {1'b0, DataL, 1'b0};
+                ALU[`ALU_color_to_CPY] = {color, gen, dest, LR2, BR, CPY};
+                ALU[`ALU_PACKET_ResultData] = DataL >> DataR;
+                ALU[`ALU_Z] = ~|ALU[`ALU_PACKET_ResultData];
             end
         `ROL:
             begin
@@ -149,34 +160,57 @@ function [`ALU_LENGTH - 1:0] ALU;//ALU_LENGTH >> 58
         //Load ans Store instruction
         `LDM:
             begin
-                
+                {ALU[`ALU_WRITE_EN], ALU[`ALU_WRITE_DATA], ALU[`ALU_LOAD_FLG]} = {1'b0, DataL, 1'b1};
+                ALU[`ALU_color_to_CPY] = {color, gen, dest, LR2, BR, CPY};
+                ALU[`ALU_PACKET_ResultData] = DataL + DataR;
+                ALU[`ALU_C] = C;
+                ALU[`ALU_Z] = Z;
             end
         `STM:
             begin
-                
+                {ALU[`ALU_WRITE_EN], ALU[`ALU_WRITE_DATA], ALU[`ALU_LOAD_FLG]} = {1'b1, DataL, 1'b0};
+                ALU[`ALU_color_to_CPY] = {color, gen, dest, LR2, BR, CPY};
+                ALU[`ALU_PACKET_ResultData] = DataR;
+                ALU[`ALU_C] = C;
+                ALU[`ALU_Z] = Z;
             end
         
         //Packet erasing instruction
         `ABSORB:
             begin
-                
+                ALU = `ALU_LENGTH'b0;
             end
         
         //Identifier change instruction
         `CHGCOL:
             begin
-                
+                {ALU[`ALU_WRITE_EN], ALU[`ALU_WRITE_DATA], ALU[`ALU_LOAD_FLG]} = {1'b0, DataL, 1'b0};
+                ALU[`ALU_color_to_CPY] = {DataR, gen, dest, LR2, BR, CPY};//colorをDataRに変えた
+                ALU[`ALU_PACKET_ResultData] = DataL;
+                ALU[`ALU_C] = C;
+                ALU[`ALU_Z] = Z;
             end
         `ADDGEN:
             begin
-                
+                {ALU[`ALU_WRITE_EN], ALU[`ALU_WRITE_DATA], ALU[`ALU_LOAD_FLG]} = {1'b0, DataL, 1'b0};
+                ALU[`ALU_color_to_CPY] = {color, ($signed(gen) + $signed(DataR)), dest, LR2, BR, CPY};
+                ALU[`ALU_PACKET_ResultData] = DataL;
+                ALU[`ALU_C] = C;
+                ALU[`ALU_Z] = Z;
             end
         `DECGEN:
             begin
-                
+                {ALU[`ALU_WRITE_EN], ALU[`ALU_WRITE_DATA], ALU[`ALU_LOAD_FLG]} = {1'b0, DataL, 1'b0};
+                ALU[`ALU_color_to_CPY] = {color, (gen - `gen_LENGTH'b1), dest, LR2, BR, CPY};
+                ALU[`ALU_PACKET_ResultData] = DataL;
+                ALU[`ALU_C] = C;
+                ALU[`ALU_Z] = Z;
+            end
+        default:
+            begin
+                 ALU = {`ALU_LENGTH{1'bx}};
             end
     endcase
-
 endfunction
 
 endmodule
