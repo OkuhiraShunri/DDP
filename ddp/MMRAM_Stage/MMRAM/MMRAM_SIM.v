@@ -49,6 +49,8 @@ end
 // Ack_in信号の生成
 initial begin
             Ack_in <= 1'b1;
+    #95000  Ack_in <= 1'b0;
+    #12000  Ack_in <= 1'b1;
     // #36000  Ack_in <= 1'b0;
     // #12000  Ack_in <= 1'b1;
     // #12000  Ack_in <= 1'b0;

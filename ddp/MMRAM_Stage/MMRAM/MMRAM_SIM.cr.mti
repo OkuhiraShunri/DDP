@@ -5,12 +5,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	CF
 
-} {} {}} C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/MMRAM_Stage/MMRAM/MMRAM_Stage.v {1 {vlog -work work -stats=none C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/MMRAM_Stage/MMRAM/MMRAM_Stage.v
+} {} {}} C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/MMRAM_Stage/MMRAM/MMRAM_SIM.v {1 {vlog -work work -stats=none C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/MMRAM_Stage/MMRAM/MMRAM_SIM.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module MMRAM_Stage
+-- Compiling module MMRAM_SIM
 
 Top level modules:
-	MMRAM_Stage
+	MMRAM_SIM
 
 } {} {}} C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/MMRAM_Stage/MMRAM/CE.v {1 {vlog -work work -stats=none C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/MMRAM_Stage/MMRAM/CE.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016

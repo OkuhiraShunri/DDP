@@ -7,8 +7,8 @@ module MMRAM_Stage(
     output Send_out, Ack_out
 );
 
-reg [19:0] RAM[63:0];
-reg [15:0] CST_MEM[63:0];
+reg [19:0] RAM[0:63];
+reg [15:0] CST_MEM[0:63];
 integer i;
 initial begin
     for (i = 0; i < 64; i = i + 1) begin//RAM初期化
@@ -23,12 +23,14 @@ CE ce(.CE_Send_in(Send_in), .CE_Ack_in(Ack_in), .MR(MR), .Exb(DEL), .CE_Ack_out(
 
 //---DLとRAMの書き込み処理---
 reg [37:0] DL;
+wire [19:0] DATA_IN;
+assign DATA_IN = PACKET_IN[19:0];
 always @(posedge CP or posedge MR) begin
     if(MR)begin
         DL <= 38'b0;
     end
     else if(WR_E)begin
-        RAM[ADDR] <= PACKET_IN[19:0];
+        RAM[ADDR] <= DATA_IN;
         DL <= PACKET_IN;
     end
     else if(!WR_E)begin
@@ -37,14 +39,37 @@ always @(posedge CP or posedge MR) begin
 end
 
 //---RAMの読み出し処理---
-wire [20:0] DATA_OUT;
-assign DATA_OUT = RAM[ADDR];
+// wire [20:0] DATA_OUT;
+// assign DATA_OUT = RAM[ADDR];//組み合わせ回路
+reg [19:0] DATA_OUT;
+always @(posedge CP or posedge MR) begin
+    if(MR)begin
+        DATA_OUT <= 20'b0;
+    end
+    else begin
+        DATA_OUT <= RAM[ADDR];
+    end
+end
 
 //---CST_MEMの読み出し処理(書き込みはしない)---
+// wire [6:0] dest;
+// wire [15:0] CST_DATA;
+// assign dest = PACKET_IN[26:20];
+// assign CST_DATA = CP ? CST_MEM[dest] : CST_DATA;//組み合わせ回路
 wire [6:0] dest;
-wire [15:0] CST_DATA;
 assign dest = PACKET_IN[26:20];
-assign CST_DATA = CP ? CST_MEM[dest] : CST_DATA;//組み合わせ回路
+reg [15:0] CST_DATA;
+always @(posedge CP or posedge MR) begin
+    if(MR)begin
+        CST_DATA <= 16'b0;
+    end
+    else begin
+        CST_DATA <= CST_MEM[dest];
+    end
+end
+
+
+
 
 //merge1
 wire [53:0] MERGE1_OUT;
