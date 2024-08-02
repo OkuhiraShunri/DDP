@@ -1,0 +1,98 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/MMRAM_Stage/MMRAM
+vCE
+Z0 !s110 1722499261
+!i10b 1
+!s100 RdzGHcOd3S`H]7WGlOY_50
+IERzVJ_mi<RV>>hijeUPUh2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/FP_Stage/FP
+w1722493463
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/FP_Stage/FP/CE.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/FP_Stage/FP/CE.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1722499261.000000
+!s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/FP_Stage/FP/CE.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/FP_Stage/FP/CE.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@c@e
+vCF
+R0
+!i10b 1
+!s100 MGVYG1D4>5i^<4l<KFaiH2
+ING6A9TX3l4C=EULcTZOjn0
+R1
+R2
+w1653134678
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/FP_Stage/FP/CF.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/FP_Stage/FP/CF.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/FP_Stage/FP/CF.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/FP_Stage/FP/CF.v|
+!i113 1
+R5
+R6
+n@c@f
+vFP_SIM
+R0
+!i10b 1
+!s100 o:IgDDBEFm>TzPn?MMkTh0
+IGG8aEI;O^Rd7ZkSYE5YBP2
+R1
+R2
+w1722499255
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/FP_Stage/FP/FP_SIM.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/FP_Stage/FP/FP_SIM.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 macro.vh|C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/FP_Stage/FP/FP_SIM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/FP_Stage/FP/FP_SIM.v|
+!i113 1
+R5
+R6
+n@f@p_@s@i@m
+vFP_Stage
+R0
+!i10b 1
+!s100 GP4gTJJGzO9PMQDN[RNj^1
+IVHVE9SVN:UE]@OY:mPcX20
+R1
+R2
+w1722403438
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/FP_Stage/FP/FP_Stage.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/FP_Stage/FP/FP_Stage.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 macro.vh|C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/FP_Stage/FP/FP_Stage.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/FP_Stage/FP/FP_Stage.v|
+!i113 1
+R5
+R6
+n@f@p_@stage
