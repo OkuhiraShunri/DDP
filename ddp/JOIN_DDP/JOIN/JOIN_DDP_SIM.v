@@ -21,6 +21,6 @@ initial begin
 end
 
 initial begin
-    PACKET_IN <= {3'b111, 8'b0, 7'b1, 1'b0, 1'b0, 1'b0, 1'b0, 16'd4};
+    PACKET_IN <= {3'b111, 8'b0, 7'b1, 1'b0, 1'b0, 1'b0, 1'b0, 16'd4};//待ち合わせしないパケット
 end
 endmodule

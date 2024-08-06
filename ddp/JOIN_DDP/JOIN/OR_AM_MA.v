@@ -57,21 +57,21 @@ always @(posedge CP or posedge MR) begin
         ADDR <= 6'b0;   
     end
     else if(MF)begin
-        if(FIRE_OR)begin
+        if(FIRE_OR)begin//発火している
             WR_E <= 0;
             ADDR <= R_ADDR;
             DEL <= 1;
         end
-        else if(!FIRE_OR)begin
+        else if(!FIRE_OR)begin//発火していない
             WR_E <= 1;
             ADDR <= W_ADDR;
             DEL <= 0;
         end
     end
-    else if(!MF)begin
+    else if(!MF)begin//待ち合わせ行わない
         WR_E <= 0;
         ADDR <= ADDR;
-        DEL <= 0;
+        DEL <= 1;
     end
 end
 
