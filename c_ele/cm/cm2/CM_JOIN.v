@@ -1,4 +1,4 @@
-module CM(
+module CM_JOIN(
     input Send_in_a, Send_in_b, Ack_in, MR, 
     output Ack_out_a, Ack_out_b, Send_out, CP_a, CP_b, AEB
 );
@@ -11,7 +11,7 @@ ARB arb(.ARB_Send_in_a(Send_in_a), .ARB_Ack_out_a(ack_out_a), .ARB_Send_in_b(Sen
 wire nor1, nor2, nor3;
 assign nor1 = ~(send_out_a | send_out_b);
 assign nor2 = ~(cp_a | nor3);
-assign nor3 = ~(cp_b | nor2 | ~MR);
+assign nor3 = ~(cp_b | nor2 | MR);
 
 //output
 assign Send_out = nor1;

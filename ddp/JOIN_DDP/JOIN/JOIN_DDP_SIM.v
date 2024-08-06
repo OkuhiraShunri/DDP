@@ -1,6 +1,26 @@
 `timescale 1ns/100ps
 module JOIN_DDP_SIM();
-
+reg Send_in, Ack_in, MR;
+reg [37:0] PACKET_IN;
+wire Send_out, Ack_out;
+wire [37:0] PACKET_OUT;
 JOIN_DDP ddp(.MR(MR), .Send_in(Send_in), .Ack_in(Ack_in), .PACKET_IN(PACKET_IN), 
              .Send_out(Send_out), .Ack_out(Ack_out), .PACKET_OUT(PACKET_OUT));
+
+initial begin
+            Send_in = 1;
+            MR = 1;
+    #50     MR = 0;//#10だとMMCAM以降のCP上がらない
+    #30     Send_in = 0;
+    #30     Send_in = 1;
+end
+
+
+initial begin
+    Ack_in = 1;
+end
+
+initial begin
+    PACKET_IN <= {3'b111, 8'b0, 7'b1, 1'b0, 1'b0, 1'b0, 1'b0, 16'd4};
+end
 endmodule

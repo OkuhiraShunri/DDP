@@ -1,0 +1,98 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/18.0
+vC
+Z0 !s110 1722754095
+!i10b 1
+!s100 _Q`LnahVH92Lm3SoOnF:b3
+IUT[=Y6ddKG<=_aEZk^kRT1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cm/sin_sim
+w1716643136
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cm/sin_sim/C.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cm/sin_sim/C.v
+L0 3
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1722754095.000000
+!s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cm/sin_sim/C.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cm/sin_sim/C.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@c
+vCJ
+R0
+!i10b 1
+!s100 W8dfkj?3OTfgO:4;dRime2
+I5X`cNb712DKbd:O1L^SL11
+R1
+R2
+w1716787370
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cm/sin_sim/CJ.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cm/sin_sim/CJ.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cm/sin_sim/CJ.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cm/sin_sim/CJ.v|
+!i113 1
+R5
+R6
+n@c@j
+vCM
+Z7 !s110 1722754096
+!i10b 1
+!s100 FKoWzeG@mg^iFFZJ<AIIF2
+IL[PiNg:a2S93VF5bQU=<G1
+R1
+R2
+w1716643156
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cm/sin_sim/CM.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cm/sin_sim/CM.v
+L0 2
+R3
+r1
+!s85 0
+31
+Z8 !s108 1722754096.000000
+!s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cm/sin_sim/CM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cm/sin_sim/CM.v|
+!i113 1
+R5
+R6
+n@c@m
+vCM_SIM
+R7
+!i10b 1
+!s100 `IImX9^aNc=9P@Vj;J5[Y0
+IERF[X1PicBdH@:`72i=Jh3
+R1
+R2
+w1722753993
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cm/sin_sim/CM_SIM.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cm/sin_sim/CM_SIM.v
+L0 2
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cm/sin_sim/CM_SIM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/c_ele/cm/sin_sim/CM_SIM.v|
+!i113 1
+R5
+R6
+n@c@m_@s@i@m

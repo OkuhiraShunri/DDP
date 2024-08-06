@@ -8,12 +8,22 @@ module M_Stage(
 reg [37:0] DL_EX; 
 reg [37:0] DL_IN;
 wire CP_EXTERNAL, CP_INTERNAL;
-always @(posedge CP_EXTERNAL) begin
-    DL_EX <= PACKET_IN_EXTERNAL;
+always @(posedge CP_EXTERNAL or posedge MR) begin
+    if(MR)begin
+        DL_EX <= 38'b0;
+    end
+    else begin
+        DL_EX <= PACKET_IN_EXTERNAL;
+    end
 end 
 
-always @(posedge CP_INTERNAL) begin
-    DL_IN <= PACKET_IN_INTERNAL;
+always @(posedge CP_INTERNAL or posedge MR) begin
+    if(MR)begin
+        DL_IN <= 38'b0;
+    end
+    else begin
+        DL_IN <= PACKET_IN_INTERNAL;
+    end
 end
 
 CM cm(.Send_in_a(Send_in_EX), .Send_in_b(Send_in_IN), .Ack_in(Ack_in), .MR(MR), .Ack_out_a(Ack_out_EX), .Ack_out_b(Ack_out_IN),

@@ -18,7 +18,7 @@ initial begin
     end    
     //sim用に適当に値格納
     SubPS[1] = 1;
-    SubPS[3] = 1;
+    SubPS[2] = 1;
 end
 
 //DLの更新

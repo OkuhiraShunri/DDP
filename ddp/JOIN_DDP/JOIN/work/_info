@@ -1,0 +1,451 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/FP_Stage/FP
+vARB
+Z0 !s110 1722920153
+!i10b 1
+!s100 ;RfHfRHfEh?EI=Od0nW:N2
+IB:WOkkE9GlY?WP:@HQ:n[0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN
+w1718954979
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/ARB.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/ARB.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1722920153.000000
+!s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/ARB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/ARB.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@a@r@b
+vB_Stage
+R0
+!i10b 1
+!s100 ]R6TOQXbzM2F=z=<7Qcok1
+IS94K`BA=2S]KDf=Z9:^L90
+R1
+R2
+w1722669567
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/B_Stage.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/B_Stage.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 macro.vh|C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/B_Stage.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/B_Stage.v|
+!i113 1
+R5
+R6
+n@b_@stage
+vC
+R0
+!i10b 1
+!s100 h^Jj09^?2KzGYRE=l[]452
+IdNE17BK:2P5[Xl3GE_>FS1
+R1
+R2
+w1650521784
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/C.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/C.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/C.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/C.v|
+!i113 1
+R5
+R6
+n@c
+vCB
+R0
+!i10b 1
+!s100 NzC0C@9k=g7FegUWJiTT21
+I3dA@LZj7O4Zkl@@9d<CH82
+R1
+R2
+w1722238568
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/CB.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/CB.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/CB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/CB.v|
+!i113 1
+R5
+R6
+n@c@b
+vCE
+R0
+!i10b 1
+!s100 RdzGHcOd3S`H]7WGlOY_50
+I;eB>]mz82he@>K7_g6Q1;3
+R1
+R2
+w1722493463
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/CE.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/CE.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/CE.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/CE.v|
+!i113 1
+R5
+R6
+n@c@e
+vCF
+R0
+!i10b 1
+!s100 MGVYG1D4>5i^<4l<KFaiH2
+IBkCZigUkG0F?<4XBoiBOi2
+R1
+R2
+w1653134678
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/CF.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/CF.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/CF.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/CF.v|
+!i113 1
+R5
+R6
+n@c@f
+vCJ
+R0
+!i10b 1
+!s100 bG5EhBFE_z9DcCYB?S6_O0
+IG7]6NdG[=;BImMo^4i0o40
+R1
+R2
+w1718946602
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/CJ.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/CJ.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/CJ.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/CJ.v|
+!i113 1
+R5
+R6
+n@c@j
+vCM
+R0
+!i10b 1
+!s100 SVkJ8eF:HleG__ZEDUfJg2
+IA3V;D[DW1MVzgID<LJYUY3
+R1
+R2
+w1722920147
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/CM.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/CM.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/CM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/CM.v|
+!i113 1
+R5
+R6
+n@c@m
+vCOPY_Stage
+R0
+!i10b 1
+!s100 gCOdG0jQYSnVFHEkZ5GB?3
+IR5H]b5G1XTfYS2g^aa6ZW3
+R1
+R2
+w1722212432
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/COPY_Stage.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/COPY_Stage.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/COPY_Stage.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/COPY_Stage.v|
+!i113 1
+R5
+R6
+n@c@o@p@y_@stage
+vCX2
+R0
+!i10b 1
+!s100 mOI09GeXjllh_THQlND1b0
+IoKSWF5JK^>gT]eEk0Km?80
+R1
+R2
+w1719897204
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/CX2.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/CX2.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/CX2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/CX2.v|
+!i113 1
+R5
+R6
+n@c@x2
+vENTRY_FD
+Z7 !s110 1722920154
+!i10b 1
+!s100 feXf38:Wlk6aJi5[A7XIc2
+IgbCgUbR?R`GT:_aSRMFZH0
+R1
+R2
+w1721549145
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/ENTRY_FD.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/ENTRY_FD.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z8 !s108 1722920154.000000
+!s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/ENTRY_FD.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/ENTRY_FD.v|
+!i113 1
+R5
+R6
+n@e@n@t@r@y_@f@d
+vFP_Stage
+R7
+!i10b 1
+!s100 GP4gTJJGzO9PMQDN[RNj^1
+IPVSefKU86CmUnzHQoiRhZ3
+R1
+R2
+w1722403438
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/FP_Stage.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/FP_Stage.v
+L0 2
+R3
+r1
+!s85 0
+31
+R8
+!s107 macro.vh|C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/FP_Stage.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/FP_Stage.v|
+!i113 1
+R5
+R6
+n@f@p_@stage
+vJOIN_DDP
+R7
+!i10b 1
+!s100 dRZ2_GHYf6:3Z5W^E=Pm42
+I?fjzWDeV[oR<[3cTKPnU]1
+R1
+R2
+w1722752082
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/JOIN_DDP.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/JOIN_DDP.v
+L0 2
+R3
+r1
+!s85 0
+31
+R8
+!s107 macro.vh|C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/JOIN_DDP.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/JOIN_DDP.v|
+!i113 1
+R5
+R6
+n@j@o@i@n_@d@d@p
+vJOIN_DDP_SIM
+R7
+!i10b 1
+!s100 SXHf5O<=k_od2K6Y1aPNI0
+IM1J^=EGXCb2kN5^GfQ_YE3
+R1
+R2
+w1722672054
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/JOIN_DDP_SIM.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/JOIN_DDP_SIM.v
+L0 2
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/JOIN_DDP_SIM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/JOIN_DDP_SIM.v|
+!i113 1
+R5
+R6
+n@j@o@i@n_@d@d@p_@s@i@m
+vM_Stage
+R7
+!i10b 1
+!s100 MRH<o:TbPV5Ha8E62CN;h1
+IMBbGL7A;:ePzfVD^g45d:1
+R1
+R2
+w1722752376
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/M_Stage.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/M_Stage.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/M_Stage.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/M_Stage.v|
+!i113 1
+R5
+R6
+n@m_@stage
+vMA_Stage
+R7
+!i10b 1
+!s100 ]iiCYJFWJohbXUUbol4<f3
+Iz;`]lM=D8W<bQ5WFYECoU2
+R1
+R2
+w1722154185
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/MA_Stage.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/MA_Stage.v
+L0 2
+R3
+r1
+!s85 0
+31
+R8
+!s107 macro.vh|C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/MA_Stage.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/MA_Stage.v|
+!i113 1
+R5
+R6
+n@m@a_@stage
+vMMCAM_Stage
+R7
+!i10b 1
+!s100 2Pm4LhoXVc>NAUd3kE@QP2
+II5`=5PGi_MJUjk`GL_n;W3
+R1
+R2
+w1721454402
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/MMCAM_Stage.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/MMCAM_Stage.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/MMCAM_Stage.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/MMCAM_Stage.v|
+!i113 1
+R5
+R6
+n@m@m@c@a@m_@stage
+vMMRAM_Stage
+R7
+!i10b 1
+!s100 O?]`ETZcB`2Mdn?[@7end3
+IVbbX[[:zn7la[kh`UkRiV0
+R1
+R2
+w1722425788
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/MMRAM_Stage.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/MMRAM_Stage.v
+L0 2
+R3
+r1
+!s85 0
+31
+R8
+!s107 common_macro.vh|C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/MMRAM_Stage.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/MMRAM_Stage.v|
+!i113 1
+R5
+R6
+n@m@m@r@a@m_@stage
+vOR_AM_MA
+R7
+!i10b 1
+!s100 :9iI;ja9:HkonLT8X<OZ<2
+I;5QVcE[DlO>ePWoVTHc?R1
+R1
+R2
+w1721462385
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/OR_AM_MA.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/OR_AM_MA.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/OR_AM_MA.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/OR_AM_MA.v|
+!i113 1
+R5
+R6
+n@o@r_@a@m_@m@a
+vPS_Stage
+R7
+!i10b 1
+!s100 1HVc91h_=1[:Bde4F5X^=3
+I^Y:5h?m6V9iBQgQY=^EzH3
+R1
+R2
+w1722735655
+8C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/PS_Stage.v
+FC:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/PS_Stage.v
+Fcommon_param.vh
+L0 3
+R3
+r1
+!s85 0
+31
+R8
+!s107 common_param.vh|common_macro.vh|C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/PS_Stage.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/PS_Stage.v|
+!i113 1
+R5
+R6
+n@p@s_@stage

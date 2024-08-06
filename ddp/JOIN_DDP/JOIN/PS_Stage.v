@@ -20,10 +20,10 @@ initial begin
     //$readmemh("Recursion.txt", PS);       // 使用するプログラムファイルを指定
 
     //**************************** 単体sim用に値を格納しておく*********************////////////////////////
-    PS[0] = {7'b0011, 4'b1111, ADDC};
-    PS[1] = {7'b1010, 4'b1111, SUBC};
-    PS[2] = {7'b1100, 4'b1111, ADDC};
-    PS[3] = {7'b1111, 4'b1111, ABSORB};
+    PS[0] = {7'b0000, 4'b1111, ADDC};
+    PS[1] = {7'd3, 4'b0000, ADD};
+    PS[2] = {7'd3, 4'b1000, ADD};
+    PS[3] = {7'd0, 4'b0010, SUB};
     //////////////////////**************************************************//////////////////////////
 end
 
@@ -55,6 +55,6 @@ end
 assign PACKET_OUT = {DL[`PS_PACKIN_CG], PSData, DL[`PS_PACKIN_CZDD]};//PS_PACKIN_CG >> 51:41, PS_PACKIN_CZDD >> 33:0
 
 //ABSORB & output
-assign DEL = (PACKET_OUT[`PS_PACKOUT_OPC] == ABSORB)? 1'b0: 1'b1; 
-
+assign DEL = (PACKET_OUT[`PS_PACKOUT_OPC] == ABSORB)? 1'b0: 1'b1; //PS_PACKOUT_OPC >> 39:34
+//assign DEL = 1;
 endmodule

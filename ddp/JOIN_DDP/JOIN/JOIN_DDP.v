@@ -6,7 +6,7 @@ module JOIN_DDP(
     output [37:0] PACKET_OUT
 );
 
-wire [`MMCAM_PACKET_SIZE-1:0] M_PACKET_OUT;
+wire [`M_PACKET_SIZE-1:0] M_PACKET_OUT;
 wire [`MMRAM_PACKET_SIZE-1:0] MMCAM_PACKET_OUT;
 wire [`PS_PACKET_SIZE-1:0] MMRAM_PACKET_OUT;
 wire [`FP_PACKET_SIZE-1:0] PS_PACKET_OUT;
@@ -27,8 +27,8 @@ wire COPY_Send_out, COPY_Ack_out;
 wire B_Send_out_EXTERNAL, B_Send_out_INTERNAL, B_Ack_out;
 
 
-M_Stage M(.MR(MR), .Send_in_EX(Send_in), .Send_in_IN(B_Send_out_INTERNAL), .Ack_in(MMCAM_Ack_out), .PACKET_IN_EXTERNAL(PACKET_IN_EXTERNAL), 
-          .PACKET_IN_INTERNAL(PACKET_IN_INTERNAL), .Ack_out_EX(Ack_out), .Ack_out_IN(M_Ack_out_IN), .Send_out(M_Send_out), .PACKET_OUT(M_PACKET_OUT));
+M_Stage M(.MR(MR), .Send_in_EX(Send_in), .Send_in_IN(B_Send_out_INTERNAL), .Ack_in(MMCAM_Ack_out), .PACKET_IN_EXTERNAL(PACKET_IN), 
+          .PACKET_IN_INTERNAL(B_PACKET_OUT), .Ack_out_EX(Ack_out), .Ack_out_IN(M_Ack_out_IN), .Send_out(M_Send_out), .PACKET_OUT(M_PACKET_OUT));
 
 MMCAM_Stage MMCAM(.MR(MR), .Send_in(M_Send_out), .Ack_in(MMRAM_Ack_out), .PACKET_IN(M_PACKET_OUT), .PACKET_OUT(MMCAM_PACKET_OUT), 
                   .WR_E(WR_E), .DEL(DEL), .Ack_out(MMCAM_Ack_out), .Send_out(MMCAM_Send_out), .ADDR(ADDR));
