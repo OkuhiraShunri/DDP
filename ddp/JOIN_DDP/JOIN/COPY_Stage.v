@@ -35,6 +35,6 @@ wire mux2;//mux2の出力はLRフラグ
 assign mux2 = FEB ? DL[20] : DL[21];//DL[20]はコピーしたパケットを次のノードへ入力する際に左右どちらにするか決めるもの。DL[21]はオリジナルパケットを次のノードへ入力する際に左右どちらにするか決めるもの。
 
 //merge
-assign PACKET_OUT = {DL[37:27], mux1, mux2, DL[19], DL[17:0]}; 
-
+//assign PACKET_OUT = {DL[37:27], mux1, mux2, DL[19], DL[17:0]}; 
+assign PACKET_OUT = {DL[39:29], mux1, mux2, DL[19], DL[17:0]};
 endmodule

@@ -25,6 +25,7 @@ wire FP_Send_out, FP_Ack_out;
 wire MA_Send_out, MA_Ack_out;
 wire COPY_Send_out, COPY_Ack_out;
 wire B_Send_out_EXTERNAL, B_Send_out_INTERNAL, B_Ack_out;
+wire [5:0] ADDR;
 
 
 M_Stage M(.MR(MR), .Send_in_EX(Send_in), .Send_in_IN(B_Send_out_INTERNAL), .Ack_in(MMCAM_Ack_out), .PACKET_IN_EXTERNAL(PACKET_IN), 

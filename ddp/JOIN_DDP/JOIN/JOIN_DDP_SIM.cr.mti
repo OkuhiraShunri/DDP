@@ -40,19 +40,19 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	ARB
 
-} {} {}} C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/B_Stage.v {1 {vlog -work work -stats=none C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/B_Stage.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module B_Stage
-
-Top level modules:
-	B_Stage
-
 } {} {}} C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/CB.v {1 {vlog -work work -stats=none C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/CB.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module CB
 
 Top level modules:
 	CB
+
+} {} {}} C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/JOIN_DDP_SIM.v {1 {vlog -work work -stats=none C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/JOIN_DDP_SIM.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module JOIN_DDP_SIM
+
+Top level modules:
+	JOIN_DDP_SIM
 
 } {} {}} C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/CE.v {1 {vlog -work work -stats=none C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/CE.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -89,6 +89,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	CX2
 
+} {} {}} C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/COPY_Stage.v {1 {vlog -work work -stats=none C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/COPY_Stage.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module COPY_Stage
+
+Top level modules:
+	COPY_Stage
+
 } {} {}} C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/PS_Stage.v {1 {vlog -work work -stats=none C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/PS_Stage.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module PS_Stage
@@ -102,13 +109,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 
 Top level modules:
 	MMCAM_Stage
-
-} {} {}} C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/COPY_Stage.v {1 {vlog -work work -stats=none C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/COPY_Stage.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module COPY_Stage
-
-Top level modules:
-	COPY_Stage
 
 } {} {}} C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/JOIN_DDP.v {1 {vlog -work work -stats=none C:/Users/OkuhiraShunri/Documents/verilog/DDP/ddp/JOIN_DDP/JOIN/JOIN_DDP.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016

@@ -44,6 +44,6 @@ CM cm(.Send_in_a(Send_in_EX), .Send_in_b(Send_in_IN), .Ack_in(Ack_in), .MR(MR), 
 
 //output
 //PACKET_OUT = MUX1(DL_EX, DL_IN, AEB);
-assign PACKET_OUT = AEB ? DL_EX : DL_IN;
-
+//assign PACKET_OUT = AEB ? DL_EX : DL_IN;//まえ
+assign PACKET_OUT = AEB ? DL_IN : DL_EX;//あと
 endmodule

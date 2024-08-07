@@ -11,8 +11,14 @@ initial begin
             Send_in = 1;
             MR = 1;
     #50     MR = 0;//#10だとMMCAM以降のCP上がらない
-    #30     Send_in = 0;
-    #30     Send_in = 1;
+    #10     Send_in = 0;
+    #10     Send_in = 1;
+    #10     Send_in = 0;
+    #10     Send_in = 1;
+    #10     Send_in = 0;
+    #10     Send_in = 1;
+    #10     Send_in = 0;
+    #10     Send_in = 1;
 end
 
 
@@ -21,6 +27,10 @@ initial begin
 end
 
 initial begin
-    PACKET_IN <= {3'b111, 8'b0, 7'b1, 1'b0, 1'b0, 1'b0, 1'b0, 16'd4};//待ち合わせしないパケット
+    //PACKET_IN <= {3'b111, 8'b0, 7'b1, 1'b0, 1'b0, 1'b0, 1'b0, 16'd4};//待ち合わせしないパケット
+            PACKET_IN <= {3'b111, 8'b0, 7'd1, 1'b0, 1'b1, 1'b0, 1'b0, 16'd4};//A
+    #90     PACKET_IN <= {3'b111, 8'b0, 7'd2, 1'b0, 1'b1, 1'b0, 1'b0, 16'd2};//C
+    #20     PACKET_IN <= {3'b111, 8'b0, 7'd1, 1'b1, 1'b1, 1'b0, 1'b0, 16'd8};//B
+    #20     PACKET_IN <= {3'b111, 8'b0, 7'd2, 1'b1, 1'b1, 1'b0, 1'b0, 16'd3};//D
 end
 endmodule
