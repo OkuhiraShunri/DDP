@@ -20,6 +20,12 @@ initial begin
     SubPS[1] = 1;
     SubPS[2] = 1;
     SubPS[3] = 1;
+    SubPS[4] = 1;
+    SubPS[5] = 0;
+    SubPS[6] = 0;
+    SubPS[7] = 1;
+    SubPS[8] = 0;
+    SubPS[9] = 0;
 end
 
 //DLの更新
