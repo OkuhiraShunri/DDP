@@ -16,7 +16,7 @@ initial begin
     for (i = 0; i < 64; i = i + 1) begin
             SubPS[i] = 0;
     end    
-    //sim用に適当に値格納
+    //sim用に値を格納
     SubPS[1] = 1;
     SubPS[2] = 1;
     SubPS[3] = 1;
@@ -26,6 +26,29 @@ initial begin
     SubPS[7] = 1;
     SubPS[8] = 0;
     SubPS[9] = 0;
+    // SubPS[10] = 0;
+    // SubPS[11] = 0;
+    // SubPS[12] = 1;
+    // SubPS[13] = 0;
+    // SubPS[14] = 0;
+    // SubPS[15] = 1;
+    // SubPS[50] = 0;
+    // SubPS[51] = 0;
+    // SubPS[60] = 0;
+    // SubPS[61] = 1;
+    SubPS[10] = 0;
+    SubPS[11] = 0;
+    SubPS[12] = 0;
+    SubPS[13] = 1;
+    SubPS[14] = 0;
+    SubPS[15] = 0;
+    SubPS[16] = 1;
+    SubPS[17] = 0;
+    SubPS[18] = 1;
+    SubPS[50] = 0;
+    SubPS[51] = 0;
+    SubPS[60] = 0;
+    SubPS[61] = 0;
 end
 
 //DLの更新
