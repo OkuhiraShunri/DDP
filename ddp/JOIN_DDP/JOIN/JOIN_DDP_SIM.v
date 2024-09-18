@@ -33,8 +33,8 @@ end
 
 initial begin
             Ack_in = 1;
-    #670    Ack_in = 0;
-    #15     Ack_in = 1;
+    // #670    Ack_in = 0;
+    // #15     Ack_in = 1;
 end
 
 //足し算と引き算のテスト(仕様書P1)
