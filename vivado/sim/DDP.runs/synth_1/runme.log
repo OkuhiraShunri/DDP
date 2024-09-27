@@ -1,0 +1,488 @@
+
+*** Running vivado
+    with args -log JOIN_DDP.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source JOIN_DDP.tcl
+
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Fri Sep 27 15:15:47 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source JOIN_DDP.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 538.957 ; gain = 237.723
+Command: read_checkpoint -auto_incremental -incremental C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/DDP.srcs/utils_1/imports/synth_1/JOIN_DDP.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/DDP.srcs/utils_1/imports/synth_1/JOIN_DDP.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top JOIN_DDP -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 7684
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 996.828 ; gain = 446.230
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'CP', assumed default net type 'wire' [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/B_Stage.v:12]
+INFO: [Synth 8-11241] undeclared symbol 'send_out_b', assumed default net type 'wire' [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/CM.v:9]
+WARNING: [Synth 8-10940] macro 'M_PACKET_SIZE' is redefined [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/common_macro.vh:58]
+WARNING: [Synth 8-10940] macro 'MMCAM_PACKET_SIZE' is redefined [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/common_macro.vh:63]
+WARNING: [Synth 8-10940] macro 'MA_PACKET_SIZE' is redefined [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/common_macro.vh:139]
+INFO: [Synth 8-11241] undeclared symbol 'AEB', assumed default net type 'wire' [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/M_Stage.v:31]
+WARNING: [Synth 8-10940] macro 'M_PACKET_SIZE' is redefined [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/macro.vh:5]
+WARNING: [Synth 8-10940] macro 'MMCAM_PACKET_SIZE' is redefined [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/macro.vh:6]
+WARNING: [Synth 8-10940] macro 'MA_PACKET_SIZE' is redefined [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/macro.vh:10]
+INFO: [Synth 8-11241] undeclared symbol 'M_Ack_out_IN', assumed default net type 'wire' [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/JOIN_DDP.v:33]
+INFO: [Synth 8-11241] undeclared symbol 'WR_E', assumed default net type 'wire' [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/JOIN_DDP.v:36]
+INFO: [Synth 8-11241] undeclared symbol 'DEL', assumed default net type 'wire' [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/JOIN_DDP.v:36]
+INFO: [Synth 8-11241] undeclared symbol 'PS_DEL', assumed default net type 'wire' [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/JOIN_DDP.v:42]
+INFO: [Synth 8-11241] undeclared symbol 'WRITE_DATA', assumed default net type 'wire' [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/JOIN_DDP.v:45]
+INFO: [Synth 8-11241] undeclared symbol 'WRITE_EN', assumed default net type 'wire' [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/JOIN_DDP.v:45]
+INFO: [Synth 8-11241] undeclared symbol 'LOAD_FLG', assumed default net type 'wire' [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/JOIN_DDP.v:45]
+INFO: [Synth 8-6157] synthesizing module 'JOIN_DDP' [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/JOIN_DDP.v:1]
+INFO: [Synth 8-6157] synthesizing module 'M_Stage' [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/M_Stage.v:1]
+INFO: [Synth 8-6157] synthesizing module 'CM' [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/CM.v:1]
+INFO: [Synth 8-6157] synthesizing module 'CJ' [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/CJ.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Delay_4ns' [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/Delay_4ns.v:1]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:81887]
+	Parameter INIT bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (0#1) [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:81887]
+INFO: [Synth 8-6155] done synthesizing module 'Delay_4ns' (0#1) [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/Delay_4ns.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'CJ' (0#1) [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/CJ.v:2]
+INFO: [Synth 8-6157] synthesizing module 'ARB' [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/ARB.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ARB' (0#1) [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/ARB.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'CM' (0#1) [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/CM.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'M_Stage' (0#1) [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/M_Stage.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MMCAM_Stage' [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/MMCAM_Stage.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ENTRY_FD' [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/ENTRY_FD.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ENTRY_FD' (0#1) [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/ENTRY_FD.v:1]
+INFO: [Synth 8-6157] synthesizing module 'C' [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/C.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'C' (0#1) [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/C.v:2]
+INFO: [Synth 8-6157] synthesizing module 'OR_AM_MA' [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/OR_AM_MA.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'OR_AM_MA' (0#1) [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/OR_AM_MA.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MMCAM_Stage' (0#1) [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/MMCAM_Stage.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MMRAM_Stage' [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/MMRAM_Stage.v:1]
+INFO: [Synth 8-6157] synthesizing module 'CE' [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/CE.v:1]
+INFO: [Synth 8-6157] synthesizing module 'CF' [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/CF.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Delay_2ns' [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/Delay_2ns.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Delay_2ns' (0#1) [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/Delay_2ns.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'CF' (0#1) [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/CF.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'CE' (0#1) [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/CE.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MMRAM_Stage' (0#1) [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/MMRAM_Stage.v:1]
+INFO: [Synth 8-6157] synthesizing module 'PS_Stage' [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/PS_Stage.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'PS_Stage' (0#1) [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/PS_Stage.v:1]
+INFO: [Synth 8-6157] synthesizing module 'FP_Stage' [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/FP_Stage.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'FP_Stage' (0#1) [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/FP_Stage.v:1]
+WARNING: [Synth 8-689] width (1) of port connection 'WRITE_DATA' does not match port width (16) of module 'FP_Stage' [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/JOIN_DDP.v:45]
+INFO: [Synth 8-6157] synthesizing module 'MA_Stage' [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/MA_Stage.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MA_Stage' (0#1) [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/MA_Stage.v:1]
+WARNING: [Synth 8-689] width (1) of port connection 'WRITE_DATA' does not match port width (16) of module 'MA_Stage' [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/JOIN_DDP.v:48]
+INFO: [Synth 8-6157] synthesizing module 'COPY_Stage' [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/COPY_Stage.v:1]
+INFO: [Synth 8-6157] synthesizing module 'CX2' [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/CX2.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'CX2' (0#1) [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/CX2.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'COPY_Stage' (0#1) [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/COPY_Stage.v:1]
+INFO: [Synth 8-6157] synthesizing module 'B_Stage' [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/B_Stage.v:1]
+INFO: [Synth 8-6157] synthesizing module 'CB' [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/CB.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'CB' (0#1) [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/CB.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'B_Stage' (0#1) [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/B_Stage.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'JOIN_DDP' (0#1) [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/JOIN_DDP.v:1]
+WARNING: [Synth 8-7137] Register ENTRY_reg in module ENTRY_FD has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/ENTRY_FD.v:15]
+WARNING: [Synth 8-6026] Ignoring keep related attribute (keep/mark_debug/dont_touch) applied on memory [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/MMRAM_Stage.v:11]
+WARNING: [Synth 8-6026] Ignoring keep related attribute (keep/mark_debug/dont_touch) applied on memory [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/MMRAM_Stage.v:12]
+WARNING: [Synth 8-7137] Register RAM_reg in module MMRAM_Stage has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code 
+WARNING: [Synth 8-4767] Trying to implement RAM 'RAM_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
+RAM "RAM_reg" dissolved into registers
+WARNING: [Synth 8-6026] Ignoring keep related attribute (keep/mark_debug/dont_touch) applied on memory [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/PS_Stage.v:11]
+WARNING: [Synth 8-6026] Ignoring keep related attribute (keep/mark_debug/dont_touch) applied on memory [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/B_Stage.v:14]
+WARNING: [Synth 8-7137] Register MF_reg in module B_Stage has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/B_Stage.v:77]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1236.059 ; gain = 685.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1236.059 ; gain = 685.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1236.059 ; gain = 685.461
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Device 21-9227] Part: xc7z010clg400-1 does not have CEAM library.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:31 . Memory (MB): peak = 1396.121 ; gain = 845.523
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   17 Bit       Adders := 1     
+	   3 Input   16 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 2     
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
++---Registers : 
+	               62 Bit    Registers := 1     
+	               52 Bit    Registers := 1     
+	               41 Bit    Registers := 1     
+	               40 Bit    Registers := 1     
+	               38 Bit    Registers := 6     
+	               20 Bit    Registers := 65    
+	               19 Bit    Registers := 64    
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 1026  
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 73    
++---Muxes : 
+	   2 Input   54 Bit        Muxes := 1     
+	   2 Input   52 Bit        Muxes := 1     
+	   2 Input   40 Bit        Muxes := 1     
+	   2 Input   38 Bit        Muxes := 1     
+	   2 Input   19 Bit        Muxes := 128   
+	 129 Input   17 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	  65 Input   16 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 64    
+	   2 Input    1 Bit        Muxes := 320   
+	  65 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP ALU1, operation Mode is: A*B.
+DSP Report: operator ALU1 is absorbed into DSP ALU1.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:04 ; elapsed = 00:01:35 . Memory (MB): peak = 1421.051 ; gain = 870.453
+---------------------------------------------------------------------------------
+ Sort Area is JOIN_DDP__GC0 ALU1_0 : 0 0 : 1946 1946 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|FP_Stage    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:05 ; elapsed = 00:01:36 . Memory (MB): peak = 1444.766 ; gain = 894.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:08 ; elapsed = 00:01:39 . Memory (MB): peak = 1444.766 ; gain = 894.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin send_in_b_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin M_Ack_out_inferred:in0 to constant 0
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/MA_Stage.v:42]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/M_Stage.v:14]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/M_Stage.v:23]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/ENTRY_FD.v:15]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/MMRAM_Stage.v:65]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/PS_Stage.v:72]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/FP_Stage.v:17]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/CX2.v:14]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/CX2.v:21]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/B_Stage.v:77]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/JOIN_DDP.v:61]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:15 ; elapsed = 00:01:46 . Memory (MB): peak = 1457.172 ; gain = 906.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:15 ; elapsed = 00:01:46 . Memory (MB): peak = 1457.172 ; gain = 906.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:16 ; elapsed = 00:01:47 . Memory (MB): peak = 1457.172 ; gain = 906.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:16 ; elapsed = 00:01:47 . Memory (MB): peak = 1457.172 ; gain = 906.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:16 ; elapsed = 00:01:47 . Memory (MB): peak = 1457.172 ; gain = 906.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:16 ; elapsed = 00:01:48 . Memory (MB): peak = 1457.172 ; gain = 906.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|FP_Stage    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |   146|
+|2     |DSP48E1 |     1|
+|3     |LUT1    |   609|
+|4     |LUT2    |  2772|
+|5     |LUT3    | 10756|
+|6     |LUT4    |   526|
+|7     |LUT5    |  1070|
+|8     |LUT6    | 13698|
+|9     |MUXF7   |  2354|
+|10    |MUXF8   |  1168|
+|11    |FDCE    | 18166|
+|12    |FDCP    |     1|
+|13    |FDC     |     1|
+|14    |FDPE    |  1219|
+|15    |FDP     |     1|
+|16    |FDRE    |  1282|
+|17    |LDC     |  1218|
+|18    |IBUF    |    41|
+|19    |OBUF    |    40|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------------------------+--------------+------+
+|      |Instance                   |Module        |Cells |
++------+---------------------------+--------------+------+
+|1     |top                        |              | 55069|
+|2     |  MA                       |MA_Stage      | 41985|
+|3     |    c                      |C__1          |    44|
+|4     |      delay1               |Delay_4ns__1  |     9|
+|5     |      delay2               |Delay_4ns__2  |     9|
+|6     |      delay3               |Delay_4ns__3  |     9|
+|7     |      delay4               |Delay_4ns__4  |     9|
+|8     |  M                        |M_Stage       |   218|
+|9     |    cm                     |CM            |   104|
+|10    |      cj_a                 |CJ__1         |    45|
+|11    |        delay1             |Delay_4ns__38 |     9|
+|12    |        delay2             |Delay_4ns__37 |     9|
+|13    |        delay3             |Delay_4ns__36 |     9|
+|14    |        delay4             |Delay_4ns__35 |     9|
+|15    |      cj_b                 |CJ            |    45|
+|16    |        delay1             |Delay_4ns__12 |     9|
+|17    |        delay2             |Delay_4ns__13 |     9|
+|18    |        delay3             |Delay_4ns__14 |     9|
+|19    |        delay4             |Delay_4ns     |     9|
+|20    |      arb                  |ARB           |     8|
+|21    |  MMCAM                    |MMCAM_Stage   |  9538|
+|22    |    \entry_fd_loop[0].ef   |ENTRY_FD__1   |   144|
+|23    |    \entry_fd_loop[1].ef   |ENTRY_FD__2   |   144|
+|24    |    \entry_fd_loop[2].ef   |ENTRY_FD__3   |   144|
+|25    |    \entry_fd_loop[3].ef   |ENTRY_FD__4   |   144|
+|26    |    \entry_fd_loop[4].ef   |ENTRY_FD__5   |   144|
+|27    |    \entry_fd_loop[5].ef   |ENTRY_FD__6   |   144|
+|28    |    \entry_fd_loop[6].ef   |ENTRY_FD__7   |   144|
+|29    |    \entry_fd_loop[7].ef   |ENTRY_FD__8   |   144|
+|30    |    \entry_fd_loop[8].ef   |ENTRY_FD__9   |   144|
+|31    |    \entry_fd_loop[9].ef   |ENTRY_FD__10  |   144|
+|32    |    \entry_fd_loop[10].ef  |ENTRY_FD__11  |   144|
+|33    |    \entry_fd_loop[11].ef  |ENTRY_FD__12  |   144|
+|34    |    \entry_fd_loop[12].ef  |ENTRY_FD__13  |   144|
+|35    |    \entry_fd_loop[13].ef  |ENTRY_FD__14  |   144|
+|36    |    \entry_fd_loop[14].ef  |ENTRY_FD__15  |   144|
+|37    |    \entry_fd_loop[15].ef  |ENTRY_FD__16  |   144|
+|38    |    \entry_fd_loop[16].ef  |ENTRY_FD__17  |   144|
+|39    |    \entry_fd_loop[17].ef  |ENTRY_FD__18  |   144|
+|40    |    \entry_fd_loop[18].ef  |ENTRY_FD__19  |   144|
+|41    |    \entry_fd_loop[19].ef  |ENTRY_FD__20  |   144|
+|42    |    \entry_fd_loop[20].ef  |ENTRY_FD__21  |   144|
+|43    |    \entry_fd_loop[21].ef  |ENTRY_FD__22  |   144|
+|44    |    \entry_fd_loop[22].ef  |ENTRY_FD__23  |   144|
+|45    |    \entry_fd_loop[23].ef  |ENTRY_FD__24  |   144|
+|46    |    \entry_fd_loop[24].ef  |ENTRY_FD__25  |   144|
+|47    |    \entry_fd_loop[25].ef  |ENTRY_FD__26  |   144|
+|48    |    \entry_fd_loop[26].ef  |ENTRY_FD__27  |   144|
+|49    |    \entry_fd_loop[27].ef  |ENTRY_FD__28  |   144|
+|50    |    \entry_fd_loop[28].ef  |ENTRY_FD__29  |   144|
+|51    |    \entry_fd_loop[29].ef  |ENTRY_FD__30  |   144|
+|52    |    \entry_fd_loop[30].ef  |ENTRY_FD__31  |   144|
+|53    |    \entry_fd_loop[31].ef  |ENTRY_FD__32  |   144|
+|54    |    \entry_fd_loop[32].ef  |ENTRY_FD__33  |   144|
+|55    |    \entry_fd_loop[33].ef  |ENTRY_FD__34  |   144|
+|56    |    \entry_fd_loop[34].ef  |ENTRY_FD__35  |   144|
+|57    |    \entry_fd_loop[35].ef  |ENTRY_FD__36  |   144|
+|58    |    \entry_fd_loop[36].ef  |ENTRY_FD__37  |   144|
+|59    |    \entry_fd_loop[37].ef  |ENTRY_FD__38  |   144|
+|60    |    \entry_fd_loop[38].ef  |ENTRY_FD__39  |   144|
+|61    |    \entry_fd_loop[39].ef  |ENTRY_FD__40  |   144|
+|62    |    \entry_fd_loop[40].ef  |ENTRY_FD__41  |   144|
+|63    |    \entry_fd_loop[41].ef  |ENTRY_FD__42  |   144|
+|64    |    \entry_fd_loop[42].ef  |ENTRY_FD__43  |   144|
+|65    |    \entry_fd_loop[43].ef  |ENTRY_FD__44  |   144|
+|66    |    \entry_fd_loop[44].ef  |ENTRY_FD__45  |   144|
+|67    |    \entry_fd_loop[45].ef  |ENTRY_FD__46  |   144|
+|68    |    \entry_fd_loop[46].ef  |ENTRY_FD__47  |   144|
+|69    |    \entry_fd_loop[47].ef  |ENTRY_FD__48  |   144|
+|70    |    \entry_fd_loop[48].ef  |ENTRY_FD__49  |   144|
+|71    |    \entry_fd_loop[49].ef  |ENTRY_FD__50  |   144|
+|72    |    \entry_fd_loop[50].ef  |ENTRY_FD__51  |   144|
+|73    |    \entry_fd_loop[51].ef  |ENTRY_FD__52  |   144|
+|74    |    \entry_fd_loop[52].ef  |ENTRY_FD__53  |   144|
+|75    |    \entry_fd_loop[53].ef  |ENTRY_FD__54  |   144|
+|76    |    \entry_fd_loop[54].ef  |ENTRY_FD__55  |   144|
+|77    |    \entry_fd_loop[55].ef  |ENTRY_FD__56  |   144|
+|78    |    \entry_fd_loop[56].ef  |ENTRY_FD__57  |   144|
+|79    |    \entry_fd_loop[57].ef  |ENTRY_FD__58  |   144|
+|80    |    \entry_fd_loop[58].ef  |ENTRY_FD__59  |   144|
+|81    |    \entry_fd_loop[59].ef  |ENTRY_FD__60  |   144|
+|82    |    \entry_fd_loop[60].ef  |ENTRY_FD__61  |   144|
+|83    |    \entry_fd_loop[61].ef  |ENTRY_FD__62  |   144|
+|84    |    \entry_fd_loop[62].ef  |ENTRY_FD__63  |   144|
+|85    |    \entry_fd_loop[63].ef  |ENTRY_FD      |   144|
+|86    |    c                      |C__3          |    44|
+|87    |      delay1               |Delay_4ns__22 |     9|
+|88    |      delay2               |Delay_4ns__21 |     9|
+|89    |      delay3               |Delay_4ns__20 |     9|
+|90    |      delay4               |Delay_4ns__19 |     9|
+|91    |    oam                    |OR_AM_MA      |   240|
+|92    |  MMRAM                    |MMRAM_Stage   |  2210|
+|93    |    ce                     |CE            |    44|
+|94    |      cf                   |CF            |    40|
+|95    |        delay1             |Delay_4ns__9  |     9|
+|96    |        delay2             |Delay_4ns__10 |     9|
+|97    |        delay3             |Delay_4ns__11 |     9|
+|98    |        delay4             |Delay_2ns     |     5|
+|99    |  PS                       |PS_Stage      |   137|
+|100   |    c                      |C__2          |    44|
+|101   |      delay1               |Delay_4ns__18 |     9|
+|102   |      delay2               |Delay_4ns__17 |     9|
+|103   |      delay3               |Delay_4ns__16 |     9|
+|104   |      delay4               |Delay_4ns__15 |     9|
+|105   |  FP                       |FP_Stage      |   567|
+|106   |    ce                     |CE__1         |    44|
+|107   |      cf                   |CF__4         |    40|
+|108   |        delay1             |Delay_4ns__34 |     9|
+|109   |        delay2             |Delay_4ns__33 |     9|
+|110   |        delay3             |Delay_4ns__32 |     9|
+|111   |        delay4             |Delay_2ns__4  |     5|
+|112   |  COPY                     |COPY_Stage    |   161|
+|113   |    cx2                    |CX2           |    97|
+|114   |      cf1                  |CF__2         |    40|
+|115   |        delay1             |Delay_4ns__28 |     9|
+|116   |        delay2             |Delay_4ns__27 |     9|
+|117   |        delay3             |Delay_4ns__26 |     9|
+|118   |        delay4             |Delay_2ns__2  |     5|
+|119   |      cf2                  |CF__3         |    40|
+|120   |        delay1             |Delay_4ns__31 |     9|
+|121   |        delay2             |Delay_4ns__30 |     9|
+|122   |        delay3             |Delay_4ns__29 |     9|
+|123   |        delay4             |Delay_2ns__3  |     5|
+|124   |  B                        |B_Stage       |    89|
+|125   |    cb                     |CB            |    44|
+|126   |      cf                   |CF__1         |    40|
+|127   |        delay1             |Delay_4ns__25 |     9|
+|128   |        delay2             |Delay_4ns__24 |     9|
+|129   |        delay3             |Delay_4ns__23 |     9|
+|130   |        delay4             |Delay_2ns__1  |     5|
+|131   |  c                        |C             |    44|
+|132   |    delay1                 |Delay_4ns__5  |     9|
+|133   |    delay2                 |Delay_4ns__6  |     9|
+|134   |    delay3                 |Delay_4ns__7  |     9|
+|135   |    delay4                 |Delay_4ns__8  |     9|
++------+---------------------------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:16 ; elapsed = 00:01:48 . Memory (MB): peak = 1457.172 ; gain = 906.574
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 29 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:16 ; elapsed = 00:01:48 . Memory (MB): peak = 1457.172 ; gain = 906.574
+Synthesis Optimization Complete : Time (s): cpu = 00:01:16 ; elapsed = 00:01:48 . Memory (MB): peak = 1457.172 ; gain = 906.574
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.375 . Memory (MB): peak = 1466.625 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4890 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1566.262 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1221 instances were transformed.
+  FDCP_1 => FDCP (inverted pins: C) (FDCE, FDPE, LDCE, LUT3, VCC): 1 instance 
+  FDC_1 => FDCE (inverted pins: C): 1 instance 
+  FDP_1 => FDPE (inverted pins: C): 1 instance 
+  LDC => LDCE: 1218 instances
+
+Synth Design complete | Checksum: 81553d7c
+INFO: [Common 17-83] Releasing license: Synthesis
+71 Infos, 29 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:24 ; elapsed = 00:02:00 . Memory (MB): peak = 1566.262 ; gain = 1022.980
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1566.262 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/DDP.runs/synth_1/JOIN_DDP.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file JOIN_DDP_utilization_synth.rpt -pb JOIN_DDP_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 27 15:17:59 2024...

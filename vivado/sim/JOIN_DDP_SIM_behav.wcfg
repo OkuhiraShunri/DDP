@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="JOIN_DDP_SIM_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="JOIN_DDP_SIM" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="399.001 ns"></ZoomEndTime>
+      <Cursor1Time time="2,308.500 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="178"></NameColumnWidth>
+      <ValueColumnWidth column_width="87"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/JOIN_DDP_SIM/Send_in" type="logic">
+      <obj_property name="ElementShortName">Send_in</obj_property>
+      <obj_property name="ObjectShortName">Send_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/JOIN_DDP_SIM/Ack_in" type="logic">
+      <obj_property name="ElementShortName">Ack_in</obj_property>
+      <obj_property name="ObjectShortName">Ack_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/JOIN_DDP_SIM/MR" type="logic">
+      <obj_property name="ElementShortName">MR</obj_property>
+      <obj_property name="ObjectShortName">MR</obj_property>
+   </wvobject>
+   <wvobject fp_name="/JOIN_DDP_SIM/PACKET_IN" type="array">
+      <obj_property name="ElementShortName">PACKET_IN[37:0]</obj_property>
+      <obj_property name="ObjectShortName">PACKET_IN[37:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/JOIN_DDP_SIM/Send_out" type="logic">
+      <obj_property name="ElementShortName">Send_out</obj_property>
+      <obj_property name="ObjectShortName">Send_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/JOIN_DDP_SIM/Ack_out" type="logic">
+      <obj_property name="ElementShortName">Ack_out</obj_property>
+      <obj_property name="ObjectShortName">Ack_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/JOIN_DDP_SIM/PACKET_OUT" type="array">
+      <obj_property name="ElementShortName">PACKET_OUT[37:0]</obj_property>
+      <obj_property name="ObjectShortName">PACKET_OUT[37:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="group18" type="group">
+      <obj_property name="label">CP</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/JOIN_DDP_SIM/ddp/M/CP_EXTERNAL" type="logic">
+         <obj_property name="ElementShortName">CP_EXTERNAL</obj_property>
+         <obj_property name="ObjectShortName">CP_EXTERNAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="/JOIN_DDP_SIM/ddp/M/CP_INTERNAL" type="logic">
+         <obj_property name="ElementShortName">CP_INTERNAL</obj_property>
+         <obj_property name="ObjectShortName">CP_INTERNAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="/JOIN_DDP_SIM/ddp/MMCAM/CP" type="logic">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">CP</obj_property>
+         <obj_property name="ObjectShortName">CP</obj_property>
+         <obj_property name="label">CP_MMCAM</obj_property>
+      </wvobject>
+      <wvobject fp_name="/JOIN_DDP_SIM/ddp/MMRAM/CP" type="logic">
+         <obj_property name="ElementShortName">CP</obj_property>
+         <obj_property name="ObjectShortName">CP</obj_property>
+      </wvobject>
+      <wvobject fp_name="/JOIN_DDP_SIM/ddp/PS/CP" type="logic">
+         <obj_property name="ElementShortName">CP</obj_property>
+         <obj_property name="ObjectShortName">CP</obj_property>
+      </wvobject>
+      <wvobject fp_name="/JOIN_DDP_SIM/ddp/FP/CP" type="logic">
+         <obj_property name="ElementShortName">CP</obj_property>
+         <obj_property name="ObjectShortName">CP</obj_property>
+      </wvobject>
+      <wvobject fp_name="/JOIN_DDP_SIM/ddp/MA/CP" type="logic">
+         <obj_property name="ElementShortName">CP</obj_property>
+         <obj_property name="ObjectShortName">CP</obj_property>
+      </wvobject>
+      <wvobject fp_name="/JOIN_DDP_SIM/ddp/COPY/CP" type="logic">
+         <obj_property name="ElementShortName">CP</obj_property>
+         <obj_property name="ObjectShortName">CP</obj_property>
+      </wvobject>
+      <wvobject fp_name="/JOIN_DDP_SIM/ddp/B/CP" type="logic">
+         <obj_property name="ElementShortName">CP</obj_property>
+         <obj_property name="ObjectShortName">CP</obj_property>
+      </wvobject>
+      <wvobject fp_name="/JOIN_DDP_SIM/ddp/c/CP" type="logic">
+         <obj_property name="ElementShortName">CP</obj_property>
+         <obj_property name="ObjectShortName">CP</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

@@ -5,11 +5,17 @@ module CB(
 
 reg DL = 1;
 wire cf_ack_out, cf_send_out, cp;
+wire and_1;
 
 CF cf(.Send_in(CB_Send_in), .Ack_in(and_1), .MR(MR), .Ack_out(cf_ack_out), .Send_out(cf_send_out), .CP(cp));
 
-always @(posedge cp) begin
-    DL <= BR;
+always @(posedge cp or posedge MR) begin
+    if(MR)begin
+        DL <= 1'b0;
+    end
+    else begin
+        DL <= BR;
+    end
 end
 
 assign and_1 = CB_Ack_in_a & CB_Ack_in_b;
