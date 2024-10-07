@@ -58,8 +58,8 @@ end
 //     #90     PACKET_IN <= {3'b111, 8'b0, 7'd7, 1'b1, 1'b1, 1'b0, 1'b1, 16'd2};//B
 // end
 
-//階乗のテスト
+//階乗のテストaaa
 initial begin
-    PACKET_IN <= {3'b111, 8'b0, 7'd0, 1'b0, 1'b0, 1'b0, 1'b0, 16'd6};
+    PACKET_IN <= {3'b111, 8'b0, 7'd10, 1'b0, 1'b0, 1'b0, 1'b0, 16'd5};
 end
 endmodule

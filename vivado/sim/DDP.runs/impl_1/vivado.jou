@@ -3,8 +3,8 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Fri Sep 27 15:18:06 2024
-# Process ID: 22812
+# Start of session at: Wed Oct  2 13:24:19 2024
+# Process ID: 21168
 # Current directory: C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/DDP.runs/impl_1
 # Command line: vivado.exe -log JOIN_DDP.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source JOIN_DDP.tcl -notrace
 # Log file: C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/DDP.runs/impl_1/JOIN_DDP.vdi
@@ -17,8 +17,8 @@
 # CPU Physical cores:8
 # CPU Logical cores :16
 # Host memory       :16887 MB
-# Swap memory       :17874 MB
-# Total Virtual     :34762 MB
-# Available Virtual :7093 MB
+# Swap memory       :14815 MB
+# Total Virtual     :31702 MB
+# Available Virtual :4814 MB
 #-----------------------------------------------------------
 source JOIN_DDP.tcl -notrace
