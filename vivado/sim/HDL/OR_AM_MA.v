@@ -1,8 +1,8 @@
 (* dont_touch = "true" *)
 module OR_AM_MA(
-    input [63:0] FIRE, VALID,
+    input [19:0] FIRE, VALID,
     input MF, CP, MR,
-    output [63:0] EN,
+    output [19:0] EN,
     output reg WR_E, DEL,
     output reg [5:0] ADDR
 );
@@ -13,13 +13,13 @@ module OR_AM_MA(
 assign FIRE_OR = |FIRE;//発火検出
 assign R_ADDR = DECODE(FIRE);//発火場所を探索
 function [5:0] DECODE;
-    input [63:0] FIRE;
+    input [19:0] FIRE;
     integer i;
     reg f;
     begin
         DECODE = 6'd0;
         f = 0;//ループ抜けるフラグ
-        for(i = 0; i < 64; i = i + 1)begin
+        for(i = 0; i < 20; i = i + 1)begin
             if(FIRE[i] && !f)begin
                 DECODE = i[5:0];
                 f = 1;
@@ -31,22 +31,22 @@ endfunction
 //AM
 (* dont_touch = "true" *) wire [5:0] W_ADDR;
 assign {W_ADDR, EN} = AM(VALID, MF, FIRE_OR);
-function[69:0] AM;
-    input [63:0] VALID;
+function[25:0] AM;
+    input [19:0] VALID;
     input MF;
     input FIRE_OR;
     integer i;
     reg f;
     begin
-        AM = 70'd0;
+        AM = 26'd0;
         f = 0;
-        for(i = 0; i < 64; i = i + 1)begin
+        for(i = 0; i < 20; i = i + 1)begin
             if((FIRE_OR || ~MF) && !f)begin//発火の検出または待ち合わせしないパケットの検出
-                AM = {6'd0, 64'b0};//ENが64'b0ということは、ENTRYのどこにも書き込めない、すなわち待ち合わせできないということを示す
+                AM = {6'd0, 20'b0};//ENが64'b0ということは、ENTRYのどこにも書き込めない、すなわち待ち合わせできないということを示す
                 f = 1;
             end
             else if((!VALID[i]) && !f && MF)begin//ENTRYに空きがあるiはどこか探索 VALID[i]=0で空きがあることを示す. VALIDは全体で64bitでENTRYのどこにパケットが書き込まれているかがわかる
-                AM = {i[5:0], 64'b1 << i[5:0]};//bit幅を正確に指定しないとW_ADDRが永遠に0となります.特に、64'b1のところ。　ENTRYに空きがあるところはENが1になる
+                AM = {i[5:0], 20'b1 << i[5:0]};//bit幅を正確に指定しないとW_ADDRが永遠に0となります.特に、64'b1のところ。　ENTRYに空きがあるところはENが1になる
                 f = 1;
             end
         end

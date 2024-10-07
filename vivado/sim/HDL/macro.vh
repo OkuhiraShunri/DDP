@@ -61,7 +61,7 @@
 `define MMRAM_DEPTH  64
 
 `define DMEM_WIDTH  16
-`define DMEM_DEPTH  1024
+`define DMEM_DEPTH  20
 
 `define CMEM_WIDTH  16
 `define CMEM_DEPTH  64

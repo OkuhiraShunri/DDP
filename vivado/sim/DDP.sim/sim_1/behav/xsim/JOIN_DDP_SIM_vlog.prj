@@ -10,6 +10,8 @@ verilog xil_defaultlib  --include "../../../../HDL" \
 "../../../../HDL/CM.v" \
 "../../../../HDL/COPY_Stage.v" \
 "../../../../HDL/CX2.v" \
+"../../../../HDL/Delay_2ns.v" \
+"../../../../HDL/Delay_4ns.v" \
 "../../../../HDL/ENTRY_FD.v" \
 "../../../../HDL/FP_Stage.v" \
 "../../../../HDL/JOIN_DDP.v" \

@@ -1,70 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1727843051">
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1728281212">
   <File Type="ROUTE-PWR" Name="JOIN_DDP_power_routed.rpt"/>
   <File Type="PA-TCL" Name="JOIN_DDP.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="JOIN_DDP_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="JOIN_DDP_reports.tcl"/>
-  <File Type="OPT-RQA-PB" Name="JOIN_DDP_rqa_opted.pb"/>
+  <File Type="BITSTR-MSK" Name="JOIN_DDP.msk"/>
+  <File Type="ROUTE-CLK" Name="JOIN_DDP_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="JOIN_DDP.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="JOIN_DDP_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="JOIN_DDP.bit"/>
+  <File Type="BG-DRC" Name="JOIN_DDP.drc"/>
+  <File Type="BG-BGN" Name="JOIN_DDP.bgn"/>
+  <File Type="BG-BIN" Name="JOIN_DDP.bin"/>
+  <File Type="BITSTR-RBT" Name="JOIN_DDP.rbt"/>
+  <File Type="BITSTR-NKY" Name="JOIN_DDP.nky"/>
+  <File Type="BITSTR-BMM" Name="JOIN_DDP_bd.bmm"/>
   <File Type="BITSTR-MMI" Name="JOIN_DDP.mmi"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="JOIN_DDP_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="JOIN_DDP_timing_summary_init.rpt"/>
-  <File Type="OPT-TIMING" Name="JOIN_DDP_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="JOIN_DDP_opt.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="JOIN_DDP_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-SYSDEF" Name="JOIN_DDP.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="JOIN_DDP.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="OPT-DRC" Name="JOIN_DDP_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="JOIN_DDP.hwdef"/>
-  <File Type="PWROPT-DCP" Name="JOIN_DDP_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="JOIN_DDP_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="JOIN_DDP_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="JOIN_DDP_placed.dcp"/>
   <File Type="PLACE-IO" Name="JOIN_DDP_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="JOIN_DDP_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="JOIN_DDP_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="JOIN_DDP_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="JOIN_DDP_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="JOIN_DDP_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="JOIN_DDP_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BIN" Name="JOIN_DDP.bin"/>
-  <File Type="PLACE-TIMING" Name="JOIN_DDP_timing_summary_placed.rpt"/>
-  <File Type="ROUTE-PWR-RPX" Name="JOIN_DDP_power_routed.rpx"/>
-  <File Type="PLACE-RQA-PB" Name="JOIN_DDP_rqa_placed.pb"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="JOIN_DDP_postplace_pwropt.dcp"/>
-  <File Type="BITSTR-MSK" Name="JOIN_DDP.msk"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="JOIN_DDP_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="JOIN_DDP_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="JOIN_DDP_drc_physopted.rpt"/>
-  <File Type="BITSTR-RBT" Name="JOIN_DDP.rbt"/>
-  <File Type="PHYSOPT-TIMING" Name="JOIN_DDP_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="JOIN_DDP_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="JOIN_DDP_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="JOIN_DDP_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="JOIN_DDP_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="JOIN_DDP_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="JOIN_DDP_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="JOIN_DDP_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="JOIN_DDP_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="JOIN_DDP_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-RQS-PB" Name="JOIN_DDP_rqs_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="JOIN_DDP_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="JOIN_DDP_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="JOIN_DDP_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="JOIN_DDP_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="JOIN_DDP_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="JOIN_DDP_routed_bb.dcp"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="JOIN_DDP_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="JOIN_DDP_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="JOIN_DDP_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="JOIN_DDP_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="JOIN_DDP_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="JOIN_DDP_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="JOIN_DDP_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="JOIN_DDP_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="JOIN_DDP_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="JOIN_DDP_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="JOIN_DDP_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="JOIN_DDP_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="JOIN_DDP_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="JOIN_DDP_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="JOIN_DDP_postroute_physopt_bb.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING" Name="JOIN_DDP_timing_summary_postroute_physopted.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="JOIN_DDP_timing_summary_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="JOIN_DDP_timing_summary_postroute_physopted.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="JOIN_DDP_bus_skew_postroute_physopted.rpt"/>
-  <File Type="BG-BIT" Name="JOIN_DDP.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="JOIN_DDP_bus_skew_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="JOIN_DDP_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BITSTR-NKY" Name="JOIN_DDP.nky"/>
-  <File Type="BITSTR-BMM" Name="JOIN_DDP_bd.bmm"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="JOIN_DDP_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="JOIN_DDP_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="JOIN_DDP_methodology_drc_routed.rpx"/>
   <File Type="PDI-FILE" Name="JOIN_DDP.pdi"/>
   <File Type="BOOT-PDI-FILE" Name="JOIN_DDP_boot.pdi"/>
   <File Type="PL-PDI-FILE" Name="JOIN_DDP_pld.pdi"/>
@@ -73,13 +66,6 @@
   <File Type="RNPI_FILE" Name="JOIN_DDP.rnpi"/>
   <File Type="NPI_FILE" Name="JOIN_DDP.npi"/>
   <File Type="RBD_FILE" Name="JOIN_DDP.rbd"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="JOIN_DDP.ltx"/>
-  <File Type="BITSTR-SYSDEF" Name="JOIN_DDP.sysdef"/>
-  <File Type="BG-BGN" Name="JOIN_DDP.bgn"/>
-  <File Type="BG-DRC" Name="JOIN_DDP.drc"/>
-  <File Type="RDI-RDI" Name="JOIN_DDP.vdi"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="ROUTE-RQS" Name="JOIN_DDP_routed.rqs"/>
   <File Type="POSTROUTE-PHYSOPT-RQS" Name="JOIN_DDP_postroute_physopted.rqs"/>
   <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
@@ -291,5 +277,6 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
   </Strategy>
 </GenRun>

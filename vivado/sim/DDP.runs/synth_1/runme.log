@@ -8,12 +8,12 @@
   **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
   **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
   **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-  **** Start of session at: Fri Sep 27 15:15:47 2024
+  **** Start of session at: Mon Oct  7 14:32:33 2024
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source JOIN_DDP.tcl -notrace
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 538.957 ; gain = 237.723
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 538.488 ; gain = 235.715
 Command: read_checkpoint -auto_incremental -incremental C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/DDP.srcs/utils_1/imports/synth_1/JOIN_DDP.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/DDP.srcs/utils_1/imports/synth_1/JOIN_DDP.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -25,9 +25,9 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 7684
+INFO: [Synth 8-7075] Helper process launched with PID 25172
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 996.828 ; gain = 446.230
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 996.410 ; gain = 448.301
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-11241] undeclared symbol 'CP', assumed default net type 'wire' [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/B_Stage.v:12]
 INFO: [Synth 8-11241] undeclared symbol 'send_out_b', assumed default net type 'wire' [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/CM.v:9]
@@ -102,24 +102,24 @@ Reason is one or more of the following :
 RAM "RAM_reg" dissolved into registers
 WARNING: [Synth 8-6026] Ignoring keep related attribute (keep/mark_debug/dont_touch) applied on memory [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/PS_Stage.v:11]
 WARNING: [Synth 8-6026] Ignoring keep related attribute (keep/mark_debug/dont_touch) applied on memory [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/B_Stage.v:14]
-WARNING: [Synth 8-7137] Register MF_reg in module B_Stage has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/B_Stage.v:77]
+WARNING: [Synth 8-7137] Register MF_reg in module B_Stage has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/B_Stage.v:97]
+WARNING: [Synth 8-7129] Port ADDR[5] in module MMRAM_Stage is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1236.059 ; gain = 685.461
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1121.695 ; gain = 573.586
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1236.059 ; gain = 685.461
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1121.695 ; gain = 573.586
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1236.059 ; gain = 685.461
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1121.695 ; gain = 573.586
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z010clg400-1
-INFO: [Device 21-9227] Part: xc7z010clg400-1 does not have CEAM library.
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:31 . Memory (MB): peak = 1396.121 ; gain = 845.523
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1141.633 ; gain = 593.523
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
@@ -141,34 +141,34 @@ Detailed RTL Component Info :
 	               41 Bit    Registers := 1     
 	               40 Bit    Registers := 1     
 	               38 Bit    Registers := 6     
-	               20 Bit    Registers := 65    
-	               19 Bit    Registers := 64    
+	               20 Bit    Registers := 21    
+	               19 Bit    Registers := 20    
 	               17 Bit    Registers := 1     
-	               16 Bit    Registers := 1026  
+	               16 Bit    Registers := 22    
 	                6 Bit    Registers := 1     
-	                1 Bit    Registers := 73    
+	                1 Bit    Registers := 29    
 +---Muxes : 
 	   2 Input   54 Bit        Muxes := 1     
 	   2 Input   52 Bit        Muxes := 1     
 	   2 Input   40 Bit        Muxes := 1     
 	   2 Input   38 Bit        Muxes := 1     
-	   2 Input   19 Bit        Muxes := 128   
-	 129 Input   17 Bit        Muxes := 1     
+	   2 Input   19 Bit        Muxes := 40    
+	  21 Input   17 Bit        Muxes := 1     
+	  21 Input   16 Bit        Muxes := 1     
 	   2 Input   16 Bit        Muxes := 1     
-	  65 Input   16 Bit        Muxes := 1     
 	   2 Input    7 Bit        Muxes := 1     
 	   2 Input    6 Bit        Muxes := 1     
 	   2 Input    3 Bit        Muxes := 1     
 	   2 Input    2 Bit        Muxes := 1     
-	   3 Input    1 Bit        Muxes := 64    
-	   2 Input    1 Bit        Muxes := 320   
-	  65 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 20    
+	   2 Input    1 Bit        Muxes := 102   
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Part Resource Summary
 ---------------------------------------------------------------------------------
+INFO: [Device 21-9227] Part: xc7z010clg400-1 does not have CEAM library.
 Part Resources:
 DSPs: 80 (col length:40)
 BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
@@ -179,15 +179,26 @@ No constraint files found.
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 DSP Report: Generating DSP ALU1, operation Mode is: A*B.
 DSP Report: operator ALU1 is absorbed into DSP ALU1.
+WARNING: [Synth 8-7129] Port ADDR[5] in module MMRAM_Stage is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:04 ; elapsed = 00:01:35 . Memory (MB): peak = 1421.051 ; gain = 870.453
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1358.234 ; gain = 810.125
 ---------------------------------------------------------------------------------
- Sort Area is JOIN_DDP__GC0 ALU1_0 : 0 0 : 1946 1946 : Used 1 time 0
+ Sort Area is  ALU1_0 : 0 0 : 1946 1946 : Used 1 time 0
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|B_Stage     | SubPS      | 32x1          | LUT            | 
+|B_Stage     | p_0_out    | 32x1          | LUT            | 
++------------+------------+---------------+----------------+
+
 
 DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
 +------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
@@ -205,13 +216,13 @@ No constraint files found.
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:05 ; elapsed = 00:01:36 . Memory (MB): peak = 1444.766 ; gain = 894.168
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1364.012 ; gain = 815.902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:08 ; elapsed = 00:01:39 . Memory (MB): peak = 1444.766 ; gain = 894.168
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1364.012 ; gain = 815.902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -230,49 +241,49 @@ Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-3295] tying undriven pin send_in_b_inferred:in0 to constant 0
 WARNING: [Synth 8-3295] tying undriven pin M_Ack_out_inferred:in0 to constant 0
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/MA_Stage.v:42]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/M_Stage.v:14]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/M_Stage.v:23]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/ENTRY_FD.v:15]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/MMRAM_Stage.v:65]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/PS_Stage.v:72]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/MMRAM_Stage.v:79]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/PS_Stage.v:90]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/FP_Stage.v:17]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/MA_Stage.v:44]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/CX2.v:14]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/CX2.v:21]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/B_Stage.v:77]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/B_Stage.v:97]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/JOIN_DDP.v:61]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:15 ; elapsed = 00:01:46 . Memory (MB): peak = 1457.172 ; gain = 906.574
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1364.027 ; gain = 815.918
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:15 ; elapsed = 00:01:46 . Memory (MB): peak = 1457.172 ; gain = 906.574
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1364.027 ; gain = 815.918
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:16 ; elapsed = 00:01:47 . Memory (MB): peak = 1457.172 ; gain = 906.574
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1364.027 ; gain = 815.918
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:16 ; elapsed = 00:01:47 . Memory (MB): peak = 1457.172 ; gain = 906.574
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1364.027 ; gain = 815.918
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:16 ; elapsed = 00:01:47 . Memory (MB): peak = 1457.172 ; gain = 906.574
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1364.027 ; gain = 815.918
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:16 ; elapsed = 00:01:48 . Memory (MB): peak = 1457.172 ; gain = 906.574
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1364.027 ; gain = 815.918
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -296,193 +307,152 @@ Report Cell Usage:
 +------+--------+------+
 |      |Cell    |Count |
 +------+--------+------+
-|1     |CARRY4  |   146|
+|1     |CARRY4  |    58|
 |2     |DSP48E1 |     1|
-|3     |LUT1    |   609|
-|4     |LUT2    |  2772|
-|5     |LUT3    | 10756|
-|6     |LUT4    |   526|
-|7     |LUT5    |  1070|
-|8     |LUT6    | 13698|
-|9     |MUXF7   |  2354|
-|10    |MUXF8   |  1168|
-|11    |FDCE    | 18166|
-|12    |FDCP    |     1|
-|13    |FDC     |     1|
-|14    |FDPE    |  1219|
-|15    |FDP     |     1|
-|16    |FDRE    |  1282|
-|17    |LDC     |  1218|
-|18    |IBUF    |    41|
-|19    |OBUF    |    40|
+|3     |LUT1    |   611|
+|4     |LUT2    |   885|
+|5     |LUT3    |  1313|
+|6     |LUT4    |   160|
+|7     |LUT5    |   170|
+|8     |LUT6    |   468|
+|9     |MUXF7   |    90|
+|10    |FDCE    |  1222|
+|11    |FDCP    |     1|
+|12    |FDCPE   |   380|
+|13    |FDCP    |     1|
+|14    |FDC     |     1|
+|15    |FDPE    |   383|
+|16    |FDP     |     1|
+|17    |FDRE    |   402|
+|18    |LDC     |   382|
+|19    |IBUF    |    41|
+|20    |OBUF    |    40|
 +------+--------+------+
 
 Report Instance Areas: 
 +------+---------------------------+--------------+------+
 |      |Instance                   |Module        |Cells |
 +------+---------------------------+--------------+------+
-|1     |top                        |              | 55069|
-|2     |  MA                       |MA_Stage      | 41985|
-|3     |    c                      |C__1          |    44|
-|4     |      delay1               |Delay_4ns__1  |     9|
-|5     |      delay2               |Delay_4ns__2  |     9|
-|6     |      delay3               |Delay_4ns__3  |     9|
-|7     |      delay4               |Delay_4ns__4  |     9|
-|8     |  M                        |M_Stage       |   218|
-|9     |    cm                     |CM            |   104|
-|10    |      cj_a                 |CJ__1         |    45|
-|11    |        delay1             |Delay_4ns__38 |     9|
-|12    |        delay2             |Delay_4ns__37 |     9|
-|13    |        delay3             |Delay_4ns__36 |     9|
-|14    |        delay4             |Delay_4ns__35 |     9|
-|15    |      cj_b                 |CJ            |    45|
-|16    |        delay1             |Delay_4ns__12 |     9|
-|17    |        delay2             |Delay_4ns__13 |     9|
-|18    |        delay3             |Delay_4ns__14 |     9|
-|19    |        delay4             |Delay_4ns     |     9|
-|20    |      arb                  |ARB           |     8|
-|21    |  MMCAM                    |MMCAM_Stage   |  9538|
-|22    |    \entry_fd_loop[0].ef   |ENTRY_FD__1   |   144|
-|23    |    \entry_fd_loop[1].ef   |ENTRY_FD__2   |   144|
-|24    |    \entry_fd_loop[2].ef   |ENTRY_FD__3   |   144|
-|25    |    \entry_fd_loop[3].ef   |ENTRY_FD__4   |   144|
-|26    |    \entry_fd_loop[4].ef   |ENTRY_FD__5   |   144|
-|27    |    \entry_fd_loop[5].ef   |ENTRY_FD__6   |   144|
-|28    |    \entry_fd_loop[6].ef   |ENTRY_FD__7   |   144|
-|29    |    \entry_fd_loop[7].ef   |ENTRY_FD__8   |   144|
-|30    |    \entry_fd_loop[8].ef   |ENTRY_FD__9   |   144|
-|31    |    \entry_fd_loop[9].ef   |ENTRY_FD__10  |   144|
-|32    |    \entry_fd_loop[10].ef  |ENTRY_FD__11  |   144|
-|33    |    \entry_fd_loop[11].ef  |ENTRY_FD__12  |   144|
-|34    |    \entry_fd_loop[12].ef  |ENTRY_FD__13  |   144|
-|35    |    \entry_fd_loop[13].ef  |ENTRY_FD__14  |   144|
-|36    |    \entry_fd_loop[14].ef  |ENTRY_FD__15  |   144|
-|37    |    \entry_fd_loop[15].ef  |ENTRY_FD__16  |   144|
-|38    |    \entry_fd_loop[16].ef  |ENTRY_FD__17  |   144|
-|39    |    \entry_fd_loop[17].ef  |ENTRY_FD__18  |   144|
-|40    |    \entry_fd_loop[18].ef  |ENTRY_FD__19  |   144|
-|41    |    \entry_fd_loop[19].ef  |ENTRY_FD__20  |   144|
-|42    |    \entry_fd_loop[20].ef  |ENTRY_FD__21  |   144|
-|43    |    \entry_fd_loop[21].ef  |ENTRY_FD__22  |   144|
-|44    |    \entry_fd_loop[22].ef  |ENTRY_FD__23  |   144|
-|45    |    \entry_fd_loop[23].ef  |ENTRY_FD__24  |   144|
-|46    |    \entry_fd_loop[24].ef  |ENTRY_FD__25  |   144|
-|47    |    \entry_fd_loop[25].ef  |ENTRY_FD__26  |   144|
-|48    |    \entry_fd_loop[26].ef  |ENTRY_FD__27  |   144|
-|49    |    \entry_fd_loop[27].ef  |ENTRY_FD__28  |   144|
-|50    |    \entry_fd_loop[28].ef  |ENTRY_FD__29  |   144|
-|51    |    \entry_fd_loop[29].ef  |ENTRY_FD__30  |   144|
-|52    |    \entry_fd_loop[30].ef  |ENTRY_FD__31  |   144|
-|53    |    \entry_fd_loop[31].ef  |ENTRY_FD__32  |   144|
-|54    |    \entry_fd_loop[32].ef  |ENTRY_FD__33  |   144|
-|55    |    \entry_fd_loop[33].ef  |ENTRY_FD__34  |   144|
-|56    |    \entry_fd_loop[34].ef  |ENTRY_FD__35  |   144|
-|57    |    \entry_fd_loop[35].ef  |ENTRY_FD__36  |   144|
-|58    |    \entry_fd_loop[36].ef  |ENTRY_FD__37  |   144|
-|59    |    \entry_fd_loop[37].ef  |ENTRY_FD__38  |   144|
-|60    |    \entry_fd_loop[38].ef  |ENTRY_FD__39  |   144|
-|61    |    \entry_fd_loop[39].ef  |ENTRY_FD__40  |   144|
-|62    |    \entry_fd_loop[40].ef  |ENTRY_FD__41  |   144|
-|63    |    \entry_fd_loop[41].ef  |ENTRY_FD__42  |   144|
-|64    |    \entry_fd_loop[42].ef  |ENTRY_FD__43  |   144|
-|65    |    \entry_fd_loop[43].ef  |ENTRY_FD__44  |   144|
-|66    |    \entry_fd_loop[44].ef  |ENTRY_FD__45  |   144|
-|67    |    \entry_fd_loop[45].ef  |ENTRY_FD__46  |   144|
-|68    |    \entry_fd_loop[46].ef  |ENTRY_FD__47  |   144|
-|69    |    \entry_fd_loop[47].ef  |ENTRY_FD__48  |   144|
-|70    |    \entry_fd_loop[48].ef  |ENTRY_FD__49  |   144|
-|71    |    \entry_fd_loop[49].ef  |ENTRY_FD__50  |   144|
-|72    |    \entry_fd_loop[50].ef  |ENTRY_FD__51  |   144|
-|73    |    \entry_fd_loop[51].ef  |ENTRY_FD__52  |   144|
-|74    |    \entry_fd_loop[52].ef  |ENTRY_FD__53  |   144|
-|75    |    \entry_fd_loop[53].ef  |ENTRY_FD__54  |   144|
-|76    |    \entry_fd_loop[54].ef  |ENTRY_FD__55  |   144|
-|77    |    \entry_fd_loop[55].ef  |ENTRY_FD__56  |   144|
-|78    |    \entry_fd_loop[56].ef  |ENTRY_FD__57  |   144|
-|79    |    \entry_fd_loop[57].ef  |ENTRY_FD__58  |   144|
-|80    |    \entry_fd_loop[58].ef  |ENTRY_FD__59  |   144|
-|81    |    \entry_fd_loop[59].ef  |ENTRY_FD__60  |   144|
-|82    |    \entry_fd_loop[60].ef  |ENTRY_FD__61  |   144|
-|83    |    \entry_fd_loop[61].ef  |ENTRY_FD__62  |   144|
-|84    |    \entry_fd_loop[62].ef  |ENTRY_FD__63  |   144|
-|85    |    \entry_fd_loop[63].ef  |ENTRY_FD      |   144|
-|86    |    c                      |C__3          |    44|
-|87    |      delay1               |Delay_4ns__22 |     9|
-|88    |      delay2               |Delay_4ns__21 |     9|
-|89    |      delay3               |Delay_4ns__20 |     9|
-|90    |      delay4               |Delay_4ns__19 |     9|
-|91    |    oam                    |OR_AM_MA      |   240|
-|92    |  MMRAM                    |MMRAM_Stage   |  2210|
-|93    |    ce                     |CE            |    44|
-|94    |      cf                   |CF            |    40|
-|95    |        delay1             |Delay_4ns__9  |     9|
-|96    |        delay2             |Delay_4ns__10 |     9|
-|97    |        delay3             |Delay_4ns__11 |     9|
-|98    |        delay4             |Delay_2ns     |     5|
-|99    |  PS                       |PS_Stage      |   137|
-|100   |    c                      |C__2          |    44|
-|101   |      delay1               |Delay_4ns__18 |     9|
-|102   |      delay2               |Delay_4ns__17 |     9|
-|103   |      delay3               |Delay_4ns__16 |     9|
-|104   |      delay4               |Delay_4ns__15 |     9|
-|105   |  FP                       |FP_Stage      |   567|
-|106   |    ce                     |CE__1         |    44|
-|107   |      cf                   |CF__4         |    40|
-|108   |        delay1             |Delay_4ns__34 |     9|
-|109   |        delay2             |Delay_4ns__33 |     9|
-|110   |        delay3             |Delay_4ns__32 |     9|
-|111   |        delay4             |Delay_2ns__4  |     5|
-|112   |  COPY                     |COPY_Stage    |   161|
-|113   |    cx2                    |CX2           |    97|
-|114   |      cf1                  |CF__2         |    40|
-|115   |        delay1             |Delay_4ns__28 |     9|
-|116   |        delay2             |Delay_4ns__27 |     9|
-|117   |        delay3             |Delay_4ns__26 |     9|
-|118   |        delay4             |Delay_2ns__2  |     5|
-|119   |      cf2                  |CF__3         |    40|
-|120   |        delay1             |Delay_4ns__31 |     9|
-|121   |        delay2             |Delay_4ns__30 |     9|
-|122   |        delay3             |Delay_4ns__29 |     9|
-|123   |        delay4             |Delay_2ns__3  |     5|
-|124   |  B                        |B_Stage       |    89|
-|125   |    cb                     |CB            |    44|
-|126   |      cf                   |CF__1         |    40|
-|127   |        delay1             |Delay_4ns__25 |     9|
-|128   |        delay2             |Delay_4ns__24 |     9|
-|129   |        delay3             |Delay_4ns__23 |     9|
-|130   |        delay4             |Delay_2ns__1  |     5|
-|131   |  c                        |C             |    44|
-|132   |    delay1                 |Delay_4ns__5  |     9|
-|133   |    delay2                 |Delay_4ns__6  |     9|
-|134   |    delay3                 |Delay_4ns__7  |     9|
-|135   |    delay4                 |Delay_4ns__8  |     9|
+|1     |top                        |              |  6610|
+|2     |  M                        |M_Stage       |   218|
+|3     |    cm                     |CM            |   104|
+|4     |      cj_a                 |CJ__1         |    45|
+|5     |        delay1             |Delay_4ns__38 |     9|
+|6     |        delay2             |Delay_4ns__37 |     9|
+|7     |        delay3             |Delay_4ns__36 |     9|
+|8     |        delay4             |Delay_4ns__35 |     9|
+|9     |      cj_b                 |CJ            |    45|
+|10    |        delay1             |Delay_4ns__1  |     9|
+|11    |        delay2             |Delay_4ns__2  |     9|
+|12    |        delay3             |Delay_4ns__3  |     9|
+|13    |        delay4             |Delay_4ns__4  |     9|
+|14    |      arb                  |ARB           |     8|
+|15    |  MMCAM                    |MMCAM_Stage   |  3422|
+|16    |    \entry_fd_loop[0].ef   |ENTRY_FD__1   |   163|
+|17    |    \entry_fd_loop[1].ef   |ENTRY_FD__2   |   163|
+|18    |    \entry_fd_loop[2].ef   |ENTRY_FD__3   |   163|
+|19    |    \entry_fd_loop[3].ef   |ENTRY_FD__4   |   163|
+|20    |    \entry_fd_loop[4].ef   |ENTRY_FD__5   |   163|
+|21    |    \entry_fd_loop[5].ef   |ENTRY_FD__6   |   163|
+|22    |    \entry_fd_loop[6].ef   |ENTRY_FD__7   |   163|
+|23    |    \entry_fd_loop[7].ef   |ENTRY_FD__8   |   163|
+|24    |    \entry_fd_loop[8].ef   |ENTRY_FD__9   |   163|
+|25    |    \entry_fd_loop[9].ef   |ENTRY_FD__10  |   163|
+|26    |    \entry_fd_loop[10].ef  |ENTRY_FD__11  |   163|
+|27    |    \entry_fd_loop[11].ef  |ENTRY_FD__12  |   163|
+|28    |    \entry_fd_loop[12].ef  |ENTRY_FD__13  |   163|
+|29    |    \entry_fd_loop[13].ef  |ENTRY_FD__14  |   163|
+|30    |    \entry_fd_loop[14].ef  |ENTRY_FD__15  |   163|
+|31    |    \entry_fd_loop[15].ef  |ENTRY_FD__16  |   163|
+|32    |    \entry_fd_loop[16].ef  |ENTRY_FD__17  |   163|
+|33    |    \entry_fd_loop[17].ef  |ENTRY_FD__18  |   163|
+|34    |    \entry_fd_loop[18].ef  |ENTRY_FD__19  |   163|
+|35    |    \entry_fd_loop[19].ef  |ENTRY_FD      |   163|
+|36    |    c                      |C__1          |    44|
+|37    |      delay1               |Delay_4ns__14 |     9|
+|38    |      delay2               |Delay_4ns__13 |     9|
+|39    |      delay3               |Delay_4ns__12 |     9|
+|40    |      delay4               |Delay_4ns__11 |     9|
+|41    |    oam                    |OR_AM_MA      |    80|
+|42    |  MMRAM                    |MMRAM_Stage   |   848|
+|43    |    ce                     |CE__1         |    44|
+|44    |      cf                   |CF__4         |    40|
+|45    |        delay1             |Delay_4ns__34 |     9|
+|46    |        delay2             |Delay_4ns__33 |     9|
+|47    |        delay3             |Delay_4ns__32 |     9|
+|48    |        delay4             |Delay_2ns__4  |     5|
+|49    |  PS                       |PS_Stage      |   125|
+|50    |    c                      |C__2          |    44|
+|51    |      delay1               |Delay_4ns__18 |     9|
+|52    |      delay2               |Delay_4ns__17 |     9|
+|53    |      delay3               |Delay_4ns__16 |     9|
+|54    |      delay4               |Delay_4ns__15 |     9|
+|55    |  FP                       |FP_Stage      |   564|
+|56    |    ce                     |CE            |    44|
+|57    |      cf                   |CF__1         |    40|
+|58    |        delay1             |Delay_4ns__25 |     9|
+|59    |        delay2             |Delay_4ns__24 |     9|
+|60    |        delay3             |Delay_4ns__23 |     9|
+|61    |        delay4             |Delay_2ns__1  |     5|
+|62    |  MA                       |MA_Stage      |  1018|
+|63    |    c                      |C__3          |    44|
+|64    |      delay1               |Delay_4ns__22 |     9|
+|65    |      delay2               |Delay_4ns__21 |     9|
+|66    |      delay3               |Delay_4ns__20 |     9|
+|67    |      delay4               |Delay_4ns__19 |     9|
+|68    |  COPY                     |COPY_Stage    |   161|
+|69    |    cx2                    |CX2           |    97|
+|70    |      cf1                  |CF__2         |    40|
+|71    |        delay1             |Delay_4ns__28 |     9|
+|72    |        delay2             |Delay_4ns__27 |     9|
+|73    |        delay3             |Delay_4ns__26 |     9|
+|74    |        delay4             |Delay_2ns__2  |     5|
+|75    |      cf2                  |CF__3         |    40|
+|76    |        delay1             |Delay_4ns__31 |     9|
+|77    |        delay2             |Delay_4ns__30 |     9|
+|78    |        delay3             |Delay_4ns__29 |     9|
+|79    |        delay4             |Delay_2ns__3  |     5|
+|80    |  B                        |B_Stage       |    90|
+|81    |    cb                     |CB            |    44|
+|82    |      cf                   |CF            |    40|
+|83    |        delay1             |Delay_4ns__9  |     9|
+|84    |        delay2             |Delay_4ns__10 |     9|
+|85    |        delay3             |Delay_4ns     |     9|
+|86    |        delay4             |Delay_2ns     |     5|
+|87    |  c                        |C             |    44|
+|88    |    delay1                 |Delay_4ns__5  |     9|
+|89    |    delay2                 |Delay_4ns__6  |     9|
+|90    |    delay3                 |Delay_4ns__7  |     9|
+|91    |    delay4                 |Delay_4ns__8  |     9|
 +------+---------------------------+--------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:16 ; elapsed = 00:01:48 . Memory (MB): peak = 1457.172 ; gain = 906.574
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1364.027 ; gain = 815.918
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 29 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:16 ; elapsed = 00:01:48 . Memory (MB): peak = 1457.172 ; gain = 906.574
-Synthesis Optimization Complete : Time (s): cpu = 00:01:16 ; elapsed = 00:01:48 . Memory (MB): peak = 1457.172 ; gain = 906.574
+Synthesis finished with 0 errors, 0 critical warnings and 32 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1364.027 ; gain = 815.918
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1364.027 ; gain = 815.918
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.375 . Memory (MB): peak = 1466.625 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 4890 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 1376.145 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 915 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1566.262 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1432.125 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 1221 instances were transformed.
+  A total of 766 instances were transformed.
+  FDCP => FDCP (FDCE, FDPE, LDCE, LUT3, VCC): 1 instance 
+  FDCPE => FDCPE (FDCE, FDPE, LDCE, LUT3, VCC): 380 instances
   FDCP_1 => FDCP (inverted pins: C) (FDCE, FDPE, LDCE, LUT3, VCC): 1 instance 
   FDC_1 => FDCE (inverted pins: C): 1 instance 
   FDP_1 => FDPE (inverted pins: C): 1 instance 
-  LDC => LDCE: 1218 instances
+  LDC => LDCE: 382 instances
 
-Synth Design complete | Checksum: 81553d7c
+Synth Design complete | Checksum: d3f85212
 INFO: [Common 17-83] Releasing license: Synthesis
-71 Infos, 29 Warnings, 0 Critical Warnings and 0 Errors encountered.
+71 Infos, 32 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:24 ; elapsed = 00:02:00 . Memory (MB): peak = 1566.262 ; gain = 1022.980
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1566.262 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 1432.125 ; gain = 889.305
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1432.125 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/DDP.runs/synth_1/JOIN_DDP.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file JOIN_DDP_utilization_synth.rpt -pb JOIN_DDP_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Sep 27 15:17:59 2024...
+INFO: [Common 17-206] Exiting Vivado at Mon Oct  7 14:33:11 2024...

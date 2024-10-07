@@ -8,12 +8,12 @@ module MMCAM_Stage(
 );
 
 (* dont_touch = "true" *) wire CP;
-(* dont_touch = "true" *) wire [63:0] EN, VALID, FIRE;
+(* dont_touch = "true" *) wire [19:0] EN, VALID, FIRE;
 
 C c(.Send_in(Send_in), .Ack_in(Ack_in), .MR(MR), .Ack_out(Ack_out), .Send_out(Send_out), .CP(CP));
 genvar i;
 generate
-    for (i = 0; i < 64; i = i + 1) begin :entry_fd_loop
+    for (i = 0; i < 20; i = i + 1) begin :entry_fd_loop
         ENTRY_FD ef(.CP(CP), .MR(MR), .EN(EN[i]), .COLOR_GEN_DEST_LR(PACKET_IN[37:19]), .VALID(VALID[i]), .FIRE(FIRE[i]));
     end
 endgenerate

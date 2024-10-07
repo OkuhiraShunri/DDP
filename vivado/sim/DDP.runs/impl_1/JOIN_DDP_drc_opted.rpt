@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Wed Oct  2 13:25:04 2024
+| Date         : Mon Oct  7 15:07:28 2024
 | Host         : DESKTOP-B2190GF running 64-bit major release  (build 9200)
 | Command      : report_drc -file JOIN_DDP_drc_opted.rpt -pb JOIN_DDP_drc_opted.pb -rpx JOIN_DDP_drc_opted.rpx
 | Design       : JOIN_DDP
@@ -24,11 +24,10 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 22
+             Violations found: 21
 +-------------+------------------+-------------------------------------------------------------+------------+
 | Rule        | Severity         | Description                                                 | Violations |
 +-------------+------------------+-------------------------------------------------------------+------------+
-| UTLZ-1      | Error            | Resource utilization                                        | 1          |
 | LUTLP-1     | Critical Warning | Combinatorial Loop Alert                                    | 3          |
 | NSTD-1      | Critical Warning | Unspecified I/O Standard                                    | 1          |
 | UCIO-1      | Critical Warning | Unconstrained Logical Port                                  | 1          |
@@ -41,11 +40,6 @@ Table of Contents
 
 2. REPORT DETAILS
 -----------------
-UTLZ-1#1 Error
-Resource utilization  - PBlock:ROOT
-LUT as Logic over-utilized in Top Level Design (This design requires more LUT as Logic cells than are available in the target device. This design requires 29361 of such cell types but only 17600 compatible sites are available in the target device. Please analyze your synthesis results and constraints to ensure the design is mapped to Xilinx primitives as expected. If so, please consider targeting a larger device. Please set tcl parameter "drc.disableLUTOverUtilError" to 1 to change this error to warning.)ROOT
-Related violations: <none>
-
 LUTLP-1#1 Critical Warning
 Combinatorial Loop Alert  
 2 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is COPY/cx2/nor1_out. Please evaluate your design. The cells in the loop are: COPY/cx2/nor1_out_inferred_i_1, COPY/cx2/nor2_out_inferred_i_1.
@@ -98,11 +92,11 @@ Related violations: <none>
 
 PLHOLDVIO-2#1 Warning
 Non-Optimal connections which could lead to hold violations  
-A LUT B/cb/cf/CP_INST_0 is driving clock pin of 41 cells. This could lead to large hold time violations. Involved cells are:
+A LUT B/cb/cf/CP_INST_0 is driving clock pin of 43 cells. This could lead to large hold time violations. Involved cells are:
 B/DL_reg[0], B/DL_reg[10], B/DL_reg[11], B/DL_reg[12], B/DL_reg[13],
 B/DL_reg[14], B/DL_reg[15], B/DL_reg[16], B/DL_reg[17], B/DL_reg[18],
 B/DL_reg[19], B/DL_reg[1], B/DL_reg[20], B/DL_reg[21], B/DL_reg[22]
- (the first 15 of 41 listed)
+ (the first 15 of 43 listed)
 Related violations: <none>
 
 PLHOLDVIO-2#2 Warning
@@ -154,32 +148,32 @@ Related violations: <none>
 
 PLHOLDVIO-2#7 Warning
 Non-Optimal connections which could lead to hold violations  
-A LUT MA/c/CP_INST_0 is driving clock pin of 16441 cells. This could lead to large hold time violations. Involved cells are:
+A LUT MA/c/CP_INST_0 is driving clock pin of 377 cells. This could lead to large hold time violations. Involved cells are:
 MA/DL_reg[0], MA/DL_reg[10], MA/DL_reg[11], MA/DL_reg[12], MA/DL_reg[13],
 MA/DL_reg[14], MA/DL_reg[15], MA/DL_reg[16], MA/DL_reg[17], MA/DL_reg[18],
 MA/DL_reg[19], MA/DL_reg[1], MA/DL_reg[20], MA/DL_reg[21], MA/DL_reg[22]
- (the first 15 of 16441 listed)
+ (the first 15 of 377 listed)
 Related violations: <none>
 
 PLHOLDVIO-2#8 Warning
 Non-Optimal connections which could lead to hold violations  
-A LUT MMCAM/c/CP_INST_0 is driving clock pin of 2542 cells. This could lead to large hold time violations. Involved cells are:
+A LUT MMCAM/c/CP_INST_0 is driving clock pin of 1586 cells. This could lead to large hold time violations. Involved cells are:
 MMCAM/DL_reg[0], MMCAM/DL_reg[10], MMCAM/DL_reg[11], MMCAM/DL_reg[12],
 MMCAM/DL_reg[13], MMCAM/DL_reg[14], MMCAM/DL_reg[15], MMCAM/DL_reg[16],
 MMCAM/DL_reg[17], MMCAM/DL_reg[18], MMCAM/DL_reg[19], MMCAM/DL_reg[1],
 MMCAM/DL_reg[20], MMCAM/DL_reg[21], MMCAM/DL_reg[22]
- (the first 15 of 2542 listed)
+ (the first 15 of 1586 listed)
 Related violations: <none>
 
 PLHOLDVIO-2#9 Warning
 Non-Optimal connections which could lead to hold violations  
-A LUT MMRAM/ce/cf/CP_INST_0 is driving clock pin of 1355 cells. This could lead to large hold time violations. Involved cells are:
+A LUT MMRAM/ce/cf/CP_INST_0 is driving clock pin of 475 cells. This could lead to large hold time violations. Involved cells are:
 MMRAM/CST_DATA_reg[0], MMRAM/CST_DATA_reg[10], MMRAM/CST_DATA_reg[11],
 MMRAM/CST_DATA_reg[12], MMRAM/CST_DATA_reg[13], MMRAM/CST_DATA_reg[14],
 MMRAM/CST_DATA_reg[15], MMRAM/CST_DATA_reg[1], MMRAM/CST_DATA_reg[2],
 MMRAM/CST_DATA_reg[3], MMRAM/CST_DATA_reg[4], MMRAM/CST_DATA_reg[5],
 MMRAM/CST_DATA_reg[6], MMRAM/CST_DATA_reg[7], MMRAM/CST_DATA_reg[8]
- (the first 15 of 1355 listed)
+ (the first 15 of 475 listed)
 Related violations: <none>
 
 PLHOLDVIO-2#10 Warning

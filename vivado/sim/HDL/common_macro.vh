@@ -9,7 +9,7 @@
 `define CMEM_HEIGHT             64
 `define MMRAM_HEIGHT            64
 `define DMEM_HEIGHT             1024
-`define PS_HEIGHT               128
+`define PS_HEIGHT               20
 /**********************************************************************************/
 
 `define CMEM_WIDTH_SIZE         `CMEM_WIDTH-1:0

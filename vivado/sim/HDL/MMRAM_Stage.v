@@ -8,14 +8,14 @@ module MMRAM_Stage(
     output Send_out, Ack_out
 );
 
-(* dont_touch = "true" *) reg [19:0] RAM[0:63];
-(* dont_touch = "true" *) reg [15:0] CST_MEM[0:63];
+(* dont_touch = "true" *) reg [19:0] RAM[0:19];
+(* dont_touch = "true" *) reg [15:0] CST_MEM[0:19];
 integer i;
 initial begin
-    for (i = 0; i < 64; i = i + 1) begin//RAM初期化
+    for (i = 0; i < 20; i = i + 1) begin//RAM初期化
             RAM[i] = 20'd0;
     end
-    for (i = 0; i < 64; i = i + 1) begin//CST_MEM初期化
+    for (i = 0; i < 20; i = i + 1) begin//CST_MEM初期化
             CST_MEM[i] = i + 1;
     end
     // CST_MEM[10] = 0;
@@ -25,16 +25,30 @@ initial begin
     // CST_MEM[50] = 0;
     // CST_MEM[51] = 1;
     // CST_MEM[60] = 0;
-    CST_MEM[10] = 0;
-    CST_MEM[11] = 1;
+
+    //PACKET_OUTは成功したがループはきえてない
+    // CST_MEM[10] = 0;
+    // CST_MEM[11] = 1;
+    // CST_MEM[12] = 0;
+    // CST_MEM[14] = 1;
+    // CST_MEM[15] = 0;
+    // CST_MEM[17] = 0;
+    // CST_MEM[50] = 0;
+    // CST_MEM[51] = 1;
+    // CST_MEM[60] = 0;
+    // CST_MEM[61] = 0;
+
+    CST_MEM[0] = 0;
+    CST_MEM[1] = 1;
+    CST_MEM[2] = 0;
+    CST_MEM[4] = 1;
+    CST_MEM[5] = 0;
+    CST_MEM[7] = 0;
+    CST_MEM[8] = 0;
+    CST_MEM[9] = 1;
     CST_MEM[12] = 0;
-    CST_MEM[14] = 1;
-    CST_MEM[15] = 0;
-    CST_MEM[17] = 0;
-    CST_MEM[50] = 0;
-    CST_MEM[51] = 1;
-    CST_MEM[60] = 0;
-    CST_MEM[61] = 0;
+    CST_MEM[13] = 1;
+    CST_MEM[14] = 0;
 end
 (* dont_touch = "true" *) wire CP;
 CE ce(.CE_Send_in(Send_in), .CE_Ack_in(Ack_in), .MR(MR), .Exb(DEL), .CE_Ack_out(Ack_out), .CE_Send_out(Send_out), .CE_CP(CP));
