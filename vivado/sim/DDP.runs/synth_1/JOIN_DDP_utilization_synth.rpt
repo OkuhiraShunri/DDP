@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Mon Oct  7 14:33:11 2024
+| Date         : Tue Oct  8 17:49:06 2024
 | Host         : DESKTOP-B2190GF running 64-bit major release  (build 9200)
 | Command      : report_utilization -file JOIN_DDP_utilization_synth.rpt -pb JOIN_DDP_utilization_synth.pb
 | Design       : JOIN_DDP
@@ -31,14 +31,14 @@ Table of Contents
 +-------------------------+------+-------+------------+-----------+-------+
 |        Site Type        | Used | Fixed | Prohibited | Available | Util% |
 +-------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*             | 3967 |     0 |          0 |     17600 | 22.54 |
-|   LUT as Logic          | 3967 |     0 |          0 |     17600 | 22.54 |
+| Slice LUTs*             | 3942 |     0 |          0 |     17600 | 22.40 |
+|   LUT as Logic          | 3942 |     0 |          0 |     17600 | 22.40 |
 |   LUT as Memory         |    0 |     0 |          0 |      6000 |  0.00 |
 | Slice Registers         | 3537 |     0 |          0 |     35200 | 10.05 |
 |   Register as Flip Flop | 2773 |     0 |          0 |     35200 |  7.88 |
 |   Register as Latch     |  764 |     0 |          0 |     35200 |  2.17 |
 | F7 Muxes                |   90 |     0 |          0 |      8800 |  1.02 |
-| F8 Muxes                |    0 |     0 |          0 |      4400 |  0.00 |
+| F8 Muxes                |    9 |     0 |          0 |      4400 |  0.20 |
 +-------------------------+------+-------+------------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
 Warning! LUT value is adjusted to account for LUT combining.
@@ -150,20 +150,21 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT3     | 1695 |                 LUT |
 | FDCE     | 1605 |        Flop & Latch |
-| LUT2     |  885 |                 LUT |
+| LUT3     | 1375 |                 LUT |
+| LUT2     |  884 |                 LUT |
+| LUT6     |  791 |                 LUT |
 | FDPE     |  766 |        Flop & Latch |
 | LDCE     |  764 |        Flop & Latch |
-| LUT1     |  611 |                 LUT |
-| LUT6     |  468 |                 LUT |
+| LUT1     |  610 |                 LUT |
 | FDRE     |  402 |        Flop & Latch |
-| LUT5     |  170 |                 LUT |
-| LUT4     |  160 |                 LUT |
+| LUT5     |  155 |                 LUT |
+| LUT4     |  149 |                 LUT |
 | MUXF7    |   90 |               MuxFx |
 | CARRY4   |   58 |          CarryLogic |
 | IBUF     |   41 |                  IO |
 | OBUF     |   40 |                  IO |
+| MUXF8    |    9 |               MuxFx |
 | DSP48E1  |    1 |    Block Arithmetic |
 +----------+------+---------------------+
 

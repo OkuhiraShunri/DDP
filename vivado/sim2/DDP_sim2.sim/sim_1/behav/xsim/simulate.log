@@ -1,0 +1,13 @@
+Time resolution is 1 ps
+Block Memory Generator module JOIN_DDP_SIM.ddp.MMRAM.mmram.inst.native_mem_module.blk_mem_gen_v8_4_8_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module JOIN_DDP_SIM.ddp.MMRAM.cmem.inst.native_mem_module.blk_mem_gen_v8_4_8_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module JOIN_DDP_SIM.ddp.PS.ps.inst.native_mem_module.blk_mem_gen_v8_4_8_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module JOIN_DDP_SIM.ddp.MA.dmem.inst.native_mem_module.blk_mem_gen_v8_4_8_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module JOIN_DDP_SIM.ddp.B.subps.inst.native_mem_module.blk_mem_gen_v8_4_8_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: xsimkernel Simulation Memory Usage: 494520 KB (Peak: 494520 KB), Simulation CPU Usage: 28374 ms

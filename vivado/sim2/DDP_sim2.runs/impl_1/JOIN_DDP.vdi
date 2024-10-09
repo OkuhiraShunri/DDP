@@ -1,0 +1,420 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Mon Oct  7 21:08:17 2024
+# Process ID: 6640
+# Current directory: C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/DDP_sim2.runs/impl_1
+# Command line: vivado.exe -log JOIN_DDP.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source JOIN_DDP.tcl -notrace
+# Log file: C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/DDP_sim2.runs/impl_1/JOIN_DDP.vdi
+# Journal file: C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/DDP_sim2.runs/impl_1\vivado.jou
+# Running On        :DESKTOP-B2190GF
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :11th Gen Intel(R) Core(TM) i7-11700 @ 2.50GHz
+# CPU Frequency     :2496 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :16887 MB
+# Swap memory       :19620 MB
+# Total Virtual     :36507 MB
+# Available Virtual :5834 MB
+#-----------------------------------------------------------
+source JOIN_DDP.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 538.098 ; gain = 235.949
+Command: link_design -top JOIN_DDP -part xc7z010clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Device 21-9227] Part: xc7z010clg400-1 does not have CEAM library.
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/DDP_sim2.gen/sources_1/ip/SubPS/SubPS.dcp' for cell 'B/subps'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/DDP_sim2.gen/sources_1/ip/DMEM/DMEM.dcp' for cell 'MA/dmem'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/DDP_sim2.gen/sources_1/ip/CMEM/CMEM.dcp' for cell 'MMRAM/cmem'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/DDP_sim2.gen/sources_1/ip/MMRAM/MMRAM.dcp' for cell 'MMRAM/mmram'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/DDP_sim2.gen/sources_1/ip/PS/PS.dcp' for cell 'PS/ps'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 994.660 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1387 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1113.258 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1217 instances were transformed.
+  FDCPE => FDCPE (FDCE, FDPE, LDCE, LUT3, VCC): 1216 instances
+  FDCP_1 => FDCP (inverted pins: C) (FDCE, FDPE, LDCE, LUT3, VCC): 1 instance 
+
+13 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1113.258 ; gain = 559.875
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.791 . Memory (MB): peak = 1144.344 ; gain = 31.086
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 191a13c0f
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1655.355 ; gain = 511.012
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 191a13c0f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2041.141 ; gain = 0.000
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 191a13c0f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2041.141 ; gain = 0.000
+Phase 1 Initialization | Checksum: 191a13c0f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2041.141 ; gain = 0.000
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: 191a13c0f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.167 . Memory (MB): peak = 2041.141 ; gain = 0.000
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 191a13c0f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.183 . Memory (MB): peak = 2041.141 ; gain = 0.000
+Phase 2 Timer Update And Timing Data Collection | Checksum: 191a13c0f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.183 . Memory (MB): peak = 2041.141 ; gain = 0.000
+
+Phase 3 Retarget
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 191a13c0f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.283 . Memory (MB): peak = 2041.141 ; gain = 0.000
+Retarget | Checksum: 191a13c0f
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Retarget, 875 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 191a13c0f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.326 . Memory (MB): peak = 2041.141 ; gain = 0.000
+Constant propagation | Checksum: 191a13c0f
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 782 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+Phase 5 Sweep | Checksum: 13a941d2d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.441 . Memory (MB): peak = 2041.141 ; gain = 0.000
+Sweep | Checksum: 13a941d2d
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Sweep, 5257 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+Phase 6 BUFG optimization | Checksum: 13a941d2d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.533 . Memory (MB): peak = 2041.141 ; gain = 0.000
+BUFG optimization | Checksum: 13a941d2d
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+INFO: [Opt 31-1021] In phase BUFG optimization, 12 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 13a941d2d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.547 . Memory (MB): peak = 2041.141 ; gain = 0.000
+Shift Register Optimization | Checksum: 13a941d2d
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 13a941d2d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.584 . Memory (MB): peak = 2041.141 ; gain = 0.000
+Post Processing Netlist | Checksum: 13a941d2d
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 1837 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: ae556645
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.661 . Memory (MB): peak = 2041.141 ; gain = 0.000
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2041.141 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: ae556645
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.676 . Memory (MB): peak = 2041.141 ; gain = 0.000
+Phase 9 Finalization | Checksum: ae556645
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.677 . Memory (MB): peak = 2041.141 ; gain = 0.000
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               0  |                                            875  |
+|  Constant propagation         |               0  |               0  |                                            782  |
+|  Sweep                        |               0  |               0  |                                           5257  |
+|  BUFG optimization            |               0  |               0  |                                             12  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                           1837  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: ae556645
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.678 . Memory (MB): peak = 2041.141 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Power 33-232] No user defined clocks were found in the design! Power estimation will be inaccurate until this is corrected.
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+INFO: [Pwropt 34-203] Number of nets are not same before and after processing of findDistanceFromSourceAndDest. Before: 455 After: 456
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 5 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 1 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 1 Total Ports: 10
+Ending PowerOpt Patch Enables Task | Checksum: 122633c67
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 2132.973 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 122633c67
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 2132.973 ; gain = 91.832
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 122633c67
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2132.973 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2132.973 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 15d7475af
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2132.973 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+42 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 2132.973 ; gain = 1019.715
+INFO: [Vivado 12-24828] Executing command : report_drc -file JOIN_DDP_drc_opted.rpt -pb JOIN_DDP_drc_opted.pb -rpx JOIN_DDP_drc_opted.rpx
+Command: report_drc -file JOIN_DDP_drc_opted.rpt -pb JOIN_DDP_drc_opted.pb -rpx JOIN_DDP_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/DDP_sim2.runs/impl_1/JOIN_DDP_drc_opted.rpt.
+report_drc completed successfully
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2132.973 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/DDP_sim2.runs/impl_1/JOIN_DDP_opt.dcp' has been generated.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+CRITICAL WARNING: [DRC LUTLP-1] Combinatorial Loop Alert: 2 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is COPY/cx2/nor1_out. Please evaluate your design. The cells in the loop are: COPY/cx2/nor1_out_inferred_i_1, and COPY/cx2/nor2_out_inferred_i_1.
+CRITICAL WARNING: [DRC LUTLP-1] Combinatorial Loop Alert: 2 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is M/cm/nor2. Please evaluate your design. The cells in the loop are: M/cm/nor2_inferred_i_1, and M/cm/nor3_inferred_i_1.
+CRITICAL WARNING: [DRC LUTLP-1] Combinatorial Loop Alert: 452 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is B/cb/CB_Send_out_a. Please evaluate your design. The cells in the loop are: B/cb/cf/Ack_out_INST_0, c/Ack_out_INST_0, PS/c/Ack_out_INST_0, MMCAM/c/Ack_out_INST_0, MMRAM/ce/cf/Ack_out_INST_0, COPY/cx2/cf1/Ack_out_INST_0, M/cm/cj_a/Ack_out_INST_0, FP/ce/cf/Ack_out_INST_0, MA/c/Ack_out_INST_0, M/cm/cj_b/Ack_out_INST_0, B/cb/CB_Send_out_a_INST_0, B/cb/CB_Send_out_b_INST_0, M/cm/cj_b/CP_INST_0, M/cm/cj_a/CP_INST_0, M/cm/cj_b/Send_out_INST_0... and (the first 15 of 452 listed).
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 3 Critical Warnings, 21 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2132.973 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 824528c3
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2132.973 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2132.973 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+WARNING: [Place 30-568] A LUT 'B/cb/cf/CP_INST_0' is driving clock pin of 40 registers. This could lead to large hold time violations. First few involved registers are:
+	B/cb/DL_reg {FDCE}
+	B/DL_reg[11] {FDCE}
+	B/DL_reg[23] {FDCE}
+	B/DL_reg[36] {FDCE}
+	B/DL_reg[16] {FDCE}
+WARNING: [Place 30-568] A LUT 'c/CP_INST_0' is driving clock pin of 38 registers. This could lead to large hold time violations. First few involved registers are:
+	DL_reg[21] {FDCE}
+	DL_reg[10] {FDCE}
+	DL_reg[15] {FDCE}
+	DL_reg[1] {FDCE}
+	DL_reg[22] {FDCE}
+WARNING: [Place 30-568] A LUT 'COPY/cx2/cf1/CP_INST_0' is driving clock pin of 42 registers. This could lead to large hold time violations. First few involved registers are:
+	COPY/cx2/DL_exb_reg {FDPE}
+	COPY/cx2/DL_cpy_reg {FDCE}
+	COPY/DL_reg[17] {FDCE}
+	COPY/DL_reg[20] {FDCE}
+	COPY/DL_reg[26] {FDCE}
+WARNING: [Place 30-568] A LUT 'COPY/cx2/cf2/CP_INST_0' is driving clock pin of 4 registers. This could lead to large hold time violations. First few involved registers are:
+	COPY/cx2/DL1S_reg_C {FDCE}
+	COPY/cx2/DL1S_reg_P {FDPE}
+	COPY/cx2/DL1S_reg/F2 {FDPE}
+	COPY/cx2/DL1S_reg/F1 {FDCE}
+WARNING: [Place 30-568] A LUT 'FP/ce/cf/CP_INST_0' is driving clock pin of 63 registers. This could lead to large hold time violations. First few involved registers are:
+	FP/ce/DL_reg {FDRE}
+	FP/DL_reg[15] {FDCE}
+	FP/DL_reg[16] {FDCE}
+	FP/DL_reg[19] {FDCE}
+	FP/DL_reg[23] {FDCE}
+WARNING: [Place 30-568] A LUT 'MA/c/CP_INST_0' is driving clock pin of 42 registers. This could lead to large hold time violations. First few involved registers are:
+	MA/DL_reg[24] {FDCE}
+	MA/DL_reg[23] {FDCE}
+	MA/DL_reg[10] {FDCE}
+	MA/DL_reg[6] {FDCE}
+	MA/DL_reg[8] {FDCE}
+WARNING: [Place 30-568] A LUT 'MMCAM/c/CP_INST_0' is driving clock pin of 4974 registers. This could lead to large hold time violations. First few involved registers are:
+	MMCAM/entry_fd_loop[14].ef/ENTRY_reg[4]/F1 {FDCE}
+	MMCAM/entry_fd_loop[14].ef/ENTRY_reg[5]/F2 {FDPE}
+	MMCAM/entry_fd_loop[14].ef/ENTRY_reg[6]/F1 {FDCE}
+	MMCAM/entry_fd_loop[14].ef/ENTRY_reg[6]/F2 {FDPE}
+	MMCAM/entry_fd_loop[14].ef/ENTRY_reg[4]/F2 {FDPE}
+WARNING: [Place 30-568] A LUT 'MMRAM/ce/cf/CP_INST_0' is driving clock pin of 41 registers. This could lead to large hold time violations. First few involved registers are:
+	MMRAM/ce/DL_reg {FDRE}
+	MMRAM/DL_reg[26] {FDCE}
+	MMRAM/DL_reg[28] {FDCE}
+	MMRAM/DL_reg[29] {FDCE}
+	MMRAM/DL_reg[27] {FDCE}
+WARNING: [Place 30-568] A LUT 'M/cm/cj_b/CP_INST_0' is driving clock pin of 38 registers. This could lead to large hold time violations. First few involved registers are:
+	M/DL_IN_reg[0] {FDCE}
+	M/DL_IN_reg[10] {FDCE}
+	M/DL_IN_reg[36] {FDCE}
+	M/DL_IN_reg[18] {FDCE}
+	M/DL_IN_reg[22] {FDCE}
+WARNING: [Place 30-568] A LUT 'M/cm/cj_a/CP_INST_0' is driving clock pin of 38 registers. This could lead to large hold time violations. First few involved registers are:
+	M/DL_EX_reg[8] {FDCE}
+	M/DL_EX_reg[12] {FDCE}
+	M/DL_EX_reg[35] {FDCE}
+	M/DL_EX_reg[1] {FDCE}
+	M/DL_EX_reg[9] {FDCE}
+WARNING: [Place 30-568] A LUT 'PS/c/CP_INST_0' is driving clock pin of 53 registers. This could lead to large hold time violations. First few involved registers are:
+	PS/DL_reg[32] {FDCE}
+	PS/DL_reg[6] {FDCE}
+	PS/DL_reg[33] {FDCE}
+	PS/DL_reg[31] {FDCE}
+	PS/DL_reg[20] {FDCE}
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: e5ec9d7a
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.748 . Memory (MB): peak = 2132.973 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1c14f0539
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2132.973 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1c14f0539
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2132.973 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 1c14f0539
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2132.973 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 1c14f0539
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2132.973 ; gain = 0.000
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1c14f0539
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2132.973 ; gain = 0.000
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 1c14f0539
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2132.973 ; gain = 0.000
+
+Phase 2.4 Global Placement Core
+WARNING: [Place 46-29] Timing had been disabled during Placer and, therefore, physical synthesis in Placer will be skipped.
+Phase 2.4 Global Placement Core | Checksum: 1b19f07ba
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 2132.973 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 1b19f07ba
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 2132.973 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1b19f07ba
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 2132.973 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1f1f67917
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 2132.973 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 170508be1
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 2132.973 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 170508be1
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 2132.973 ; gain = 0.000
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: 18111b533
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 2132.973 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 18111b533
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 2132.973 ; gain = 0.000
+ERROR: [Place 30-487] The packing of instances into the device could not be obeyed. There are a total of 4400 slices in the device, of which 4254 slices are available, however, the unplaced instances require 4875 slices. Please analyze your design to determine if the number of LUTs, FFs, and/or control sets can be reduced.
+
+Number of control sets and instances constrained to the design
+	Control sets: 4880
+	Luts: 8005 (combined) 8059 (total), available capacity: 17600 
+	Flip flops: 7802, available capacity: 35200
+	NOTE: each slice can only accommodate 1 unique control set so FFs cannot be packed to fully fill every slice
+
+
+ERROR: [Place 30-99] Placer failed with error: 'Detail Placement failed please check previous errors for details.'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: cc2c399e
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 2132.973 ; gain = 0.000
+57 Infos, 13 Warnings, 3 Critical Warnings and 3 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Mon Oct  7 21:09:00 2024...

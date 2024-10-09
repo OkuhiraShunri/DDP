@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date             : Mon Oct  7 15:08:04 2024
+| Date             : Tue Oct  8 17:50:17 2024
 | Host             : DESKTOP-B2190GF running 64-bit major release  (build 9200)
 | Command          : report_power -file JOIN_DDP_power_routed.rpt -pb JOIN_DDP_power_summary_routed.pb -rpx JOIN_DDP_power_routed.rpx
 | Design           : JOIN_DDP
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 63.289 (Junction temp exceeded!) |
+| Total On-Chip Power (W)  | 67.040 (Junction temp exceeded!) |
 | Design Power Budget (W)  | Unspecified*                     |
 | Power Budget Margin (W)  | NA                               |
-| Dynamic (W)              | 62.542                           |
+| Dynamic (W)              | 66.293                           |
 | Device Static (W)        | 0.747                            |
 | Effective TJA (C/W)      | 11.5                             |
 | Max Ambient (C)          | 0.0                              |
@@ -52,17 +52,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |    12.300 |     8143 |       --- |             --- |
-|   LUT as Logic |    11.593 |     3829 |     17600 |           21.76 |
+| Slice Logic    |    14.479 |     8126 |       --- |             --- |
+|   LUT as Logic |    13.754 |     3796 |     17600 |           21.57 |
 |   Register     |     0.485 |     3537 |     35200 |           10.05 |
+|   F7/F8 Muxes  |     0.122 |       99 |     17600 |            0.56 |
 |   CARRY4       |     0.117 |       58 |      4400 |            1.32 |
-|   F7/F8 Muxes  |     0.105 |       90 |     17600 |            0.51 |
-|   Others       |     0.000 |      469 |       --- |             --- |
-| Signals        |    22.112 |     6086 |       --- |             --- |
+|   Others       |     0.000 |      468 |       --- |             --- |
+| Signals        |    23.684 |     6052 |       --- |             --- |
 | DSPs           |     1.004 |        1 |        80 |            1.25 |
 | I/O            |    27.126 |       81 |       100 |           81.00 |
 | Static Power   |     0.747 |          |           |                 |
-| Total          |    63.289 |          |           |                 |
+| Total          |    67.040 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,7 +72,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |    35.705 |      35.576 |      0.129 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |    39.456 |      39.327 |      0.129 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     2.248 |       2.207 |      0.040 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -146,71 +146,71 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| JOIN_DDP                 |    62.542 |
-|   B                      |     0.840 |
-|     MF_reg               |     0.014 |
-|     cb                   |     0.248 |
-|       cf                 |     0.234 |
-|   COPY                   |     0.953 |
-|     cx2                  |     0.496 |
+| JOIN_DDP                 |    66.293 |
+|   B                      |     0.772 |
+|     MF_reg               |     0.015 |
+|     cb                   |     0.267 |
+|       cf                 |     0.250 |
+|   COPY                   |     0.969 |
+|     cx2                  |     0.505 |
 |       DL1S_reg           |     0.003 |
-|       cf1                |     0.249 |
+|       cf1                |     0.264 |
 |       cf2                |     0.157 |
-|   FP                     |    10.166 |
-|     ce                   |     0.307 |
-|       cf                 |     0.296 |
-|   M                      |     7.602 |
-|     cm                   |     0.553 |
-|       arb                |     0.049 |
-|       cj_a               |     0.157 |
-|       cj_b               |     0.261 |
-|   MA                     |     4.052 |
-|     c                    |     0.556 |
-|       delay1             |     0.056 |
-|       delay2             |     0.053 |
-|       delay3             |     0.034 |
-|       delay4             |     0.035 |
-|   MMCAM                  |     7.734 |
-|     c                    |     2.727 |
-|       delay1             |     0.055 |
-|       delay2             |     0.065 |
-|       delay3             |     0.041 |
+|   FP                     |     9.862 |
+|     ce                   |     0.332 |
+|       cf                 |     0.319 |
+|   M                      |     7.467 |
+|     cm                   |     0.508 |
+|       arb                |     0.042 |
+|       cj_a               |     0.167 |
+|       cj_b               |     0.220 |
+|   MA                     |     8.550 |
+|     c                    |     0.507 |
+|       delay1             |     0.058 |
+|       delay2             |     0.063 |
+|       delay3             |     0.044 |
 |       delay4             |     0.039 |
-|     entry_fd_loop[0].ef  |     0.193 |
-|     entry_fd_loop[10].ef |     0.168 |
-|     entry_fd_loop[11].ef |     0.169 |
-|     entry_fd_loop[12].ef |     0.081 |
-|     entry_fd_loop[13].ef |     0.071 |
-|     entry_fd_loop[14].ef |     0.172 |
-|     entry_fd_loop[15].ef |     0.232 |
-|     entry_fd_loop[16].ef |     0.217 |
-|     entry_fd_loop[17].ef |     0.165 |
-|     entry_fd_loop[18].ef |     0.156 |
-|     entry_fd_loop[19].ef |     0.151 |
-|     entry_fd_loop[1].ef  |     0.085 |
-|     entry_fd_loop[2].ef  |     0.211 |
-|     entry_fd_loop[3].ef  |     0.193 |
+|   MMCAM                  |     7.477 |
+|     c                    |     2.743 |
+|       delay1             |     0.067 |
+|       delay2             |     0.061 |
+|       delay3             |     0.051 |
+|       delay4             |     0.035 |
+|     entry_fd_loop[0].ef  |     0.181 |
+|     entry_fd_loop[10].ef |     0.172 |
+|     entry_fd_loop[11].ef |     0.163 |
+|     entry_fd_loop[12].ef |     0.088 |
+|     entry_fd_loop[13].ef |     0.084 |
+|     entry_fd_loop[14].ef |     0.175 |
+|     entry_fd_loop[15].ef |     0.189 |
+|     entry_fd_loop[16].ef |     0.209 |
+|     entry_fd_loop[17].ef |     0.156 |
+|     entry_fd_loop[18].ef |     0.148 |
+|     entry_fd_loop[19].ef |     0.160 |
+|     entry_fd_loop[1].ef  |     0.093 |
+|     entry_fd_loop[2].ef  |     0.173 |
+|     entry_fd_loop[3].ef  |     0.182 |
 |     entry_fd_loop[4].ef  |     0.177 |
-|     entry_fd_loop[5].ef  |     0.182 |
-|     entry_fd_loop[6].ef  |     0.184 |
-|     entry_fd_loop[7].ef  |     0.195 |
-|     entry_fd_loop[8].ef  |     0.207 |
-|     entry_fd_loop[9].ef  |     0.169 |
-|     oam                  |     0.406 |
-|   MMRAM                  |     2.408 |
-|     ce                   |     0.523 |
-|       cf                 |     0.495 |
-|   PS                     |     0.802 |
-|     c                    |     0.339 |
-|       delay1             |     0.066 |
-|       delay2             |     0.068 |
-|       delay3             |     0.038 |
-|       delay4             |     0.032 |
-|   c                      |     0.154 |
-|     delay1               |     0.035 |
-|     delay2               |     0.037 |
-|     delay3               |     0.021 |
-|     delay4               |     0.022 |
+|     entry_fd_loop[5].ef  |     0.171 |
+|     entry_fd_loop[6].ef  |     0.173 |
+|     entry_fd_loop[7].ef  |     0.177 |
+|     entry_fd_loop[8].ef  |     0.171 |
+|     entry_fd_loop[9].ef  |     0.173 |
+|     oam                  |     0.378 |
+|   MMRAM                  |     2.446 |
+|     ce                   |     0.621 |
+|       cf                 |     0.590 |
+|   PS                     |     0.776 |
+|     c                    |     0.345 |
+|       delay1             |     0.083 |
+|       delay2             |     0.057 |
+|       delay3             |     0.035 |
+|       delay4             |     0.034 |
+|   c                      |     0.140 |
+|     delay1               |     0.032 |
+|     delay2               |     0.040 |
+|     delay3               |     0.014 |
+|     delay4               |     0.019 |
 +--------------------------+-----------+
 
 

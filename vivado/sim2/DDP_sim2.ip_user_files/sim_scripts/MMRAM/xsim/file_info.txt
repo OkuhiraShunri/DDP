@@ -1,0 +1,2 @@
+MMRAM.v,verilog,xil_defaultlib,../../../../DDP_sim2.gen/sources_1/ip/MMRAM/sim/MMRAM.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

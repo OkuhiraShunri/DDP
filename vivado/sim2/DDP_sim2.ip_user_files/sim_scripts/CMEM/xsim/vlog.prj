@@ -1,0 +1,7 @@
+verilog xil_defaultlib  \
+"../../../../DDP_sim2.gen/sources_1/ip/CMEM/sim/CMEM.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

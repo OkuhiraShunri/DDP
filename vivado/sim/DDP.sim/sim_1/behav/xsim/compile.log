@@ -36,6 +36,9 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/OkuhiraShunri/Documents/ve
 WARNING: [VRFC 10-9157] macro 'M_PACKET_SIZE' is redefined [../../../../HDL/common_macro.vh:58]
 WARNING: [VRFC 10-9157] macro 'MMCAM_PACKET_SIZE' is redefined [../../../../HDL/common_macro.vh:63]
 WARNING: [VRFC 10-9157] macro 'MA_PACKET_SIZE' is redefined [../../../../HDL/common_macro.vh:139]
+WARNING: [VRFC 10-9157] macro 'M_PACKET_SIZE' is redefined [../../../../HDL/macro.vh:5]
+WARNING: [VRFC 10-9157] macro 'MMCAM_PACKET_SIZE' is redefined [../../../../HDL/macro.vh:6]
+WARNING: [VRFC 10-9157] macro 'MA_PACKET_SIZE' is redefined [../../../../HDL/macro.vh:10]
 INFO: [VRFC 10-311] analyzing module MMRAM_Stage
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/M_Stage.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module M_Stage

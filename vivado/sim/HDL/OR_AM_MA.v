@@ -1,27 +1,30 @@
 (* dont_touch = "true" *)
+//`include "macro.vh"
+`include "common_macro.vh"
 module OR_AM_MA(
-    input [19:0] FIRE, VALID,
-    input MF, CP, MR,
-    output [19:0] EN,
+    input [`MMCAM_EFV_SIZE] FIRE, 
+    input [`MMCAM_EFV_SIZE] VALID,
+    input MF, CP, MR, 
+    output [`MMCAM_EFV_SIZE] EN,
     output reg WR_E, DEL,
-    output reg [5:0] ADDR
+    output reg [`MMCAM_ADDR_SIZE] ADDR
 );
 
 //OR
-(* dont_touch = "true" *) wire[5:0] R_ADDR;
+(* dont_touch = "true" *) wire[`MMCAM_ADDR_SIZE] R_ADDR;
 (* dont_touch = "true" *) wire FIRE_OR;
 assign FIRE_OR = |FIRE;//発火検出
 assign R_ADDR = DECODE(FIRE);//発火場所を探索
-function [5:0] DECODE;
-    input [19:0] FIRE;
+function [`MMCAM_ADDR_SIZE] DECODE;
+    input [`MMCAM_EFV_SIZE] FIRE;
     integer i;
     reg f;
     begin
-        DECODE = 6'd0;
+        DECODE = `MMCAM_ADDR_WIDTH'd0;
         f = 0;//ループ抜けるフラグ
-        for(i = 0; i < 20; i = i + 1)begin
+        for(i = 0; i < `MMCAM_EFV_WIDTH; i = i + 1)begin
             if(FIRE[i] && !f)begin
-                DECODE = i[5:0];
+                DECODE = i[`MMCAM_ADDR_SIZE];
                 f = 1;
             end
         end
@@ -29,24 +32,24 @@ function [5:0] DECODE;
 endfunction
 
 //AM
-(* dont_touch = "true" *) wire [5:0] W_ADDR;
+(* dont_touch = "true" *) wire [`MMCAM_ADDR_SIZE] W_ADDR;
 assign {W_ADDR, EN} = AM(VALID, MF, FIRE_OR);
-function[25:0] AM;
-    input [19:0] VALID;
+function[`MMCAM_AM_SIZE] AM;
+    input [`MMCAM_EFV_SIZE] VALID;
     input MF;
     input FIRE_OR;
     integer i;
     reg f;
     begin
-        AM = 26'd0;
+        AM = `MMCAM_AM_WIDTH'd0;
         f = 0;
-        for(i = 0; i < 20; i = i + 1)begin
+        for(i = 0; i < `MMCAM_EFV_WIDTH; i = i + 1)begin
             if((FIRE_OR || ~MF) && !f)begin//発火の検出または待ち合わせしないパケットの検出
-                AM = {6'd0, 20'b0};//ENが64'b0ということは、ENTRYのどこにも書き込めない、すなわち待ち合わせできないということを示す
+                AM = {`MMCAM_ADDR_WIDTH'd0, `MMCAM_EFV_WIDTH'b0};//ENが64'b0ということは、ENTRYのどこにも書き込めない、すなわち待ち合わせできないということを示す
                 f = 1;
             end
             else if((!VALID[i]) && !f && MF)begin//ENTRYに空きがあるiはどこか探索 VALID[i]=0で空きがあることを示す. VALIDは全体で64bitでENTRYのどこにパケットが書き込まれているかがわかる
-                AM = {i[5:0], 20'b1 << i[5:0]};//bit幅を正確に指定しないとW_ADDRが永遠に0となります.特に、64'b1のところ。　ENTRYに空きがあるところはENが1になる
+                AM = {i[`MMCAM_ADDR_SIZE], `MMCAM_EFV_WIDTH'b1 << i[`MMCAM_ADDR_SIZE]};//bit幅を正確に指定しないとW_ADDRが永遠に0となります.特に、64'b1のところ。　ENTRYに空きがあるところはENが1になる
                 f = 1;
             end
         end
@@ -59,7 +62,7 @@ always @(posedge CP or posedge MR) begin
     if(MR)begin
         WR_E <= 0;
         DEL <= 1;  //DELの初期値は1   
-        ADDR <= 6'b0;   
+        ADDR <= `MMCAM_ADDR_WIDTH'b0;   
     end
     else if(MF)begin
         if(FIRE_OR)begin//発火している

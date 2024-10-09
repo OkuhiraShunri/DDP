@@ -57,9 +57,7 @@ if {$::dispatch::connected} {
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 4
-set_param checkpoint.writeSynthRtdsInDcp 1
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
+set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z010clg400-1
 
@@ -76,8 +74,8 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog {
-  C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/macro.vh
   C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/common_macro.vh
+  C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/macro.vh
   C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/common_param.vh
 }
 read_verilog -library xil_defaultlib {

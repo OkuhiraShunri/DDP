@@ -3,8 +3,8 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Mon Oct  7 14:32:33 2024
-# Process ID: 22000
+# Start of session at: Tue Oct  8 17:48:27 2024
+# Process ID: 22464
 # Current directory: C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/DDP.runs/synth_1
 # Command line: vivado.exe -log JOIN_DDP.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source JOIN_DDP.tcl
 # Log file: C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/DDP.runs/synth_1/JOIN_DDP.vds
@@ -17,12 +17,12 @@
 # CPU Physical cores:8
 # CPU Logical cores :16
 # Host memory       :16887 MB
-# Swap memory       :20005 MB
-# Total Virtual     :36893 MB
-# Available Virtual :6996 MB
+# Swap memory       :20665 MB
+# Total Virtual     :37552 MB
+# Available Virtual :5139 MB
 #-----------------------------------------------------------
 source JOIN_DDP.tcl -notrace
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 538.488 ; gain = 235.715
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 538.668 ; gain = 239.195
 Command: read_checkpoint -auto_incremental -incremental C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/DDP.srcs/utils_1/imports/synth_1/JOIN_DDP.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/DDP.srcs/utils_1/imports/synth_1/JOIN_DDP.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -34,15 +34,21 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 25172
+INFO: [Synth 8-7075] Helper process launched with PID 19120
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 996.410 ; gain = 448.301
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 996.352 ; gain = 445.156
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-11241] undeclared symbol 'CP', assumed default net type 'wire' [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/B_Stage.v:12]
+WARNING: [Synth 8-10940] macro 'M_PACKET_SIZE' is redefined [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/common_macro.vh:61]
+WARNING: [Synth 8-10940] macro 'MMCAM_PACKET_SIZE' is redefined [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/common_macro.vh:66]
+WARNING: [Synth 8-10940] macro 'MA_PACKET_SIZE' is redefined [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/common_macro.vh:147]
+INFO: [Synth 8-11241] undeclared symbol 'CP', assumed default net type 'wire' [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/B_Stage.v:13]
 INFO: [Synth 8-11241] undeclared symbol 'send_out_b', assumed default net type 'wire' [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/CM.v:9]
-WARNING: [Synth 8-10940] macro 'M_PACKET_SIZE' is redefined [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/common_macro.vh:58]
-WARNING: [Synth 8-10940] macro 'MMCAM_PACKET_SIZE' is redefined [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/common_macro.vh:63]
-WARNING: [Synth 8-10940] macro 'MA_PACKET_SIZE' is redefined [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/common_macro.vh:139]
+WARNING: [Synth 8-10940] macro 'M_PACKET_SIZE' is redefined [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/macro.vh:5]
+WARNING: [Synth 8-10940] macro 'MMCAM_PACKET_SIZE' is redefined [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/macro.vh:6]
+WARNING: [Synth 8-10940] macro 'MA_PACKET_SIZE' is redefined [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/macro.vh:10]
+WARNING: [Synth 8-10940] macro 'M_PACKET_SIZE' is redefined [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/common_macro.vh:61]
+WARNING: [Synth 8-10940] macro 'MMCAM_PACKET_SIZE' is redefined [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/common_macro.vh:66]
+WARNING: [Synth 8-10940] macro 'MA_PACKET_SIZE' is redefined [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/common_macro.vh:147]
 INFO: [Synth 8-11241] undeclared symbol 'AEB', assumed default net type 'wire' [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/M_Stage.v:31]
 WARNING: [Synth 8-10940] macro 'M_PACKET_SIZE' is redefined [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/macro.vh:5]
 WARNING: [Synth 8-10940] macro 'MMCAM_PACKET_SIZE' is redefined [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/macro.vh:6]
@@ -101,34 +107,34 @@ INFO: [Synth 8-6157] synthesizing module 'CB' [C:/Users/OkuhiraShunri/Documents/
 INFO: [Synth 8-6155] done synthesizing module 'CB' (0#1) [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/CB.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'B_Stage' (0#1) [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/B_Stage.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'JOIN_DDP' (0#1) [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/JOIN_DDP.v:1]
-WARNING: [Synth 8-7137] Register ENTRY_reg in module ENTRY_FD has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/ENTRY_FD.v:15]
-WARNING: [Synth 8-6026] Ignoring keep related attribute (keep/mark_debug/dont_touch) applied on memory [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/MMRAM_Stage.v:11]
+WARNING: [Synth 8-7137] Register ENTRY_reg in module ENTRY_FD has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/ENTRY_FD.v:17]
 WARNING: [Synth 8-6026] Ignoring keep related attribute (keep/mark_debug/dont_touch) applied on memory [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/MMRAM_Stage.v:12]
+WARNING: [Synth 8-6026] Ignoring keep related attribute (keep/mark_debug/dont_touch) applied on memory [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/MMRAM_Stage.v:13]
 WARNING: [Synth 8-7137] Register RAM_reg in module MMRAM_Stage has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code 
 WARNING: [Synth 8-4767] Trying to implement RAM 'RAM_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
 Reason is one or more of the following :
 	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
 RAM "RAM_reg" dissolved into registers
 WARNING: [Synth 8-6026] Ignoring keep related attribute (keep/mark_debug/dont_touch) applied on memory [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/PS_Stage.v:11]
-WARNING: [Synth 8-6026] Ignoring keep related attribute (keep/mark_debug/dont_touch) applied on memory [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/B_Stage.v:14]
-WARNING: [Synth 8-7137] Register MF_reg in module B_Stage has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/B_Stage.v:97]
+WARNING: [Synth 8-6026] Ignoring keep related attribute (keep/mark_debug/dont_touch) applied on memory [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/B_Stage.v:15]
+WARNING: [Synth 8-7137] Register MF_reg in module B_Stage has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/B_Stage.v:62]
 WARNING: [Synth 8-7129] Port ADDR[5] in module MMRAM_Stage is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1121.695 ; gain = 573.586
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1122.734 ; gain = 571.539
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1121.695 ; gain = 573.586
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1122.734 ; gain = 571.539
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1121.695 ; gain = 573.586
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1122.734 ; gain = 571.539
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1141.633 ; gain = 593.523
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1150.102 ; gain = 598.906
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
@@ -193,7 +199,7 @@ DSP Report: Generating DSP ALU1, operation Mode is: A*B.
 DSP Report: operator ALU1 is absorbed into DSP ALU1.
 WARNING: [Synth 8-7129] Port ADDR[5] in module MMRAM_Stage is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1358.234 ; gain = 810.125
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1358.520 ; gain = 807.324
 ---------------------------------------------------------------------------------
  Sort Area is  ALU1_0 : 0 0 : 1946 1946 : Used 1 time 0
 ---------------------------------------------------------------------------------
@@ -225,13 +231,13 @@ No constraint files found.
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1364.012 ; gain = 815.902
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1364.301 ; gain = 813.105
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1364.012 ; gain = 815.902
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1364.301 ; gain = 813.105
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -252,47 +258,47 @@ WARNING: [Synth 8-3295] tying undriven pin send_in_b_inferred:in0 to constant 0
 WARNING: [Synth 8-3295] tying undriven pin M_Ack_out_inferred:in0 to constant 0
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/M_Stage.v:14]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/M_Stage.v:23]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/ENTRY_FD.v:15]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/MMRAM_Stage.v:79]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/PS_Stage.v:90]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/ENTRY_FD.v:17]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/MMRAM_Stage.v:61]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/PS_Stage.v:44]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/FP_Stage.v:17]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/MA_Stage.v:44]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/MA_Stage.v:45]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/CX2.v:14]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/CX2.v:21]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/B_Stage.v:97]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/B_Stage.v:62]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/HDL/JOIN_DDP.v:61]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1364.027 ; gain = 815.918
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1364.301 ; gain = 813.105
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1364.027 ; gain = 815.918
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1364.301 ; gain = 813.105
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1364.027 ; gain = 815.918
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1364.301 ; gain = 813.105
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1364.027 ; gain = 815.918
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1364.301 ; gain = 813.105
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1364.027 ; gain = 815.918
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1364.301 ; gain = 813.105
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1364.027 ; gain = 815.918
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1364.301 ; gain = 813.105
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -318,31 +324,32 @@ Report Cell Usage:
 +------+--------+------+
 |1     |CARRY4  |    58|
 |2     |DSP48E1 |     1|
-|3     |LUT1    |   611|
-|4     |LUT2    |   885|
-|5     |LUT3    |  1313|
-|6     |LUT4    |   160|
-|7     |LUT5    |   170|
-|8     |LUT6    |   468|
+|3     |LUT1    |   610|
+|4     |LUT2    |   884|
+|5     |LUT3    |   993|
+|6     |LUT4    |   149|
+|7     |LUT5    |   155|
+|8     |LUT6    |   791|
 |9     |MUXF7   |    90|
-|10    |FDCE    |  1222|
-|11    |FDCP    |     1|
-|12    |FDCPE   |   380|
-|13    |FDCP    |     1|
-|14    |FDC     |     1|
-|15    |FDPE    |   383|
-|16    |FDP     |     1|
-|17    |FDRE    |   402|
-|18    |LDC     |   382|
-|19    |IBUF    |    41|
-|20    |OBUF    |    40|
+|10    |MUXF8   |     9|
+|11    |FDCE    |  1222|
+|12    |FDCP    |     1|
+|13    |FDCPE   |   380|
+|14    |FDCP    |     1|
+|15    |FDC     |     1|
+|16    |FDPE    |   383|
+|17    |FDP     |     1|
+|18    |FDRE    |   402|
+|19    |LDC     |   382|
+|20    |IBUF    |    41|
+|21    |OBUF    |    40|
 +------+--------+------+
 
 Report Instance Areas: 
 +------+---------------------------+--------------+------+
 |      |Instance                   |Module        |Cells |
 +------+---------------------------+--------------+------+
-|1     |top                        |              |  6610|
+|1     |top                        |              |  6594|
 |2     |  M                        |M_Stage       |   218|
 |3     |    cm                     |CM            |   104|
 |4     |      cj_a                 |CJ__1         |    45|
@@ -403,7 +410,7 @@ Report Instance Areas:
 |59    |        delay2             |Delay_4ns__24 |     9|
 |60    |        delay3             |Delay_4ns__23 |     9|
 |61    |        delay4             |Delay_2ns__1  |     5|
-|62    |  MA                       |MA_Stage      |  1018|
+|62    |  MA                       |MA_Stage      |  1002|
 |63    |    c                      |C__3          |    44|
 |64    |      delay1               |Delay_4ns__22 |     9|
 |65    |      delay2               |Delay_4ns__21 |     9|
@@ -435,18 +442,18 @@ Report Instance Areas:
 |91    |    delay4                 |Delay_4ns__8  |     9|
 +------+---------------------------+--------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1364.027 ; gain = 815.918
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1364.301 ; gain = 813.105
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 32 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1364.027 ; gain = 815.918
-Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1364.027 ; gain = 815.918
+Synthesis finished with 0 errors, 0 critical warnings and 38 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1364.301 ; gain = 813.105
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1364.301 ; gain = 813.105
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 1376.145 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 915 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 1376.453 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 924 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1432.125 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1433.055 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 766 instances were transformed.
   FDCP => FDCP (FDCE, FDPE, LDCE, LUT3, VCC): 1 instance 
@@ -456,12 +463,12 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   FDP_1 => FDPE (inverted pins: C): 1 instance 
   LDC => LDCE: 382 instances
 
-Synth Design complete | Checksum: d3f85212
+Synth Design complete | Checksum: 22eb11a7
 INFO: [Common 17-83] Releasing license: Synthesis
-71 Infos, 32 Warnings, 0 Critical Warnings and 0 Errors encountered.
+71 Infos, 38 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 1432.125 ; gain = 889.305
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1432.125 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 1433.055 ; gain = 889.176
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1433.055 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim/DDP.runs/synth_1/JOIN_DDP.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file JOIN_DDP_utilization_synth.rpt -pb JOIN_DDP_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Oct  7 14:33:11 2024...
+INFO: [Common 17-206] Exiting Vivado at Tue Oct  8 17:49:06 2024...

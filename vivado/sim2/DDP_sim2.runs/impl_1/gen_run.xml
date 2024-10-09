@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1728302890">
+  <File Type="ROUTE-PWR" Name="JOIN_DDP_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="JOIN_DDP.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="JOIN_DDP_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="JOIN_DDP_reports.tcl"/>
+  <File Type="OPT-RQA-PB" Name="JOIN_DDP_rqa_opted.pb"/>
+  <File Type="BITSTR-MMI" Name="JOIN_DDP.mmi"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="JOIN_DDP_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="JOIN_DDP_timing_summary_init.rpt"/>
+  <File Type="OPT-TIMING" Name="JOIN_DDP_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="JOIN_DDP_opt.dcp"/>
+  <File Type="OPT-DRC" Name="JOIN_DDP_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="JOIN_DDP.hwdef"/>
+  <File Type="PWROPT-DCP" Name="JOIN_DDP_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="JOIN_DDP_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="JOIN_DDP_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="JOIN_DDP_placed.dcp"/>
+  <File Type="PLACE-IO" Name="JOIN_DDP_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="JOIN_DDP_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="JOIN_DDP_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="JOIN_DDP_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="JOIN_DDP_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="JOIN_DDP_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="JOIN_DDP_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="JOIN_DDP.bin"/>
+  <File Type="PLACE-TIMING" Name="JOIN_DDP_timing_summary_placed.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="JOIN_DDP_power_routed.rpx"/>
+  <File Type="PLACE-RQA-PB" Name="JOIN_DDP_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="JOIN_DDP_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="JOIN_DDP.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="JOIN_DDP_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="JOIN_DDP_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="JOIN_DDP_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="JOIN_DDP.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="JOIN_DDP_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="JOIN_DDP_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="JOIN_DDP_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="JOIN_DDP_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="JOIN_DDP_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="JOIN_DDP_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="JOIN_DDP_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="JOIN_DDP_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="JOIN_DDP_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="JOIN_DDP_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-RQS-PB" Name="JOIN_DDP_rqs_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="JOIN_DDP_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="JOIN_DDP_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="JOIN_DDP_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="JOIN_DDP_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="JOIN_DDP_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="JOIN_DDP_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="JOIN_DDP_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="JOIN_DDP_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="JOIN_DDP_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="JOIN_DDP_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="JOIN_DDP_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="JOIN_DDP_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="JOIN_DDP_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="JOIN_DDP_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="JOIN_DDP_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="JOIN_DDP_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="JOIN_DDP.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="JOIN_DDP_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="JOIN_DDP_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="JOIN_DDP.nky"/>
+  <File Type="BITSTR-BMM" Name="JOIN_DDP_bd.bmm"/>
+  <File Type="PDI-FILE" Name="JOIN_DDP.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="JOIN_DDP_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="JOIN_DDP_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="JOIN_DDP.rcfi"/>
+  <File Type="CFI_FILE" Name="JOIN_DDP.cfi"/>
+  <File Type="RNPI_FILE" Name="JOIN_DDP.rnpi"/>
+  <File Type="NPI_FILE" Name="JOIN_DDP.npi"/>
+  <File Type="RBD_FILE" Name="JOIN_DDP.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="JOIN_DDP.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="JOIN_DDP.sysdef"/>
+  <File Type="BG-BGN" Name="JOIN_DDP.bgn"/>
+  <File Type="BG-DRC" Name="JOIN_DDP.drc"/>
+  <File Type="RDI-RDI" Name="JOIN_DDP.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-RQS" Name="JOIN_DDP_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="JOIN_DDP_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/HDL/ARB.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/HDL/macro.vh">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/HDL/B_Stage.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/HDL/C.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/HDL/CB.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/HDL/CE.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/HDL/CF.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/HDL/CJ.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/HDL/CM.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/HDL/COPY_Stage.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/HDL/CX2.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/HDL/Delay_2ns.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/HDL/Delay_4ns.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/HDL/ENTRY_FD.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/HDL/FP_Stage.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/HDL/MA_Stage.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/HDL/MMCAM_Stage.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/HDL/common_macro.vh">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/HDL/MMRAM_Stage.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/HDL/M_Stage.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/HDL/OR_AM_MA.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/HDL/common_param.vh">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/HDL/PS_Stage.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/HDL/JOIN_DDP.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/CoeFile/PS.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/CoeFile/CMEM.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/CoeFile/SubPS.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="JOIN_DDP"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="MMRAM"/>
+  <BlockFileSet Type="BlockSrcs" Name="DMEM"/>
+  <BlockFileSet Type="BlockSrcs" Name="SubPS"/>
+  <BlockFileSet Type="BlockSrcs" Name="PS"/>
+  <BlockFileSet Type="BlockSrcs" Name="CMEM"/>
+</GenRun>

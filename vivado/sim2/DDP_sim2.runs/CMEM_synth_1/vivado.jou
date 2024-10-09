@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Mon Oct  7 17:38:11 2024
+# Process ID: 16988
+# Current directory: C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/DDP_sim2.runs/CMEM_synth_1
+# Command line: vivado.exe -log CMEM.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source CMEM.tcl
+# Log file: C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/DDP_sim2.runs/CMEM_synth_1/CMEM.vds
+# Journal file: C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/DDP_sim2.runs/CMEM_synth_1\vivado.jou
+# Running On        :DESKTOP-B2190GF
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :11th Gen Intel(R) Core(TM) i7-11700 @ 2.50GHz
+# CPU Frequency     :2496 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :16887 MB
+# Swap memory       :19415 MB
+# Total Virtual     :36302 MB
+# Available Virtual :5885 MB
+#-----------------------------------------------------------
+source CMEM.tcl -notrace

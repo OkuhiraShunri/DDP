@@ -1,5 +1,6 @@
 (* dont_touch = "true" *)
-`include "macro.vh"
+//`include "macro.vh"
+`include "common_macro.vh"
 module MA_Stage(
     input WRITE_EN, LOAD_FLG, Send_in, Ack_in, MR,
     input [15:0] WRITE_DATA,
@@ -9,12 +10,12 @@ module MA_Stage(
 );
 
 
-(* dont_touch = "true" *) reg [`DMEM_WIDTH - 1 : 0] DMEM [0:`DMEM_DEPTH - 1];//DMEM_WIDTH >> 16 DMEM_DEPTH >> 1024
-(* dont_touch = "true" *) reg [`MA_PACKET_SIZE : 0] DL; //MA_PACKET_SIZE >> 40, 最上位ビットはLOAD_FLG, DLは計41bit
+(* dont_touch = "true" *) reg [`DMEM_WIDTH_SIZE] DMEM [`DMEM_HEIGHT_SIZE];//DMEM_WIDTH >> 16 DMEM_DEPTH >> 1024
+(* dont_touch = "true" *) reg [`MA_DL_SIZE] DL; //MA_PACKET_SIZE >> 40, 最上位ビットはLOAD_FLG, DLは計41bit
 
 integer i;
 initial begin
-    for (i = 0; i < `DMEM_DEPTH; i = i + 1) begin
+    for (i = 0; i < `DMEM_HEIGHT; i = i + 1) begin
         DMEM[i] <= `DMEM_WIDTH'd0;
     end
 end
@@ -33,12 +34,12 @@ always @(posedge CP or posedge MR) begin
 end
 
 //DMEMの読み出しと書き込み処理
-(* dont_touch = "true" *) wire [16:0] ResultData;
-assign ResultData = PACKET_IN[15:0];//メモリアドレス取得
+(* dont_touch = "true" *) wire [`MA_PACKET_RESULTDATA] ResultData;
+assign ResultData = PACKET_IN[`MA_PACKET_RESULTDATA];//メモリアドレス取得
 (* dont_touch = "true" *) reg [15:0] LOAD_DATA;
 always @(posedge CP or posedge MR) begin
     if(MR)begin
-        for (i = 0; i < `DMEM_DEPTH; i = i + 1) begin
+        for (i = 0; i < `DMEM_HEIGHT; i = i + 1) begin
             DMEM[i] <= `DMEM_WIDTH'd0;
         end
         LOAD_DATA <= 16'b0;
@@ -52,9 +53,9 @@ always @(posedge CP or posedge MR) begin
 end
 
 //merge処理
-(* dont_touch = "true" *) wire [`MA_MERGE_LENGTH - 1 : 0] MERGE_DATA;//MA_MERGE_LENGTH >> 40
-(* dont_touch = "true" *) wire [`OTHER_DATA_LENGTH - 1 : 0] OTHER_DATA; //OTHER_DATA_LENGTH >> 24
-assign OTHER_DATA = DL[39:16];
+(* dont_touch = "true" *) wire [`MA_MERGE_SIZE] MERGE_DATA;//MA_MERGE_LENGTH >> 40
+(* dont_touch = "true" *) wire [`MA_OTHERDATA_SIZE] OTHER_DATA; //OTHER_DATA_LENGTH >> 24
+assign OTHER_DATA = DL[`MA_PACKET_OTHERDATA];
 assign MERGE_DATA = {OTHER_DATA, LOAD_DATA};
 
 

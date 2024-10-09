@@ -1,0 +1,2 @@
+DMEM.v,verilog,xil_defaultlib,../../../../DDP_sim2.gen/sources_1/ip/DMEM/sim/DMEM.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

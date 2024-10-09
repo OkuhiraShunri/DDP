@@ -1,4 +1,6 @@
 (* dont_touch = "true" *)
+//`include "macro.vh"
+`include "common_macro.vh"
 module MMCAM_Stage(
     input MR, Send_in, Ack_in, 
     input [37:0] PACKET_IN,
@@ -8,12 +10,12 @@ module MMCAM_Stage(
 );
 
 (* dont_touch = "true" *) wire CP;
-(* dont_touch = "true" *) wire [19:0] EN, VALID, FIRE;
+(* dont_touch = "true" *) wire [`MMCAM_EFV_SIZE] EN, FIRE, VALID; 
 
 C c(.Send_in(Send_in), .Ack_in(Ack_in), .MR(MR), .Ack_out(Ack_out), .Send_out(Send_out), .CP(CP));
 genvar i;
 generate
-    for (i = 0; i < 20; i = i + 1) begin :entry_fd_loop
+    for (i = 0; i < `MMCAM_ENTRY_HEIGHT; i = i + 1) begin :entry_fd_loop
         ENTRY_FD ef(.CP(CP), .MR(MR), .EN(EN[i]), .COLOR_GEN_DEST_LR(PACKET_IN[37:19]), .VALID(VALID[i]), .FIRE(FIRE[i]));
     end
 endgenerate

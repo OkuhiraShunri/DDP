@@ -1,30 +1,10 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="OkuhiraShunri" Host="DESKTOP-B2190GF" Pid="17052" HostCore="16" HostMemory="016887386112">
+    <Process Command="vivado.bat" Owner="OkuhiraShunri" Host="DESKTOP-B2190GF" Pid="28656" HostCore="16" HostMemory="016887386112">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="OkuhiraShunri" Host="DESKTOP-B2190GF" Pid="19760" HostCore="16" HostMemory="016887386112">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="OkuhiraShunri" Host="DESKTOP-B2190GF" Pid="11616" HostCore="16" HostMemory="016887386112">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="OkuhiraShunri" Host="DESKTOP-B2190GF" Pid="27704" HostCore="16" HostMemory="016887386112">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="OkuhiraShunri" Host="DESKTOP-B2190GF" Pid="1756" HostCore="16" HostMemory="016887386112">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="OkuhiraShunri" Host="DESKTOP-B2190GF" Pid="31172" HostCore="16" HostMemory="016887386112">
+    <Process Command="vivado.bat" Owner="OkuhiraShunri" Host="DESKTOP-B2190GF" Pid="32144" HostCore="16" HostMemory="016887386112">
     </Process>
 </ProcessHandle>
