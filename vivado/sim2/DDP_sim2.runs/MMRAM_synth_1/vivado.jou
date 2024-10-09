@@ -3,8 +3,8 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Mon Oct  7 16:58:10 2024
-# Process ID: 21824
+# Start of session at: Wed Oct  9 13:59:28 2024
+# Process ID: 5776
 # Current directory: C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/DDP_sim2.runs/MMRAM_synth_1
 # Command line: vivado.exe -log MMRAM.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MMRAM.tcl
 # Log file: C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/DDP_sim2.runs/MMRAM_synth_1/MMRAM.vds
@@ -17,8 +17,8 @@
 # CPU Physical cores:8
 # CPU Logical cores :16
 # Host memory       :16887 MB
-# Swap memory       :17241 MB
-# Total Virtual     :34129 MB
-# Available Virtual :3920 MB
+# Swap memory       :25541 MB
+# Total Virtual     :42428 MB
+# Available Virtual :6355 MB
 #-----------------------------------------------------------
 source MMRAM.tcl -notrace

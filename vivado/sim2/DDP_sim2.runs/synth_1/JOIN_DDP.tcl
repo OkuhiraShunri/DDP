@@ -56,7 +56,7 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_msg_config -id {Common 17-41} -limit 10000000
+set_param chipscope.maxJobs 4
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z010clg400-1
 
@@ -74,9 +74,9 @@ set_property ip_output_repo c:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-add_files c:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/CoeFile/PS.coe
-add_files c:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/CoeFile/CMEM.coe
-add_files c:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/CoeFile/SubPS.coe
+add_files C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/CoeFile/PS.coe
+add_files C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/CoeFile/CMEM.coe
+add_files C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/CoeFile/SubPS.coe
 read_verilog {
   C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/HDL/macro.vh
   C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/HDL/common_macro.vh
@@ -105,19 +105,19 @@ read_verilog -library xil_defaultlib {
   C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/HDL/PS_Stage.v
   C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/HDL/JOIN_DDP.v
 }
-read_ip -quiet c:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/DDP_sim2.srcs/sources_1/ip/MMRAM/MMRAM.xci
+read_ip -quiet C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/DDP_sim2.srcs/sources_1/ip/MMRAM/MMRAM.xci
 set_property used_in_implementation false [get_files -all c:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/DDP_sim2.gen/sources_1/ip/MMRAM/MMRAM_ooc.xdc]
 
-read_ip -quiet c:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/DDP_sim2.srcs/sources_1/ip/DMEM/DMEM.xci
+read_ip -quiet C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/DDP_sim2.srcs/sources_1/ip/DMEM/DMEM.xci
 set_property used_in_implementation false [get_files -all c:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/DDP_sim2.gen/sources_1/ip/DMEM/DMEM_ooc.xdc]
 
-read_ip -quiet c:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/DDP_sim2.srcs/sources_1/ip/PS/PS.xci
+read_ip -quiet C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/DDP_sim2.srcs/sources_1/ip/PS/PS.xci
 set_property used_in_implementation false [get_files -all c:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/DDP_sim2.gen/sources_1/ip/PS/PS_ooc.xdc]
 
-read_ip -quiet c:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/DDP_sim2.srcs/sources_1/ip/CMEM/CMEM.xci
+read_ip -quiet C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/DDP_sim2.srcs/sources_1/ip/CMEM/CMEM.xci
 set_property used_in_implementation false [get_files -all c:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/DDP_sim2.gen/sources_1/ip/CMEM/CMEM_ooc.xdc]
 
-read_ip -quiet c:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/DDP_sim2.srcs/sources_1/ip/SubPS/SubPS.xci
+read_ip -quiet C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/DDP_sim2.srcs/sources_1/ip/SubPS/SubPS.xci
 set_property used_in_implementation false [get_files -all c:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/DDP_sim2.gen/sources_1/ip/SubPS/SubPS_ooc.xdc]
 
 OPTRACE "Adding files" END { }
@@ -130,6 +130,8 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/DDP_sim2.srcs/utils_1/imports/synth_1/JOIN_DDP.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

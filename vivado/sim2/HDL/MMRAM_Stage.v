@@ -37,7 +37,7 @@ module MMRAM_Stage(
 //     CST_MEM[61] = 0;
 // end
 (* dont_touch = "true" *) wire CP;
-CE ce(.CE_Send_in(Send_in), .CE_Ack_in(Ack_in), .MR(MR), .Exb(DEL), .CE_Ack_out(Ack_out), .CE_Send_out(Send_out), .CE_CP(CP));
+(* dont_touch = "true" *) CE ce(.CE_Send_in(Send_in), .CE_Ack_in(Ack_in), .MR(MR), .Exb(DEL), .CE_Ack_out(Ack_out), .CE_Send_out(Send_out), .CE_CP(CP));
 
 //---DLとRAMの書き込み処理---
 (* dont_touch = "true" *) reg [37:0] DL;

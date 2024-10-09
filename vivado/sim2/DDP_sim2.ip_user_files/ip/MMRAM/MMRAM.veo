@@ -57,7 +57,7 @@
 MMRAM your_instance_name (
   .clka(clka),    // input wire clka
   .wea(wea),      // input wire [0 : 0] wea
-  .addra(addra),  // input wire [5 : 0] addra
+  .addra(addra),  // input wire [4 : 0] addra
   .dina(dina),    // input wire [19 : 0] dina
   .douta(douta)  // output wire [19 : 0] douta
 );

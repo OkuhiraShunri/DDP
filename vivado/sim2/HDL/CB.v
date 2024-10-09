@@ -8,7 +8,7 @@ module CB(
 (* dont_touch = "true" *) wire cf_ack_out, cf_send_out, cp;
 (* dont_touch = "true" *) wire and_1;
 
-CF cf(.Send_in(CB_Send_in), .Ack_in(and_1), .MR(MR), .Ack_out(cf_ack_out), .Send_out(cf_send_out), .CP(cp));
+(* dont_touch = "true" *) CF cf(.Send_in(CB_Send_in), .Ack_in(and_1), .MR(MR), .Ack_out(cf_ack_out), .Send_out(cf_send_out), .CP(cp));
 
 always @(posedge cp or posedge MR) begin
     if(MR)begin

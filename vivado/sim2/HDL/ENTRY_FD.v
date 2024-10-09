@@ -1,11 +1,13 @@
 (* dont_touch = "true" *)
+//`include "macro.vh"
+`include "common_macro.vh"
 module ENTRY_FD(
     input EN, CP, MR,
-    input [18:0] COLOR_GEN_DEST_LR,
+    input [`CGDL_SIZE] COLOR_GEN_DEST_LR,
     output VALID, FIRE
 );
 
-(* dont_touch = "true" *) reg [18:0] ENTRY = 19'b0;
+(* dont_touch = "true" *) reg [`MMCAM_ENTRY_SIZE] ENTRY = `MMCAM_ENTRY_WIDTH'b0;
 (* dont_touch = "true" *) reg VALID_reg = 0;
 always @(posedge CP or posedge MR)begin
     if(MR)begin

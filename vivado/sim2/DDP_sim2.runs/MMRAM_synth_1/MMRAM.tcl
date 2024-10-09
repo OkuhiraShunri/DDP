@@ -56,6 +56,7 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "MMRAM_synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 4
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 OPTRACE "Creating in-memory project" START { }
@@ -75,7 +76,7 @@ set_property ip_output_repo c:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet c:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/DDP_sim2.srcs/sources_1/ip/MMRAM/MMRAM.xci
+read_ip -quiet C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/DDP_sim2.srcs/sources_1/ip/MMRAM/MMRAM.xci
 set_property used_in_implementation false [get_files -all c:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/DDP_sim2.gen/sources_1/ip/MMRAM/MMRAM_ooc.xdc]
 
 OPTRACE "Adding files" END { }

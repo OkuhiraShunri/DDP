@@ -6,7 +6,7 @@ module CE(
     (* dont_touch = "true" *) wire cf_send_out, cf_ack_out, cp;
     (* dont_touch = "true" *) wire or_1, or_2, and_1;
     (* dont_touch = "true" *) reg DL = 1;//DLが1なら削除しないでそのまま次のC素子にSend_outする。　0なら削除する(Send_out出力しないようにする。)
-    CF cf(.Send_in(CE_Send_in), .Ack_in(and_1), .MR(MR), .Ack_out(cf_ack_out), .Send_out(cf_send_out), .CP(cp));
+    (* dont_touch = "true" *) CF cf(.Send_in(CE_Send_in), .Ack_in(and_1), .MR(MR), .Ack_out(cf_ack_out), .Send_out(cf_send_out), .CP(cp));
     always @(posedge cp) begin
         DL <= Exb;
     end

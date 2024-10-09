@@ -1,4 +1,4 @@
-;Sample coe file for PS 1bit*64
+;Sample coe file for PS 1bit*20
 memory_initialization_radix = 2;
 memory_initialization_vector = 
 0,

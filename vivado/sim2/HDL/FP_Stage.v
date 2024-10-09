@@ -9,7 +9,7 @@ module FP_Stage(
     output WRITE_EN, LOAD_FLG
 );
 (* dont_touch = "true" *) wire CP;
-CE ce(.CE_Send_in(Send_in), .CE_Ack_in(Ack_in), .MR(MR), .Exb(DEL), .CE_Ack_out(Ack_out), .CE_Send_out(Send_out), .CE_CP(CP));
+(* dont_touch = "true" *) CE ce(.CE_Send_in(Send_in), .CE_Ack_in(Ack_in), .MR(MR), .Exb(DEL), .CE_Ack_out(Ack_out), .CE_Send_out(Send_out), .CE_CP(CP));
 //pipline reg DLの書き込み処理
 (* dont_touch = "true" *) reg [61:0] DL;
 always @(posedge CP or posedge MR) begin

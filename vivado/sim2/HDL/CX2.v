@@ -24,8 +24,8 @@ assign nor1_out = ~(cf2_cp | nor2_out);
 assign nor2_out = ~(cf1_cp | nor1_out);
 
 
-CF cf1(.Send_in(Send_in), .Ack_in(and2_out), .MR(MR), .Ack_out(cf1_ack_out), .Send_out(cf1_send_out), .CP(cf1_cp));
-CF cf2(.Send_in(nand1_out), .Ack_in(Ack_in), .MR(MR), .Ack_out(cf2_ack_out), .Send_out(cf2_send_out), .CP(cf2_cp));
+(* dont_touch = "true" *) CF cf1(.Send_in(Send_in), .Ack_in(and2_out), .MR(MR), .Ack_out(cf1_ack_out), .Send_out(cf1_send_out), .CP(cf1_cp));
+(* dont_touch = "true" *) CF cf2(.Send_in(nand1_out), .Ack_in(Ack_in), .MR(MR), .Ack_out(cf2_ack_out), .Send_out(cf2_send_out), .CP(cf2_cp));
 
 //
 always @(posedge MR or posedge cf1_cp) begin

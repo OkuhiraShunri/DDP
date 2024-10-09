@@ -22,7 +22,7 @@ assign nand5_out = ~(nand4_out & not1_out & Ack_in);
 // assign #DELAY  LC_out = nand5_out;
 // assign #D_HALF LD_out = LC_out;
 (* dont_touch = "true" *) Delay_4ns delay1 (.din(nand1_out), .dout(LA_out));
-(* dont_touch = "true" *) Delay_4ns delay2 (.din(nand1_out), .dout(LB_out));
+(* dont_touch = "true" *) Delay_2ns delay2 (.din(nand1_out), .dout(LB_out));
 (* dont_touch = "true" *) Delay_4ns delay3 (.din(nand5_out), .dout(LC_out));
 (* dont_touch = "true" *) Delay_2ns delay4 (.din(LC_out), .dout(LD_out));
 

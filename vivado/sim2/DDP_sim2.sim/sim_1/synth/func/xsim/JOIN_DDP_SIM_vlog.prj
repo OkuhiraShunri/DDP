@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../HDL" \
+"JOIN_DDP_SIM_func_synth.v" \
+"../../../../../HDL/JOIN_DDP_SIM.v" \
+
+# Do not sort compile order
+nosort

@@ -27,7 +27,7 @@ always @(posedge CP_INTERNAL or posedge MR) begin
     end
 end
 
-CM cm(.Send_in_a(Send_in_EX), .Send_in_b(Send_in_IN), .Ack_in(Ack_in), .MR(MR), .Ack_out_a(Ack_out_EX), .Ack_out_b(Ack_out_IN),
+(* dont_touch = "true" *) CM cm(.Send_in_a(Send_in_EX), .Send_in_b(Send_in_IN), .Ack_in(Ack_in), .MR(MR), .Ack_out_a(Ack_out_EX), .Ack_out_b(Ack_out_IN),
       .Send_out(Send_out), .CP_a(CP_EXTERNAL), .CP_b(CP_INTERNAL), .AEB(AEB));
 
 // function [37:0] MUX1;

@@ -3,8 +3,8 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Mon Oct  7 17:31:46 2024
-# Process ID: 25252
+# Start of session at: Wed Oct  9 14:00:24 2024
+# Process ID: 22448
 # Current directory: C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/DDP_sim2.runs/PS_synth_1
 # Command line: vivado.exe -log PS.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source PS.tcl
 # Log file: C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/DDP_sim2.runs/PS_synth_1/PS.vds
@@ -17,8 +17,8 @@
 # CPU Physical cores:8
 # CPU Logical cores :16
 # Host memory       :16887 MB
-# Swap memory       :19415 MB
-# Total Virtual     :36302 MB
-# Available Virtual :5828 MB
+# Swap memory       :25541 MB
+# Total Virtual     :42428 MB
+# Available Virtual :6302 MB
 #-----------------------------------------------------------
 source PS.tcl -notrace

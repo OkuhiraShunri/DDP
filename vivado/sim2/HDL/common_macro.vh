@@ -6,10 +6,11 @@
 `define DMEM_WIDTH              16
 `define PS_WIDTH                17
 //`define ENTRY_WIDTH             19
-`define CMEM_HEIGHT             64
-`define MMRAM_HEIGHT            64
-`define DMEM_HEIGHT             1024
-`define PS_HEIGHT               128
+`define CMEM_HEIGHT             20
+`define MMRAM_HEIGHT            20
+`define DMEM_HEIGHT             20
+`define PS_HEIGHT               20
+`define SubPS_HEIGHT            20
 /**********************************************************************************/
 
 `define CMEM_WIDTH_SIZE         `CMEM_WIDTH-1:0
@@ -20,7 +21,7 @@
 `define MMRAM_HEIGHT_SIZE       0:`MMRAM_HEIGHT-1
 `define DMEM_HEIGHT_SIZE        0:`DMEM_HEIGHT-1
 `define PS_HEIGHT_SIZE          0:`PS_HEIGHT-1
-
+`define SubPS_HEIGHT_SIZE       0:`SubPS_HEIGHT-1
 
 /* 値を変えたいときに変えるべきマクロを最低限にとどめる．変えるべきマクロの値は，上の方にまとめる */
 
@@ -36,6 +37,7 @@
 `define C_WIDTH                 1              
 `define Z_WIDTH                 1              
 `define DATA_WIDTH              16
+`define CGDL_WIDTH              19
 /************************************************************************************************/
 
 `define COLOR_SIZE              `COLOR_WIDTH-1:0
@@ -43,6 +45,7 @@
 `define DEST_SIZE               `DEST_WIDTH-1:0
 `define OPC_SIZE                `OPC_WIDTH-1:0
 `define DATA_SIZE               `DATA_WIDTH-1:0
+`define CGDL_SIZE               `CGDL_WIDTH-1:0
 
 
 
@@ -65,17 +68,20 @@
 `define MMCAM_EFV_SIZE          `MMCAM_EFV_WIDTH-1:0
 `define MMCAM_PACKET_CGDL       37:19
 `define MMCAM_PACKET_MF         18
+`define MMCAM_ADDR_WIDTH        6
+`define MMCAM_ADDR_SIZE         `MMCAM_ADDR_WIDTH-1:0
 
 // MMCAM_ENTRY_FD
 `define MMCAM_ENTRY_WIDTH       19                          // (`CGD_WIDTH + `LR_WIDTH)
 `define MMCAM_ENTRY_SIZE        `MMCAM_ENTRY_WIDTH-1:0
+`define MMCAM_ENTRY_HEIGHT      20
 `define MMCAM_ENTRY_CGD         18:1
 `define MMCAM_ENTRY_LR          1:0
 
 // MMCAM_AM_OR_MA
 `define MMCAM_MA_WIDTH          8                           // (2 + `MMCAM_ADDR_WIDTH)
 `define MMCAM_MA_SIZE           `MMCAM_MA_WIDTH-1:0
-`define MMCAM_AM_WIDTH          70                          // (`MMCAM_ADDR_WIDTH + `MMCAM_EFV_WIDTH)
+`define MMCAM_AM_WIDTH          26                          // (`MMCAM_ADDR_WIDTH + `MMCAM_EFV_WIDTH)
 `define MMCAM_AM_SIZE           `MMCAM_AM_WIDTH-1:0
 
 // 3.MMRAM_Stage
@@ -110,6 +116,8 @@
 `define PS_PACKIN_SIZE          `PS_PACKIN_WIDTH-1:0
 `define PS_PACKOUT_WIDTH        62                          // (`CGD_WIDTH + `BR_WIDTH + `CPY_WIDTH + `OPC_WIDTH + `LMCZD_WIDTH + `DATA_WIDTH)
 `define PS_PACKOUT_SIZE         `PS_PACKOUT_WIDTH-1:0
+`define PSData_WIDTH            17
+`define PSData_SIZE             `PSData_WIDTH-1:0
 
 `define PS_PACKIN_CG            51:41
 `define PS_PACKIN_DEST          40:34
@@ -140,6 +148,8 @@
 `define MA_DL_SIZE              `MA_PACKET_WIDTH:0
 `define MA_OTHERDATA_WIDTH      24                          // `MA_PACKET_WIDTH - `DATA_WIDTH
 `define MA_OTHERDATA_SIZE       `MA_OTHERDATA_WIDTH-1:0
+`define MA_MERGE_LENGTH         40
+`define MA_MERGE_SIZE           `MA_MERGE_LENGTH-1:0
 
 `define MA_PACKET_RESULTDATA    15:0
 `define MA_PACKET_OTHERDATA     39:16

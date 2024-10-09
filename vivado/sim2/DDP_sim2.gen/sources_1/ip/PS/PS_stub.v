@@ -2,7 +2,7 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-// Date        : Mon Oct  7 17:32:34 2024
+// Date        : Wed Oct  9 14:01:11 2024
 // Host        : DESKTOP-B2190GF running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               c:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim2/DDP_sim2.gen/sources_1/ip/PS/PS_stub.v
@@ -16,9 +16,9 @@
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
 (* x_core_info = "blk_mem_gen_v8_4_8,Vivado 2024.1" *)
 module PS(clka, addra, douta)
-/* synthesis syn_black_box black_box_pad_pin="addra[6:0],douta[16:0]" */
+/* synthesis syn_black_box black_box_pad_pin="addra[4:0],douta[16:0]" */
 /* synthesis syn_force_seq_prim="clka" */;
   input clka /* synthesis syn_isclock = 1 */;
-  input [6:0]addra;
+  input [4:0]addra;
   output [16:0]douta;
 endmodule
