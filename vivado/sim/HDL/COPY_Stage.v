@@ -9,7 +9,7 @@ module COPY_Stage(
 (* dont_touch = "true" *) wire EXB;
 assign EXB = 1'b1;//EXBはつかわないので1のまま
 (* dont_touch = "true" *) wire CP, FEB;
-CX2 cx2(.Send_in(Send_in), .Ack_in(Ack_in), .CPY(PACKET_IN[18]), .EXB(EXB), .MR(MR), .Ack_out(Ack_out), .Send_out(Send_out), .CP(CP), .FEB(FEB));
+(* dont_touch = "true" *) CX2 cx2(.Send_in(Send_in), .Ack_in(Ack_in), .CPY(PACKET_IN[18]), .EXB(EXB), .MR(MR), .Ack_out(Ack_out), .Send_out(Send_out), .CP(CP), .FEB(FEB));
 
 //DLの更新
 (* dont_touch = "true" *) reg [39:0] DL;

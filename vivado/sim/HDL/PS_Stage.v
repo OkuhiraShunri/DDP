@@ -11,7 +11,7 @@ module PS_Stage(
 (* dont_touch = "true" *) reg [`PS_WIDTH_SIZE] PS[`PS_HEIGHT_SIZE];//PS_WIDTH_SIZE >> 16:0 , PS_HEIGHT_SIZE >> 0:127
 (* dont_touch = "true" *) reg [`PS_PACKIN_SIZE] DL;
 (* dont_touch = "true" *) wire CP;
-C c(.Send_in(Send_in), .Ack_out(Ack_out), .MR(MR), .Send_out(Send_out), .Ack_in(Ack_in), .CP(CP));
+(* dont_touch = "true" *) C c(.Send_in(Send_in), .Ack_out(Ack_out), .MR(MR), .Send_out(Send_out), .Ack_in(Ack_in), .CP(CP));
 
 integer i;
 initial begin

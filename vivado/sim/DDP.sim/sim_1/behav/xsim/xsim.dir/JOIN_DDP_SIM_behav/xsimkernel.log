@@ -2,3 +2,6 @@ Running: xsim.dir/JOIN_DDP_SIM_behav/xsimk.exe -simmode gui -wdb JOIN_DDP_SIM_be
 Design successfully loaded
 Design Loading Memory Usage: 8884 KB (Peak: 8884 KB)
 Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 2820088 KB (Peak: 2820088 KB)
+Simulation CPU Usage: 548905 ms

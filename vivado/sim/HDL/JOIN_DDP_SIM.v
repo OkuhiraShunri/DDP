@@ -10,7 +10,7 @@ JOIN_DDP ddp(.MR(MR), .Send_in(Send_in), .Ack_in(Ack_in), .PACKET_IN(PACKET_IN),
 initial begin
             Send_in = 1;
             MR = 1;
-    #50     MR = 0;//#10だとMMCAM以降のCP上がらない
+    #200     MR = 0;//#10だとMMCAM以降のCP上がらない
     #10     Send_in = 0;
     #10     Send_in = 1;
     // #10     Send_in = 0;

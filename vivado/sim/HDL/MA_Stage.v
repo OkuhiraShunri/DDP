@@ -21,7 +21,7 @@ initial begin
 end
 
 (* dont_touch = "true" *) wire CP;
-C c(.Send_in(Send_in), .Ack_out(Ack_out), .MR(MR), .Send_out(Send_out), .Ack_in(Ack_in), .CP(CP));
+(* dont_touch = "true" *) C c(.Send_in(Send_in), .Ack_out(Ack_out), .MR(MR), .Send_out(Send_out), .Ack_in(Ack_in), .CP(CP));
 
 //DLの更新
 always @(posedge CP or posedge MR) begin

@@ -9,7 +9,7 @@ module B_Stage(
 );
 (* dont_touch = "true" *) wire BR;
 assign BR = PACKET_IN[18];
-CB cb(.CB_Send_in(Send_in), .CB_Ack_in_a(Ack_in_a), .CB_Ack_in_b(Ack_in_b), .MR(MR), .BR(BR), 
+(* dont_touch = "true" *) CB cb(.CB_Send_in(Send_in), .CB_Ack_in_a(Ack_in_a), .CB_Ack_in_b(Ack_in_b), .MR(MR), .BR(BR), 
       .CB_Ack_out(Ack_out), .CB_Send_out_a(Send_out_a), .CB_Send_out_b(Send_out_b), .CB_CP(CP));
 
 (* dont_touch = "true" *) reg SubPS [`SubPS_HEIGHT_SIZE];

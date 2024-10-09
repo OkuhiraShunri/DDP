@@ -1,8 +1,8 @@
 -------------------------------------
 | Tool Version : Vivado v.2024.1
-| Date         : Tue Oct  8 17:49:43 2024
+| Date         : Wed Oct  9 12:10:41 2024
 | Host         : DESKTOP-B2190GF
-| Design       : design_1
+| Design       : checkpoint_JOIN_DDP
 | Device       : xc7z010-clg400-1--
 -------------------------------------
 
