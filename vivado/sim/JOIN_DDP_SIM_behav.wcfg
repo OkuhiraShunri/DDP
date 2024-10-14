@@ -11,18 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="386.454 ns"></ZoomStartTime>
-      <ZoomEndTime time="463.855 ns"></ZoomEndTime>
-      <Cursor1Time time="442.055 ns"></Cursor1Time>
+      <ZoomStartTime time="1,036,765 ps"></ZoomStartTime>
+      <ZoomEndTime time="1,037,165 ps"></ZoomEndTime>
+      <Cursor1Time time="1,037,733 ps"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="178"></NameColumnWidth>
-      <ValueColumnWidth column_width="79"></ValueColumnWidth>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="11" />
-   <wave_markers>
-      <marker time="0" label="" />
-   </wave_markers>
+   <WVObjectSize size="13" />
    <wvobject fp_name="/JOIN_DDP_SIM/Send_in" type="logic">
       <obj_property name="ElementShortName">Send_in</obj_property>
       <obj_property name="ObjectShortName">Send_in</obj_property>
@@ -164,7 +161,7 @@
          <obj_property name="ElementShortName">PACKET_OUT[37:0]</obj_property>
          <obj_property name="ObjectShortName">PACKET_OUT[37:0]</obj_property>
          <obj_property name="label">B_PACKET_OUT[37:0]</obj_property>
-         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
       </wvobject>
       <wvobject fp_name="/JOIN_DDP_SIM/PACKET_OUT" type="array">
          <obj_property name="ElementShortName">PACKET_OUT[37:0]</obj_property>
@@ -172,15 +169,127 @@
          <obj_property name="Radix">HEXRADIX</obj_property>
       </wvobject>
    </wvobject>
-   <wvobject fp_name="/JOIN_DDP_SIM/ddp/PS/dest" type="array">
-      <obj_property name="ElementShortName">dest[6:0]</obj_property>
-      <obj_property name="ObjectShortName">dest[6:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   <wvobject fp_name="group162" type="group">
+      <obj_property name="label">dest</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/JOIN_DDP_SIM/ddp/PS/dest" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">dest[6:0]</obj_property>
+         <obj_property name="ObjectShortName">dest[6:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+         <obj_property name="label">dest[6:0]_PS</obj_property>
+      </wvobject>
+      <wvobject fp_name="/JOIN_DDP_SIM/ddp/FP/dest" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">dest[6:0]</obj_property>
+         <obj_property name="ObjectShortName">dest[6:0]</obj_property>
+         <obj_property name="label">dest[6:0]_FP</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/JOIN_DDP_SIM/ddp/COPY/dest" type="array">
+         <obj_property name="ElementShortName">dest[6:0]</obj_property>
+         <obj_property name="ObjectShortName">dest[6:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/JOIN_DDP_SIM/ddp/COPY/mux1" type="array">
+         <obj_property name="ElementShortName">mux1[6:0]</obj_property>
+         <obj_property name="ObjectShortName">mux1[6:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group372" type="group">
+      <obj_property name="label">FP_Stage</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/JOIN_DDP_SIM/ddp/FP/OPC" type="array">
+         <obj_property name="ElementShortName">OPC[5:0]</obj_property>
+         <obj_property name="ObjectShortName">OPC[5:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/JOIN_DDP_SIM/ddp/FP/DataL" type="array">
+         <obj_property name="ElementShortName">DataL[15:0]</obj_property>
+         <obj_property name="ObjectShortName">DataL[15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/JOIN_DDP_SIM/ddp/FP/DataR" type="array">
+         <obj_property name="ElementShortName">DataR[15:0]</obj_property>
+         <obj_property name="ObjectShortName">DataR[15:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="vbus413" type="vbus">
+         <obj_property name="label">ResultData</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <wvobject fp_name="/JOIN_DDP_SIM/ddp/FP/PACKET_OUT[15]" type="logic">
+            <obj_property name="ElementShortName">[15]</obj_property>
+            <obj_property name="ObjectShortName">[15]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/JOIN_DDP_SIM/ddp/FP/PACKET_OUT[14]" type="logic">
+            <obj_property name="ElementShortName">[14]</obj_property>
+            <obj_property name="ObjectShortName">[14]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/JOIN_DDP_SIM/ddp/FP/PACKET_OUT[13]" type="logic">
+            <obj_property name="ElementShortName">[13]</obj_property>
+            <obj_property name="ObjectShortName">[13]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/JOIN_DDP_SIM/ddp/FP/PACKET_OUT[12]" type="logic">
+            <obj_property name="ElementShortName">[12]</obj_property>
+            <obj_property name="ObjectShortName">[12]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/JOIN_DDP_SIM/ddp/FP/PACKET_OUT[11]" type="logic">
+            <obj_property name="ElementShortName">[11]</obj_property>
+            <obj_property name="ObjectShortName">[11]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/JOIN_DDP_SIM/ddp/FP/PACKET_OUT[10]" type="logic">
+            <obj_property name="ElementShortName">[10]</obj_property>
+            <obj_property name="ObjectShortName">[10]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/JOIN_DDP_SIM/ddp/FP/PACKET_OUT[9]" type="logic">
+            <obj_property name="ElementShortName">[9]</obj_property>
+            <obj_property name="ObjectShortName">[9]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/JOIN_DDP_SIM/ddp/FP/PACKET_OUT[8]" type="logic">
+            <obj_property name="ElementShortName">[8]</obj_property>
+            <obj_property name="ObjectShortName">[8]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/JOIN_DDP_SIM/ddp/FP/PACKET_OUT[7]" type="logic">
+            <obj_property name="ElementShortName">[7]</obj_property>
+            <obj_property name="ObjectShortName">[7]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/JOIN_DDP_SIM/ddp/FP/PACKET_OUT[6]" type="logic">
+            <obj_property name="ElementShortName">[6]</obj_property>
+            <obj_property name="ObjectShortName">[6]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/JOIN_DDP_SIM/ddp/FP/PACKET_OUT[5]" type="logic">
+            <obj_property name="ElementShortName">[5]</obj_property>
+            <obj_property name="ObjectShortName">[5]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/JOIN_DDP_SIM/ddp/FP/PACKET_OUT[4]" type="logic">
+            <obj_property name="ElementShortName">[4]</obj_property>
+            <obj_property name="ObjectShortName">[4]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/JOIN_DDP_SIM/ddp/FP/PACKET_OUT[3]" type="logic">
+            <obj_property name="ElementShortName">[3]</obj_property>
+            <obj_property name="ObjectShortName">[3]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/JOIN_DDP_SIM/ddp/FP/PACKET_OUT[2]" type="logic">
+            <obj_property name="ElementShortName">[2]</obj_property>
+            <obj_property name="ObjectShortName">[2]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/JOIN_DDP_SIM/ddp/FP/PACKET_OUT[1]" type="logic">
+            <obj_property name="ElementShortName">[1]</obj_property>
+            <obj_property name="ObjectShortName">[1]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/JOIN_DDP_SIM/ddp/FP/PACKET_OUT[0]" type="logic">
+            <obj_property name="ElementShortName">[0]</obj_property>
+            <obj_property name="ObjectShortName">[0]</obj_property>
+         </wvobject>
+      </wvobject>
    </wvobject>
    <wvobject fp_name="group144" type="group">
       <obj_property name="label">MA_Stage</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/JOIN_DDP_SIM/ddp/MA/c/Send_out" type="logic">
          <obj_property name="ElementShortName">Send_out</obj_property>
          <obj_property name="ObjectShortName">Send_out</obj_property>
@@ -193,26 +302,100 @@
    <wvobject fp_name="group147" type="group">
       <obj_property name="label">COPY_Stage</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="isExpanded"></obj_property>
-      <wvobject fp_name="/JOIN_DDP_SIM/ddp/COPY/Send_in" type="logic">
+      <wvobject fp_name="group301" type="group">
+         <obj_property name="label">CX2</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/JOIN_DDP_SIM/ddp/COPY/Send_in" type="logic">
+            <obj_property name="ElementShortName">Send_in</obj_property>
+            <obj_property name="ObjectShortName">Send_in</obj_property>
+         </wvobject>
+         <wvobject fp_name="/JOIN_DDP_SIM/ddp/COPY/Ack_out" type="logic">
+            <obj_property name="ElementShortName">Ack_out</obj_property>
+            <obj_property name="ObjectShortName">Ack_out</obj_property>
+         </wvobject>
+         <wvobject fp_name="/JOIN_DDP_SIM/ddp/COPY/cx2/Send_out" type="logic">
+            <obj_property name="ElementShortName">Send_out</obj_property>
+            <obj_property name="ObjectShortName">Send_out</obj_property>
+         </wvobject>
+         <wvobject fp_name="/JOIN_DDP_SIM/ddp/COPY/cx2/Ack_in" type="logic">
+            <obj_property name="ElementShortName">Ack_in</obj_property>
+            <obj_property name="ObjectShortName">Ack_in</obj_property>
+         </wvobject>
+         <wvobject fp_name="/JOIN_DDP_SIM/ddp/COPY/FEB" type="logic">
+            <obj_property name="ElementShortName">FEB</obj_property>
+            <obj_property name="ObjectShortName">FEB</obj_property>
+         </wvobject>
+         <wvobject fp_name="/JOIN_DDP_SIM/ddp/COPY/cx2/DL1S" type="logic">
+            <obj_property name="ElementShortName">DL1S</obj_property>
+            <obj_property name="ObjectShortName">DL1S</obj_property>
+         </wvobject>
+         <wvobject fp_name="/JOIN_DDP_SIM/ddp/COPY/cx2/or2_out" type="logic">
+            <obj_property name="ElementShortName">or2_out</obj_property>
+            <obj_property name="ObjectShortName">or2_out</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group300" type="group">
+         <obj_property name="label">CF1</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/JOIN_DDP_SIM/ddp/COPY/cx2/cf1/Send_in" type="logic">
+            <obj_property name="ElementShortName">Send_in</obj_property>
+            <obj_property name="ObjectShortName">Send_in</obj_property>
+         </wvobject>
+         <wvobject fp_name="/JOIN_DDP_SIM/ddp/COPY/cx2/cf1/Ack_out" type="logic">
+            <obj_property name="ElementShortName">Ack_out</obj_property>
+            <obj_property name="ObjectShortName">Ack_out</obj_property>
+         </wvobject>
+         <wvobject fp_name="/JOIN_DDP_SIM/ddp/COPY/cx2/cf1_cp" type="logic">
+            <obj_property name="ElementShortName">cf1_cp</obj_property>
+            <obj_property name="ObjectShortName">cf1_cp</obj_property>
+         </wvobject>
+         <wvobject fp_name="/JOIN_DDP_SIM/ddp/COPY/cx2/cf1/Send_out" type="logic">
+            <obj_property name="ElementShortName">Send_out</obj_property>
+            <obj_property name="ObjectShortName">Send_out</obj_property>
+         </wvobject>
+         <wvobject fp_name="/JOIN_DDP_SIM/ddp/COPY/cx2/cf1/Ack_in" type="logic">
+            <obj_property name="ElementShortName">Ack_in</obj_property>
+            <obj_property name="ObjectShortName">Ack_in</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group302" type="group">
+         <obj_property name="label">CF2</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/JOIN_DDP_SIM/ddp/COPY/cx2/cf2/Send_in" type="logic">
+            <obj_property name="ElementShortName">Send_in</obj_property>
+            <obj_property name="ObjectShortName">Send_in</obj_property>
+         </wvobject>
+         <wvobject fp_name="/JOIN_DDP_SIM/ddp/COPY/cx2/cf2/Ack_out" type="logic">
+            <obj_property name="ElementShortName">Ack_out</obj_property>
+            <obj_property name="ObjectShortName">Ack_out</obj_property>
+         </wvobject>
+         <wvobject fp_name="/JOIN_DDP_SIM/ddp/COPY/cx2/cf2/CP" type="logic">
+            <obj_property name="ElementShortName">CP</obj_property>
+            <obj_property name="ObjectShortName">CP</obj_property>
+         </wvobject>
+         <wvobject fp_name="/JOIN_DDP_SIM/ddp/COPY/cx2/cf2/Send_out" type="logic">
+            <obj_property name="ElementShortName">Send_out</obj_property>
+            <obj_property name="ObjectShortName">Send_out</obj_property>
+         </wvobject>
+         <wvobject fp_name="/JOIN_DDP_SIM/ddp/COPY/cx2/cf2/Ack_in" type="logic">
+            <obj_property name="ElementShortName">Ack_in</obj_property>
+            <obj_property name="ObjectShortName">Ack_in</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group299" type="group">
+      <obj_property name="label">B_Stage</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/JOIN_DDP_SIM/ddp/B/cb/cf/Send_in" type="logic">
          <obj_property name="ElementShortName">Send_in</obj_property>
          <obj_property name="ObjectShortName">Send_in</obj_property>
       </wvobject>
-      <wvobject fp_name="/JOIN_DDP_SIM/ddp/COPY/Ack_out" type="logic">
+      <wvobject fp_name="/JOIN_DDP_SIM/ddp/B/cb/cf/Ack_out" type="logic">
          <obj_property name="ElementShortName">Ack_out</obj_property>
          <obj_property name="ObjectShortName">Ack_out</obj_property>
-      </wvobject>
-      <wvobject fp_name="/JOIN_DDP_SIM/ddp/COPY/Send_out" type="logic">
-         <obj_property name="ElementShortName">Send_out</obj_property>
-         <obj_property name="ObjectShortName">Send_out</obj_property>
-      </wvobject>
-      <wvobject fp_name="/JOIN_DDP_SIM/ddp/COPY/Ack_in" type="logic">
-         <obj_property name="ElementShortName">Ack_in</obj_property>
-         <obj_property name="ObjectShortName">Ack_in</obj_property>
-      </wvobject>
-      <wvobject fp_name="/JOIN_DDP_SIM/ddp/COPY/FEB" type="logic">
-         <obj_property name="ElementShortName">FEB</obj_property>
-         <obj_property name="ObjectShortName">FEB</obj_property>
       </wvobject>
    </wvobject>
 </wave_config>

@@ -1,1 +1,2 @@
-sim1の、dont touchを消したバージョン
+sim1の、dont touchを消したバージョン.
+sim1ではdont touchがついたままだとbehavioral simができないぽいため、Vivado上でできてたかの確認

@@ -16,7 +16,7 @@ module MMCAM_Stage(
 genvar i;
 generate
     for (i = 0; i < `MMCAM_ENTRY_HEIGHT; i = i + 1) begin :entry_fd_loop
-        ENTRY_FD ef(.CP(CP), .MR(MR), .EN(EN[i]), .COLOR_GEN_DEST_LR(PACKET_IN[37:19]), .VALID(VALID[i]), .FIRE(FIRE[i]));
+        (* dont_touch = "true" *) ENTRY_FD ef(.CP(CP), .MR(MR), .EN(EN[i]), .COLOR_GEN_DEST_LR(PACKET_IN[37:19]), .VALID(VALID[i]), .FIRE(FIRE[i]));
     end
 endgenerate
 

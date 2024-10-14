@@ -8,32 +8,4 @@ Pass Through NonSizing Optimizer
 WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'WRITE_DATA' [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim3/HDL/JOIN_DDP.v:44]
 WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'WRITE_DATA' [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim3/HDL/JOIN_DDP.v:47]
 Completed static elaboration
-Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim3/HDL/ARB.v" Line 2. Module ARB doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim3/HDL/B_Stage.v" Line 4. Module B_Stage doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim3/HDL/ARB.v" Line 2. Module ARB doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/sim3/HDL/B_Stage.v" Line 4. Module B_Stage doesn't have a timescale but at least one module in design has a timescale.
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.CJ
-Compiling module xil_defaultlib.ARB
-Compiling module xil_defaultlib.CM
-Compiling module xil_defaultlib.M_Stage
-Compiling module xil_defaultlib.C
-Compiling module xil_defaultlib.ENTRY_FD
-Compiling module xil_defaultlib.OR_AM_MA
-Compiling module xil_defaultlib.MMCAM_Stage_default
-Compiling module xil_defaultlib.CF_default
-Compiling module xil_defaultlib.CE
-Compiling module xil_defaultlib.MMRAM_Stage
-Compiling module xil_defaultlib.PS_Stage
-Compiling module xil_defaultlib.FP_Stage
-Compiling module xil_defaultlib.MA_Stage
-Compiling module xil_defaultlib.CX2
-Compiling module xil_defaultlib.COPY_Stage
-Compiling module xil_defaultlib.CB
-Compiling module xil_defaultlib.B_Stage
-Compiling module xil_defaultlib.JOIN_DDP
-Compiling module xil_defaultlib.JOIN_DDP_SIM
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot JOIN_DDP_SIM_behav
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

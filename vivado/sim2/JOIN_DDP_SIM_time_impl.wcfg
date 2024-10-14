@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="63.276 ns"></ZoomStartTime>
-      <ZoomEndTime time="446.277 ns"></ZoomEndTime>
-      <Cursor1Time time="398.875 ns"></Cursor1Time>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="493.988 ns"></ZoomEndTime>
+      <Cursor1Time time="500.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="178"></NameColumnWidth>
-      <ValueColumnWidth column_width="87"></ValueColumnWidth>
+      <ValueColumnWidth column_width="83"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="8" />
+   <WVObjectSize size="9" />
    <wvobject fp_name="/JOIN_DDP_SIM/Send_in" type="logic">
       <obj_property name="ElementShortName">Send_in</obj_property>
       <obj_property name="ObjectShortName">Send_in</obj_property>
@@ -105,6 +105,71 @@
       <wvobject fp_name="/JOIN_DDP_SIM/ddp/c/CP" type="logic">
          <obj_property name="ElementShortName">CP</obj_property>
          <obj_property name="ObjectShortName">CP</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group51" type="group">
+      <obj_property name="label">PACKET_OUT</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/JOIN_DDP_SIM/ddp/M/PACKET_OUT" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">PACKET_OUT[37:0]</obj_property>
+         <obj_property name="ObjectShortName">PACKET_OUT[37:0]</obj_property>
+         <obj_property name="label">M_PACKET_OUT[37:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/JOIN_DDP_SIM/ddp/MMCAM/PACKET_OUT" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">PACKET_OUT[37:0]</obj_property>
+         <obj_property name="ObjectShortName">PACKET_OUT[37:0]</obj_property>
+         <obj_property name="label">MMCAM_PACKET_OUT[37:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/JOIN_DDP_SIM/ddp/MMRAM/PACKET_OUT" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">PACKET_OUT[51:0]</obj_property>
+         <obj_property name="ObjectShortName">PACKET_OUT[51:0]</obj_property>
+         <obj_property name="label">MMRAMPACKET_OUT[51:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/JOIN_DDP_SIM/ddp/PS/PACKET_OUT" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">PACKET_OUT[61:0]</obj_property>
+         <obj_property name="ObjectShortName">PACKET_OUT[61:0]</obj_property>
+         <obj_property name="label">PS_PACKET_OUT[61:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/JOIN_DDP_SIM/ddp/FP/PACKET_OUT" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">PACKET_OUT[39:0]</obj_property>
+         <obj_property name="ObjectShortName">PACKET_OUT[39:0]</obj_property>
+         <obj_property name="label">FP_PACKET_OUT[39:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/JOIN_DDP_SIM/ddp/MA/PACKET_OUT" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">PACKET_OUT[39:0]</obj_property>
+         <obj_property name="ObjectShortName">PACKET_OUT[39:0]</obj_property>
+         <obj_property name="label">MA_PACKET_OUT[39:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/JOIN_DDP_SIM/ddp/COPY/PACKET_OUT" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">PACKET_OUT[37:0]</obj_property>
+         <obj_property name="ObjectShortName">PACKET_OUT[37:0]</obj_property>
+         <obj_property name="label">COPY_PACKET_OUT[37:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/JOIN_DDP_SIM/ddp/B/PACKET_OUT" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">PACKET_OUT[37:0]</obj_property>
+         <obj_property name="ObjectShortName">PACKET_OUT[37:0]</obj_property>
+         <obj_property name="label">B_PACKET_OUT[37:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/JOIN_DDP_SIM/PACKET_OUT" type="array">
+         <obj_property name="ElementShortName">PACKET_OUT[37:0]</obj_property>
+         <obj_property name="ObjectShortName">PACKET_OUT[37:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
       </wvobject>
    </wvobject>
 </wave_config>

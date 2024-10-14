@@ -65,5 +65,6 @@ end
 
 //merge
 assign PACKET_OUT = {DL[37:19], MF, DL[17:0]}; 
-
+(* dont_touch = "true" *) wire [6:0] dest_B;
+assign dest_B = PACKET_OUT[26:20];
 endmodule

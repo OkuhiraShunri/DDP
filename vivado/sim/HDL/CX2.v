@@ -40,20 +40,38 @@ always @(posedge MR or posedge cf1_cp) begin
 end
 
 /* DL1S の更新処理 */
-localparam GROUND = 1'b0;
-always @(posedge MR or negedge or2_out or negedge cf2_cp) begin
+//localparam GROUND = 1'b0;
+// always @(posedge MR or negedge or2_out or negedge cf2_cp) begin
+//     if (MR) begin
+//         DL1S <= 1'b0;
+//     end
+//     else if (~or2_out) begin//or2_outの立下り
+//         DL1S <= 1'b1;
+//     end
+//     else if (~cf2_cp) begin//cf2_cpの立下り
+//         DL1S <= 1'b0;
+//     end
+//     // else begin
+//     //     DL1S <= 1'b0;
+//     // end
+// end
+
+(* dont_touch = "true" *) wire cp3, cd, sd, d;
+assign cp3 = ~cf2_cp;
+assign cd = ~MR;
+assign sd = ~or2_out;
+assign d = 1'b0;
+
+always @(posedge MR or posedge sd or posedge cp3) begin
     if (MR) begin
         DL1S <= 1'b0;
     end
-    else if (~or2_out) begin//or2_outの立下り
+    else if (sd) begin
         DL1S <= 1'b1;
     end
-    else if (~cf2_cp) begin//cf2_cpの立下り
-        DL1S <= GROUND;
+    else if (cp3) begin
+        DL1S <= d;
     end
-    // else if(or2_out) begin
-    //     DL1S <= 1'b0;
-    // end
 end
 
 //output

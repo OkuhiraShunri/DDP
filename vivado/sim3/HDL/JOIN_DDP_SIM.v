@@ -60,6 +60,6 @@ end
 
 //階乗のテストaaa
 initial begin
-    PACKET_IN <= {3'b111, 8'b0, 7'd0, 1'b0, 1'b0, 1'b0, 1'b0, 16'd5};
+    PACKET_IN <= {3'b111, 8'b0, 7'd0, 1'b0, 1'b0, 1'b0, 1'b0, 16'd3};
 end
 endmodule
