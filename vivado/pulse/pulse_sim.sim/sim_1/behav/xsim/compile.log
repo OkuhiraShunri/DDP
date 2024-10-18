@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/pulse/HDL/TOGLE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOGLE
+WARNING: [VRFC 10-3380] identifier 'en50hz' is used before its declaration [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/pulse/HDL/TOGLE.v:10]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/pulse/HDL/TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TB

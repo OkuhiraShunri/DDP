@@ -79,7 +79,7 @@ end
 (* dont_touch = "true" *) wire [6:0] dest;
 (* dont_touch = "true" *) assign dest = PACKET_IN[26:20];
 (* dont_touch = "true" *) wire [15:0] CST_DATA;
-MMRAM mmram(
+(* dont_touch = "true" *) MMRAM mmram(
     .clka(CP),    // input wire clka
     .wea(WR_E),      // input wire [0 : 0] wea
     .addra(ADDR),  // input wire [5 : 0] addra
@@ -87,7 +87,7 @@ MMRAM mmram(
     .douta(DATA_OUT)  // output wire [19 : 0] douta
 );
 
-CMEM cmem (
+(* dont_touch = "true" *) CMEM cmem (
   .clka(CP),    // input wire clka
   .addra(dest[5:0]),  // input wire [5 : 0] addra
   .douta(CST_DATA)  // output wire [15 : 0] douta

@@ -1,0 +1,31 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../HDL" \
+"../../../../HDL/ARB.v" \
+"../../../../HDL/B_Stage.v" \
+"../../../../HDL/C.v" \
+"../../../../HDL/CB.v" \
+"../../../../HDL/CE.v" \
+"../../../../HDL/CF.v" \
+"../../../../HDL/CJ.v" \
+"../../../../HDL/CM.v" \
+"../../../../HDL/COPY_Stage.v" \
+"../../../../HDL/CX2.v" \
+"../../../../HDL/DISPLAY.v" \
+"../../../../HDL/ENTRY_FD.v" \
+"../../../../HDL/FP_Stage.v" \
+"../../../../HDL/JOIN_DDP.v" \
+"../../../../HDL/MA_Stage.v" \
+"../../../../HDL/MMCAM_Stage.v" \
+"../../../../HDL/MMRAM_Stage.v" \
+"../../../../HDL/M_Stage.v" \
+"../../../../HDL/OR_AM_MA.v" \
+"../../../../HDL/PACKET_FETCH.v" \
+"../../../../HDL/PS_Stage.v" \
+"../../../../HDL/WHOLE.v" \
+"../../../../HDL/WHOLE_SIM.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

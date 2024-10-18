@@ -81,7 +81,7 @@ end
 (* dont_touch = "true" *) wire MF;
 (* dont_touch = "true" *) wire [6:0] dest;
 assign dest = PACKET_IN[26:20];
-SubPS subps(
+(* dont_touch = "true" *) SubPS subps(
     .clka(CP),    // input wire clka
     .addra(dest[5:0]),  // input wire [5 : 0] addra
     .douta(MF)  // output wire [0 : 0] douta

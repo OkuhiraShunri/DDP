@@ -92,7 +92,7 @@ end
 (* dont_touch = "true" *) wire [16:0] PSData;
 (* dont_touch = "true" *) wire [6:0] dest;
 assign dest = PACKET_IN[`PS_PACKIN_DEST];
-PS ps(
+(* dont_touch = "true" *) PS ps(
     .clka(CP),
     .addra(dest),
     .douta(PSData)

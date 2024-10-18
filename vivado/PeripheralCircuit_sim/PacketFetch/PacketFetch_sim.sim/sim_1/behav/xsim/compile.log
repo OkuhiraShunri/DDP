@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/PeripheralCircuit_sim/PacketFetch/HDL/PACKET_FETCH.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PACKET_FETCH
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/PeripheralCircuit_sim/PacketFetch/HDL/PACKET_FETCH_SIM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PACKET_FETCH_SIM

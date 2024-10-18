@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/PeripheralCircuit_sim/Display/HDL/DISPLAY.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DISPLAY
+WARNING: [VRFC 10-3380] identifier 'en50hz' is used before its declaration [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/PeripheralCircuit_sim/Display/HDL/DISPLAY.v:15]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/PeripheralCircuit_sim/Display/HDL/DISPLAY_SIM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DISPLAY_SIM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/PeripheralCircuit_sim/Display/Display_sim.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

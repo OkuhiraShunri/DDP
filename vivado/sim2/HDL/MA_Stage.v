@@ -51,7 +51,7 @@ end
 //     end
 // end
 (* dont_touch = "true" *) wire [15:0] LOAD_DATA;
-DMEM dmem(
+(* dont_touch = "true" *) DMEM dmem(
     .clka(CP),    // input wire clka
     .wea(WRITE_EN),      // input wire [0 : 0] wea
     .addra(ResultData[9:0]),  // input wire [5 : 0] addra

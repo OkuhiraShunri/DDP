@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "PACKET_FETCH_SIM_behav" "xil_defaultlib.PACKET_FETCH_SIM" "xil_defaultlib.glbl" -log "elaborate.log" 
