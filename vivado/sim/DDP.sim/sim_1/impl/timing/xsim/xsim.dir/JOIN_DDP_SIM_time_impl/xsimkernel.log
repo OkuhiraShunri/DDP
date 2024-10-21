@@ -1,0 +1,4 @@
+Running: xsim.dir/JOIN_DDP_SIM_time_impl/xsimk.exe -simmode gui -wdb JOIN_DDP_SIM_time_impl.wdb -simrunnum 0 -socket 57333
+Design successfully loaded
+Design Loading Memory Usage: 103424 KB (Peak: 103424 KB)
+Design Loading CPU Usage: 202 ms

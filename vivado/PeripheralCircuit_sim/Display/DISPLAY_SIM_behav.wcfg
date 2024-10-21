@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="DISPLAY_SIM_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="DISPLAY_SIM" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="6,256.323 ns"></ZoomEndTime>
+      <Cursor1Time time="300.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="171"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="12" />
+   <wvobject fp_name="/DISPLAY_SIM/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DISPLAY_SIM/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DISPLAY_SIM/switch" type="logic">
+      <obj_property name="ElementShortName">switch</obj_property>
+      <obj_property name="ObjectShortName">switch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DISPLAY_SIM/DISPLAY/togle_sw" type="logic">
+      <obj_property name="ElementShortName">togle_sw</obj_property>
+      <obj_property name="ObjectShortName">togle_sw</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DISPLAY_SIM/pc" type="array">
+      <obj_property name="ElementShortName">pc[4:0]</obj_property>
+      <obj_property name="ObjectShortName">pc[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DISPLAY_SIM/packect" type="array">
+      <obj_property name="ElementShortName">packect[37:0]</obj_property>
+      <obj_property name="ObjectShortName">packect[37:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DISPLAY_SIM/DISPLAY/cnt" type="array">
+      <obj_property name="ElementShortName">cnt[25:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[25:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DISPLAY_SIM/DISPLAY/en50hz" type="logic">
+      <obj_property name="ElementShortName">en50hz</obj_property>
+      <obj_property name="ObjectShortName">en50hz</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DISPLAY_SIM/togle" type="logic">
+      <obj_property name="ElementShortName">togle</obj_property>
+      <obj_property name="ObjectShortName">togle</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DISPLAY_SIM/nhex" type="array">
+      <obj_property name="ElementShortName">nhex[7:0]</obj_property>
+      <obj_property name="ObjectShortName">nhex[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DISPLAY_SIM/DISPLAY/mux1" type="array">
+      <obj_property name="ElementShortName">mux1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">mux1[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DISPLAY_SIM/DISPLAY/mux2" type="array">
+      <obj_property name="ElementShortName">mux2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">mux2[3:0]</obj_property>
+   </wvobject>
+</wave_config>
