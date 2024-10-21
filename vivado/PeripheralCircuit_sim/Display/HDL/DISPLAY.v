@@ -57,7 +57,7 @@ assign mux2 = TOGLE ? mux1[7:4] : mux1[3:0];
 
 //7seg
 always @* begin
-    case(mux1)
+    case(mux2)
         4'h0:   nHEX = 8'b11000000;
         4'h1:   nHEX = 8'b11111001;
         4'h2:   nHEX = 8'b10100100;

@@ -1,7 +1,8 @@
 //(* dont_touch = "true" *)
 `include "common_macro.vh"
 module DISPLAY(
-    input CLK, RST, 
+    input CLK, RST, DISP_SWITCH, 
+    input [4:0] PC,
     input [37:0] PACKET_IN,
     output TOGLE,
     output reg [7:0] nHEX
@@ -35,12 +36,28 @@ always @(posedge en50hz) begin
 end
 assign TOGLE = togle_r;//<< Is this outputregster?
 
-wire [3:0] mux1;
-assign mux1 = TOGLE ? PACKET_IN[7:4] : PACKET_IN[3:0];
+reg togle_sw = 0;
+always @(posedge DISP_SWITCH) begin
+    if(RST)begin
+        togle_sw <= 1'b0;
+    end
+    else if(togle_sw)begin
+        togle_sw <= 1'b0;
+    end
+    else begin
+        togle_sw <= 1'b1;
+    end
+end
+
+wire [7:0] mux1;
+assign mux1 = togle_sw ? PACKET_IN[7:0] : {3'b0, PC};//パケットのデータ部分は16bitあるけど、ここでは8bitまでしか取得してないため、最大16真数表示で二桁(FF)までしか表示できない
+
+wire [3:0] mux2;
+assign mux2 = TOGLE ? mux1[7:4] : mux1[3:0];
 
 //7seg
 always @* begin
-    case(mux1)
+    case(mux2)
         4'h0:   nHEX = 8'b11000000;
         4'h1:   nHEX = 8'b11111001;
         4'h2:   nHEX = 8'b10100100;

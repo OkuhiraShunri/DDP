@@ -23,7 +23,7 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/OkuhiraShunri/Documents/ve
 INFO: [VRFC 10-311] analyzing module CX2
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/PeripheralCircuit_sim/whole/HDL/DISPLAY.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module DISPLAY
-WARNING: [VRFC 10-3380] identifier 'en50hz' is used before its declaration [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/PeripheralCircuit_sim/whole/HDL/DISPLAY.v:15]
+WARNING: [VRFC 10-3380] identifier 'en50hz' is used before its declaration [C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/PeripheralCircuit_sim/whole/HDL/DISPLAY.v:16]
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/PeripheralCircuit_sim/whole/HDL/ENTRY_FD.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ENTRY_FD
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/PeripheralCircuit_sim/whole/HDL/FP_Stage.v" into library xil_defaultlib

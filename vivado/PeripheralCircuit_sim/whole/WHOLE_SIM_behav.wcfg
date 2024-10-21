@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="1,525.720 ns"></ZoomStartTime>
-      <ZoomEndTime time="1,928.721 ns"></ZoomEndTime>
-      <Cursor1Time time="1,934.000 ns"></Cursor1Time>
+      <ZoomStartTime time="253.360 ns"></ZoomStartTime>
+      <ZoomEndTime time="676.361 ns"></ZoomEndTime>
+      <Cursor1Time time="450.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="167"></NameColumnWidth>
+      <NameColumnWidth column_width="143"></NameColumnWidth>
       <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="11" />
+   <WVObjectSize size="18" />
    <wvobject fp_name="/WHOLE_SIM/CLK" type="logic">
       <obj_property name="ElementShortName">CLK</obj_property>
       <obj_property name="ObjectShortName">CLK</obj_property>
@@ -28,17 +28,9 @@
       <obj_property name="ElementShortName">RST</obj_property>
       <obj_property name="ObjectShortName">RST</obj_property>
    </wvobject>
-   <wvobject fp_name="/WHOLE_SIM/MR" type="logic">
-      <obj_property name="ElementShortName">MR</obj_property>
-      <obj_property name="ObjectShortName">MR</obj_property>
-   </wvobject>
    <wvobject fp_name="/WHOLE_SIM/Send_in" type="logic">
       <obj_property name="ElementShortName">Send_in</obj_property>
       <obj_property name="ObjectShortName">Send_in</obj_property>
-   </wvobject>
-   <wvobject fp_name="/WHOLE_SIM/Ack_in" type="logic">
-      <obj_property name="ElementShortName">Ack_in</obj_property>
-      <obj_property name="ObjectShortName">Ack_in</obj_property>
    </wvobject>
    <wvobject fp_name="/WHOLE_SIM/Ack_out" type="logic">
       <obj_property name="ElementShortName">Ack_out</obj_property>
@@ -48,13 +40,21 @@
       <obj_property name="ElementShortName">Send_out</obj_property>
       <obj_property name="ObjectShortName">Send_out</obj_property>
    </wvobject>
-   <wvobject fp_name="/WHOLE_SIM/TOGLE" type="logic">
-      <obj_property name="ElementShortName">TOGLE</obj_property>
-      <obj_property name="ObjectShortName">TOGLE</obj_property>
+   <wvobject fp_name="/WHOLE_SIM/Ack_in" type="logic">
+      <obj_property name="ElementShortName">Ack_in</obj_property>
+      <obj_property name="ObjectShortName">Ack_in</obj_property>
    </wvobject>
-   <wvobject fp_name="/WHOLE_SIM/nHEX" type="array">
-      <obj_property name="ElementShortName">nHEX[7:0]</obj_property>
-      <obj_property name="ObjectShortName">nHEX[7:0]</obj_property>
+   <wvobject fp_name="/WHOLE_SIM/PC_UDDATE" type="logic">
+      <obj_property name="ElementShortName">PC_UDDATE</obj_property>
+      <obj_property name="ObjectShortName">PC_UDDATE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/WHOLE_SIM/DISP_SWITCH" type="logic">
+      <obj_property name="ElementShortName">DISP_SWITCH</obj_property>
+      <obj_property name="ObjectShortName">DISP_SWITCH</obj_property>
+   </wvobject>
+   <wvobject fp_name="/WHOLE_SIM/whole/ddp/PACKET_IN" type="array">
+      <obj_property name="ElementShortName">PACKET_IN[37:0]</obj_property>
+      <obj_property name="ObjectShortName">PACKET_IN[37:0]</obj_property>
    </wvobject>
    <wvobject fp_name="group30" type="group">
       <obj_property name="label">CP</obj_property>
@@ -115,8 +115,148 @@
          <obj_property name="ObjectShortName">CP</obj_property>
       </wvobject>
    </wvobject>
-   <wvobject fp_name="/WHOLE_SIM/whole/ddp/PACKET_OUT" type="array">
-      <obj_property name="ElementShortName">PACKET_OUT[37:0]</obj_property>
-      <obj_property name="ObjectShortName">PACKET_OUT[37:0]</obj_property>
+   <wvobject fp_name="group337" type="group">
+      <obj_property name="label">PACKET_OUT</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/WHOLE_SIM/whole/ddp/M/PACKET_OUT" type="array">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">PACKET_OUT[37:0]</obj_property>
+         <obj_property name="ObjectShortName">PACKET_OUT[37:0]</obj_property>
+         <obj_property name="label">M</obj_property>
+      </wvobject>
+      <wvobject fp_name="/WHOLE_SIM/whole/ddp/PACKET_OUT" type="array">
+         <obj_property name="ElementShortName">PACKET_OUT[37:0]</obj_property>
+         <obj_property name="ObjectShortName">PACKET_OUT[37:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/WHOLE_SIM/whole/PC_OUT" type="array">
+      <obj_property name="ElementShortName">PC_OUT[4:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_OUT[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="group169" type="group">
+      <obj_property name="label">PF</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/WHOLE_SIM/whole/pf/PC" type="array">
+         <obj_property name="ElementShortName">PC[4:0]</obj_property>
+         <obj_property name="ObjectShortName">PC[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/WHOLE_SIM/whole/pf/PC_2" type="array">
+         <obj_property name="ElementShortName">PC_2[4:0]</obj_property>
+         <obj_property name="ObjectShortName">PC_2[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group172" type="group">
+      <obj_property name="label">DISPLAY</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/WHOLE_SIM/whole/display/togle_sw" type="logic">
+         <obj_property name="ElementShortName">togle_sw</obj_property>
+         <obj_property name="ObjectShortName">togle_sw</obj_property>
+      </wvobject>
+      <wvobject fp_name="/WHOLE_SIM/whole/display/mux1" type="array">
+         <obj_property name="ElementShortName">mux1[7:0]</obj_property>
+         <obj_property name="ObjectShortName">mux1[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/WHOLE_SIM/TOGLE" type="logic">
+         <obj_property name="ElementShortName">TOGLE</obj_property>
+         <obj_property name="ObjectShortName">TOGLE</obj_property>
+      </wvobject>
+      <wvobject fp_name="/WHOLE_SIM/whole/display/mux2" type="array">
+         <obj_property name="ElementShortName">mux2[3:0]</obj_property>
+         <obj_property name="ObjectShortName">mux2[3:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/WHOLE_SIM/nHEX" type="array">
+         <obj_property name="ElementShortName">nHEX[7:0]</obj_property>
+         <obj_property name="ObjectShortName">nHEX[7:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/WHOLE_SIM/whole/ddp/PS/dest" type="array">
+      <obj_property name="ElementShortName">dest[6:0]</obj_property>
+      <obj_property name="ObjectShortName">dest[6:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/WHOLE_SIM/whole/ddp/FP/DataL" type="array">
+      <obj_property name="ElementShortName">DataL[15:0]</obj_property>
+      <obj_property name="ObjectShortName">DataL[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/WHOLE_SIM/whole/ddp/FP/DataR" type="array">
+      <obj_property name="ElementShortName">DataR[15:0]</obj_property>
+      <obj_property name="ObjectShortName">DataR[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="vbus383" type="vbus">
+      <obj_property name="label">Resultdata</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <wvobject fp_name="/WHOLE_SIM/whole/ddp/FP/PACKET_OUT[15]" type="logic">
+         <obj_property name="ElementShortName">[15]</obj_property>
+         <obj_property name="ObjectShortName">[15]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/WHOLE_SIM/whole/ddp/FP/PACKET_OUT[14]" type="logic">
+         <obj_property name="ElementShortName">[14]</obj_property>
+         <obj_property name="ObjectShortName">[14]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/WHOLE_SIM/whole/ddp/FP/PACKET_OUT[13]" type="logic">
+         <obj_property name="ElementShortName">[13]</obj_property>
+         <obj_property name="ObjectShortName">[13]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/WHOLE_SIM/whole/ddp/FP/PACKET_OUT[12]" type="logic">
+         <obj_property name="ElementShortName">[12]</obj_property>
+         <obj_property name="ObjectShortName">[12]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/WHOLE_SIM/whole/ddp/FP/PACKET_OUT[11]" type="logic">
+         <obj_property name="ElementShortName">[11]</obj_property>
+         <obj_property name="ObjectShortName">[11]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/WHOLE_SIM/whole/ddp/FP/PACKET_OUT[10]" type="logic">
+         <obj_property name="ElementShortName">[10]</obj_property>
+         <obj_property name="ObjectShortName">[10]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/WHOLE_SIM/whole/ddp/FP/PACKET_OUT[9]" type="logic">
+         <obj_property name="ElementShortName">[9]</obj_property>
+         <obj_property name="ObjectShortName">[9]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/WHOLE_SIM/whole/ddp/FP/PACKET_OUT[8]" type="logic">
+         <obj_property name="ElementShortName">[8]</obj_property>
+         <obj_property name="ObjectShortName">[8]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/WHOLE_SIM/whole/ddp/FP/PACKET_OUT[7]" type="logic">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">[7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/WHOLE_SIM/whole/ddp/FP/PACKET_OUT[6]" type="logic">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">[6]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/WHOLE_SIM/whole/ddp/FP/PACKET_OUT[5]" type="logic">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">[5]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/WHOLE_SIM/whole/ddp/FP/PACKET_OUT[4]" type="logic">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">[4]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/WHOLE_SIM/whole/ddp/FP/PACKET_OUT[3]" type="logic">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">[3]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/WHOLE_SIM/whole/ddp/FP/PACKET_OUT[2]" type="logic">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">[2]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/WHOLE_SIM/whole/ddp/FP/PACKET_OUT[1]" type="logic">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">[1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/WHOLE_SIM/whole/ddp/FP/PACKET_OUT[0]" type="logic">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">[0]</obj_property>
+      </wvobject>
    </wvobject>
 </wave_config>
