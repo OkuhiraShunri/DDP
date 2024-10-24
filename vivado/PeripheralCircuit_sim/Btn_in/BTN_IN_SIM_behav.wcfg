@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="BTN_IN_SIM_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="BTN_IN_SIM" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="270.040 ns"></ZoomStartTime>
+      <ZoomEndTime time="312.741 ns"></ZoomEndTime>
+      <Cursor1Time time="276.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="135"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="12" />
+   <wvobject fp_name="/BTN_IN_SIM/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BTN_IN_SIM/RST" type="logic">
+      <obj_property name="ElementShortName">RST</obj_property>
+      <obj_property name="ObjectShortName">RST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BTN_IN_SIM/Ack_out_DDP" type="logic">
+      <obj_property name="ElementShortName">Ack_out_DDP</obj_property>
+      <obj_property name="ObjectShortName">Ack_out_DDP</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BTN_IN_SIM/Send_out_DDP" type="logic">
+      <obj_property name="ElementShortName">Send_out_DDP</obj_property>
+      <obj_property name="ObjectShortName">Send_out_DDP</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BTN_IN_SIM/BIN" type="array">
+      <obj_property name="ElementShortName">BIN[3:0]</obj_property>
+      <obj_property name="ObjectShortName">BIN[3:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/BTN_IN_SIM/BTN_IN/en40hz" type="logic">
+      <obj_property name="ElementShortName">en40hz</obj_property>
+      <obj_property name="ObjectShortName">en40hz</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BTN_IN_SIM/BOUT" type="array">
+      <obj_property name="ElementShortName">BOUT[3:0]</obj_property>
+      <obj_property name="ObjectShortName">BOUT[3:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/BTN_IN_SIM/LED" type="array">
+      <obj_property name="ElementShortName">LED[1:0]</obj_property>
+      <obj_property name="ObjectShortName">LED[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BTN_IN_SIM/BTN_IN/ff1" type="array">
+      <obj_property name="ElementShortName">ff1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ff1[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BTN_IN_SIM/BTN_IN/ff2" type="array">
+      <obj_property name="ElementShortName">ff2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ff2[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BTN_IN_SIM/BTN_IN/tempP" type="array">
+      <obj_property name="ElementShortName">tempP[3:0]</obj_property>
+      <obj_property name="ObjectShortName">tempP[3:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/BTN_IN_SIM/BTN_IN/tempN" type="array">
+      <obj_property name="ElementShortName">tempN[3:0]</obj_property>
+      <obj_property name="ObjectShortName">tempN[3:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+</wave_config>

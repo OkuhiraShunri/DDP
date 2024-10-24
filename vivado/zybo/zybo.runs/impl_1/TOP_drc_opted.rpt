@@ -1,0 +1,217 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Thu Oct 24 17:07:42 2024
+| Host         : DESKTOP-B2190GF running 64-bit major release  (build 9200)
+| Command      : report_drc -file TOP_drc_opted.rpt -pb TOP_drc_opted.pb -rpx TOP_drc_opted.rpx
+| Design       : TOP
+| Device       : xc7z010clg400-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 19
++-------------+----------+-------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                 | Violations |
++-------------+----------+-------------------------------------------------------------+------------+
+| DPIP-1      | Warning  | Input pipelining                                            | 2          |
+| DPOP-1      | Warning  | PREG Output pipelining                                      | 1          |
+| DPOP-2      | Warning  | MREG Output pipelining                                      | 1          |
+| LUTLP-2     | Warning  | Combinatorial Loop Allowed                                  | 3          |
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 11         |
+| ZPS7-1      | Warning  | PS7 block required                                          | 1          |
++-------------+----------+-------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIP-1#1 Warning
+Input pipelining  
+DSP JOIN_DDP/FP/ALU1 input JOIN_DDP/FP/ALU1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP JOIN_DDP/FP/ALU1 input JOIN_DDP/FP/ALU1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP JOIN_DDP/FP/ALU1 output JOIN_DDP/FP/ALU1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP JOIN_DDP/FP/ALU1 multiplier stage JOIN_DDP/FP/ALU1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+LUTLP-2#1 Warning
+Combinatorial Loop Allowed  
+2 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: JOIN_DDP/COPY/cx2/nor1_out_inferred_i_1
+JOIN_DDP/COPY/cx2/nor2_out_inferred_i_1.
+Related violations: <none>
+
+LUTLP-2#2 Warning
+Combinatorial Loop Allowed  
+2 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: JOIN_DDP/M/cm/nor2_inferred_i_1, JOIN_DDP/M/cm/nor3_inferred_i_1.
+Related violations: <none>
+
+LUTLP-2#3 Warning
+Combinatorial Loop Allowed  
+436 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. This loop has been identified in the constraints as being known and understood by use of the ALLOW_COMBINATORIAL_LOOPS property on a net in the loop. The cells in the loop are: JOIN_DDP/B/cb/CB_Send_out_a_INST_0, JOIN_DDP/B/cb/CB_Send_out_b_INST_0,
+JOIN_DDP/B/cb/cf/Ack_out_INST_0, JOIN_DDP/COPY/cx2/cf1/Ack_out_INST_0,
+JOIN_DDP/FP/ce/cf/Ack_out_INST_0, JOIN_DDP/M/cm/cj_a/Ack_out_INST_0,
+JOIN_DDP/M/cm/cj_a/CP_INST_0, JOIN_DDP/M/cm/cj_b/Ack_out_INST_0,
+JOIN_DDP/M/cm/cj_b/CP_INST_0, JOIN_DDP/M/cm/cj_b/Send_out_INST_0,
+JOIN_DDP/MA/c/Ack_out_INST_0, JOIN_DDP/MMCAM/c/Ack_out_INST_0,
+JOIN_DDP/MMRAM/ce/cf/Ack_out_INST_0, JOIN_DDP/PS/c/Ack_out_INST_0,
+JOIN_DDP/c/Ack_out_INST_0 (the first 15 of 436 listed).
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT JOIN_DDP/B/cb/cf/CP_INST_0 is driving clock pin of 43 cells. This could lead to large hold time violations. Involved cells are:
+JOIN_DDP/B/DL_reg[0], JOIN_DDP/B/DL_reg[10], JOIN_DDP/B/DL_reg[11],
+JOIN_DDP/B/DL_reg[12], JOIN_DDP/B/DL_reg[13], JOIN_DDP/B/DL_reg[14],
+JOIN_DDP/B/DL_reg[15], JOIN_DDP/B/DL_reg[16], JOIN_DDP/B/DL_reg[17],
+JOIN_DDP/B/DL_reg[18], JOIN_DDP/B/DL_reg[19], JOIN_DDP/B/DL_reg[1],
+JOIN_DDP/B/DL_reg[20], JOIN_DDP/B/DL_reg[21], JOIN_DDP/B/DL_reg[22]
+ (the first 15 of 43 listed)
+Related violations: <none>
+
+PLHOLDVIO-2#2 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT JOIN_DDP/COPY/cx2/cf1/CP_INST_0 is driving clock pin of 42 cells. This could lead to large hold time violations. Involved cells are:
+JOIN_DDP/COPY/DL_reg[0], JOIN_DDP/COPY/DL_reg[10],
+JOIN_DDP/COPY/DL_reg[11], JOIN_DDP/COPY/DL_reg[12],
+JOIN_DDP/COPY/DL_reg[13], JOIN_DDP/COPY/DL_reg[14],
+JOIN_DDP/COPY/DL_reg[15], JOIN_DDP/COPY/DL_reg[16],
+JOIN_DDP/COPY/DL_reg[17], JOIN_DDP/COPY/DL_reg[18],
+JOIN_DDP/COPY/DL_reg[19], JOIN_DDP/COPY/DL_reg[1],
+JOIN_DDP/COPY/DL_reg[20], JOIN_DDP/COPY/DL_reg[21],
+JOIN_DDP/COPY/DL_reg[22] (the first 15 of 42 listed)
+Related violations: <none>
+
+PLHOLDVIO-2#3 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT JOIN_DDP/COPY/cx2/cp3_inferred_i_1 is driving clock pin of 4 cells. This could lead to large hold time violations. Involved cells are:
+JOIN_DDP/COPY/cx2/DL1S_reg/F1 (in JOIN_DDP/COPY/cx2/DL1S_reg macro),
+JOIN_DDP/COPY/cx2/DL1S_reg/F2 (in JOIN_DDP/COPY/cx2/DL1S_reg macro),
+JOIN_DDP/COPY/cx2/DL1S_reg_C, JOIN_DDP/COPY/cx2/DL1S_reg_P
+Related violations: <none>
+
+PLHOLDVIO-2#4 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT JOIN_DDP/FP/ce/cf/CP_INST_0 is driving clock pin of 63 cells. This could lead to large hold time violations. Involved cells are:
+JOIN_DDP/FP/DL_reg[0], JOIN_DDP/FP/DL_reg[10], JOIN_DDP/FP/DL_reg[11],
+JOIN_DDP/FP/DL_reg[12], JOIN_DDP/FP/DL_reg[13], JOIN_DDP/FP/DL_reg[14],
+JOIN_DDP/FP/DL_reg[15], JOIN_DDP/FP/DL_reg[16], JOIN_DDP/FP/DL_reg[17],
+JOIN_DDP/FP/DL_reg[18], JOIN_DDP/FP/DL_reg[19], JOIN_DDP/FP/DL_reg[1],
+JOIN_DDP/FP/DL_reg[20], JOIN_DDP/FP/DL_reg[21], JOIN_DDP/FP/DL_reg[22]
+ (the first 15 of 63 listed)
+Related violations: <none>
+
+PLHOLDVIO-2#5 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT JOIN_DDP/M/cm/cj_a/CP_INST_0 is driving clock pin of 38 cells. This could lead to large hold time violations. Involved cells are:
+JOIN_DDP/M/DL_EX_reg[0], JOIN_DDP/M/DL_EX_reg[10],
+JOIN_DDP/M/DL_EX_reg[11], JOIN_DDP/M/DL_EX_reg[12],
+JOIN_DDP/M/DL_EX_reg[13], JOIN_DDP/M/DL_EX_reg[14],
+JOIN_DDP/M/DL_EX_reg[15], JOIN_DDP/M/DL_EX_reg[16],
+JOIN_DDP/M/DL_EX_reg[17], JOIN_DDP/M/DL_EX_reg[18],
+JOIN_DDP/M/DL_EX_reg[19], JOIN_DDP/M/DL_EX_reg[1],
+JOIN_DDP/M/DL_EX_reg[20], JOIN_DDP/M/DL_EX_reg[21],
+JOIN_DDP/M/DL_EX_reg[22] (the first 15 of 38 listed)
+Related violations: <none>
+
+PLHOLDVIO-2#6 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT JOIN_DDP/M/cm/cj_b/CP_INST_0 is driving clock pin of 38 cells. This could lead to large hold time violations. Involved cells are:
+JOIN_DDP/M/DL_IN_reg[0], JOIN_DDP/M/DL_IN_reg[10],
+JOIN_DDP/M/DL_IN_reg[11], JOIN_DDP/M/DL_IN_reg[12],
+JOIN_DDP/M/DL_IN_reg[13], JOIN_DDP/M/DL_IN_reg[14],
+JOIN_DDP/M/DL_IN_reg[15], JOIN_DDP/M/DL_IN_reg[16],
+JOIN_DDP/M/DL_IN_reg[17], JOIN_DDP/M/DL_IN_reg[18],
+JOIN_DDP/M/DL_IN_reg[19], JOIN_DDP/M/DL_IN_reg[1],
+JOIN_DDP/M/DL_IN_reg[20], JOIN_DDP/M/DL_IN_reg[21],
+JOIN_DDP/M/DL_IN_reg[22] (the first 15 of 38 listed)
+Related violations: <none>
+
+PLHOLDVIO-2#7 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT JOIN_DDP/MA/c/CP_INST_0 is driving clock pin of 377 cells. This could lead to large hold time violations. Involved cells are:
+JOIN_DDP/MA/DL_reg[0], JOIN_DDP/MA/DL_reg[10], JOIN_DDP/MA/DL_reg[11],
+JOIN_DDP/MA/DL_reg[12], JOIN_DDP/MA/DL_reg[13], JOIN_DDP/MA/DL_reg[14],
+JOIN_DDP/MA/DL_reg[15], JOIN_DDP/MA/DL_reg[16], JOIN_DDP/MA/DL_reg[17],
+JOIN_DDP/MA/DL_reg[18], JOIN_DDP/MA/DL_reg[19], JOIN_DDP/MA/DL_reg[1],
+JOIN_DDP/MA/DL_reg[20], JOIN_DDP/MA/DL_reg[21], JOIN_DDP/MA/DL_reg[22]
+ (the first 15 of 377 listed)
+Related violations: <none>
+
+PLHOLDVIO-2#8 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT JOIN_DDP/MMCAM/c/CP_INST_0 is driving clock pin of 1586 cells. This could lead to large hold time violations. Involved cells are:
+JOIN_DDP/MMCAM/DL_reg[0], JOIN_DDP/MMCAM/DL_reg[10],
+JOIN_DDP/MMCAM/DL_reg[11], JOIN_DDP/MMCAM/DL_reg[12],
+JOIN_DDP/MMCAM/DL_reg[13], JOIN_DDP/MMCAM/DL_reg[14],
+JOIN_DDP/MMCAM/DL_reg[15], JOIN_DDP/MMCAM/DL_reg[16],
+JOIN_DDP/MMCAM/DL_reg[17], JOIN_DDP/MMCAM/DL_reg[18],
+JOIN_DDP/MMCAM/DL_reg[19], JOIN_DDP/MMCAM/DL_reg[1],
+JOIN_DDP/MMCAM/DL_reg[20], JOIN_DDP/MMCAM/DL_reg[21],
+JOIN_DDP/MMCAM/DL_reg[22] (the first 15 of 1586 listed)
+Related violations: <none>
+
+PLHOLDVIO-2#9 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT JOIN_DDP/MMRAM/ce/cf/CP_INST_0 is driving clock pin of 475 cells. This could lead to large hold time violations. Involved cells are:
+JOIN_DDP/MMRAM/CST_DATA_reg[0], JOIN_DDP/MMRAM/CST_DATA_reg[10],
+JOIN_DDP/MMRAM/CST_DATA_reg[11], JOIN_DDP/MMRAM/CST_DATA_reg[12],
+JOIN_DDP/MMRAM/CST_DATA_reg[13], JOIN_DDP/MMRAM/CST_DATA_reg[14],
+JOIN_DDP/MMRAM/CST_DATA_reg[15], JOIN_DDP/MMRAM/CST_DATA_reg[1],
+JOIN_DDP/MMRAM/CST_DATA_reg[2], JOIN_DDP/MMRAM/CST_DATA_reg[3],
+JOIN_DDP/MMRAM/CST_DATA_reg[4], JOIN_DDP/MMRAM/CST_DATA_reg[5],
+JOIN_DDP/MMRAM/CST_DATA_reg[6], JOIN_DDP/MMRAM/CST_DATA_reg[7],
+JOIN_DDP/MMRAM/CST_DATA_reg[8] (the first 15 of 475 listed)
+Related violations: <none>
+
+PLHOLDVIO-2#10 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT JOIN_DDP/PS/c/CP_INST_0 is driving clock pin of 69 cells. This could lead to large hold time violations. Involved cells are:
+JOIN_DDP/PS/DL_reg[0], JOIN_DDP/PS/DL_reg[10], JOIN_DDP/PS/DL_reg[11],
+JOIN_DDP/PS/DL_reg[12], JOIN_DDP/PS/DL_reg[13], JOIN_DDP/PS/DL_reg[14],
+JOIN_DDP/PS/DL_reg[15], JOIN_DDP/PS/DL_reg[16], JOIN_DDP/PS/DL_reg[17],
+JOIN_DDP/PS/DL_reg[18], JOIN_DDP/PS/DL_reg[19], JOIN_DDP/PS/DL_reg[1],
+JOIN_DDP/PS/DL_reg[20], JOIN_DDP/PS/DL_reg[21], JOIN_DDP/PS/DL_reg[22]
+ (the first 15 of 69 listed)
+Related violations: <none>
+
+PLHOLDVIO-2#11 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT JOIN_DDP/c/CP_INST_0 is driving clock pin of 38 cells. This could lead to large hold time violations. Involved cells are:
+JOIN_DDP/DL_reg[0], JOIN_DDP/DL_reg[10], JOIN_DDP/DL_reg[11],
+JOIN_DDP/DL_reg[12], JOIN_DDP/DL_reg[13], JOIN_DDP/DL_reg[14],
+JOIN_DDP/DL_reg[15], JOIN_DDP/DL_reg[16], JOIN_DDP/DL_reg[17],
+JOIN_DDP/DL_reg[18], JOIN_DDP/DL_reg[19], JOIN_DDP/DL_reg[1],
+JOIN_DDP/DL_reg[20], JOIN_DDP/DL_reg[21], JOIN_DDP/DL_reg[22]
+ (the first 15 of 38 listed)
+Related violations: <none>
+
+ZPS7-1#1 Warning
+PS7 block required  
+The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+Related violations: <none>
+
+

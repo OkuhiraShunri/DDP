@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/PeripheralCircuit_sim/Btn_in/HDL/BTN_IN.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BTN_IN
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/OkuhiraShunri/Documents/verilog/DDP/vivado/PeripheralCircuit_sim/Btn_in/HDL/BTN_IN_SIM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BTN_IN_SIM
